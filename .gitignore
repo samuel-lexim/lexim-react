@@ -1,2 +1,12 @@
+*
 
-.idea
+!/content
+!content/**
+content/logs
+
+!/versions
+!/versions/5.44.0
+!/versions/5.44.0/content
+!/versions/5.44.0/content/**
+!/versions/5.44.0/core
+!/versions/5.44.0/core/**
