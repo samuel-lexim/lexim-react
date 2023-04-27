@@ -1,12 +1,13 @@
-*
+.DS_Store
+Thumbs.db
+.idea
 
-!/content
-!content/**
-content/logs
-
-!/versions
-!/versions/5.44.0
-!/versions/5.44.0/content
-!/versions/5.44.0/content/**
-!/versions/5.44.0/core
-!/versions/5.44.0/core/**
+/*
+!/.gitignore
+!wp-content
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/index.php
+!/wp-content/themes/lexim
