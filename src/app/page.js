@@ -1,16 +1,17 @@
 import Image from 'next/image'
-import styles from './page.module.css'
-import AboutData from '../data/About';
+import styles from './page.module.scss';
+
+import AboutData from '@/data/About';
 
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
 
       {/* About List */}
       {AboutData.map((item, index) => {
         return (
-          <div className="mb-3" key={index}>
+          <div className="blueText" key={index}>
             <h2>{item.title}</h2>
             <p>{item.content}</p>
           </div>

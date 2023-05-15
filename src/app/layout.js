@@ -1,7 +1,9 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-
+import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] })
+
+// CSS
+import '@/styles/global.scss';
+import '@/styles/CustomGlobal.css'; // custom css
 
 export const metadata = {
   title: 'Lexim Global',
