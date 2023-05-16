@@ -1,0 +1,27 @@
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
+import AboutData from '@/data/About';
+
+export default function Home() {
+  return (
+    <>
+      <Navbar/>
+
+      <main>
+
+        {/* About List */}
+        {AboutData.map((item, index) => {
+          return (
+            <div className="blueText" key={index}>
+              <h2>{item.title}</h2>
+              <p>{item.content}</p>
+            </div>
+          );
+        })}
+      </main>
+
+      <Footer/>
+    </>
+  )
+}

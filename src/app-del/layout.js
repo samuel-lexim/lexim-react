@@ -16,14 +16,18 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
     <Head>
-      <link rel="icon" href="/images/logo.svg" />
+      <link rel="icon" href="/images/logo.svg"/>
       <meta
         name="description"
         content={metadata.description}
       />
-      <meta name="og:title" content={metadata.title} />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="og:title" content={metadata.title}/>
+      <meta name="twitter:card" content="summary_large_image"/>
       <title>{metadata.title}</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
     </Head>
 
     <body className={inter.className}>{children}</body>

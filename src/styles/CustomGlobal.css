@@ -1,1 +1,30 @@
 /* override CSS in Global */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --animate-delay: 0.5s;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+
+}

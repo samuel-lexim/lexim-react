@@ -9,8 +9,8 @@ export default function Navbar() {
           src="/images/logo.svg"
           alt="Lexim Global"
           className={styles.logoImg}
-          width={38}
-          height={37}
+          width={23}
+          height={23}
         />
       </div>
 

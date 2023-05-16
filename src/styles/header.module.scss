@@ -2,6 +2,7 @@
 
 .header {
   display: flex;
+  padding: 20px;
 
   .logoContainer {
 
@@ -31,3 +32,6 @@
   }
 }
 
+@media screen and (min-width: $screen_m) {
+  
+}
