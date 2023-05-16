@@ -1,10 +1,11 @@
-
+import Layout from "@/components/layout";
 import AboutData from '@/data/About';
 import AboutCss from '@/styles/pageAbout.module.scss'
 
-export default function About() {
+
+export default function About(children) {
   return (
-    <main>
+    <Layout>
 
       {/* About List */}
       {AboutData.map((item, index) => {
@@ -16,6 +17,16 @@ export default function About() {
         );
       })}
 
-    </main>
+
+    </Layout>
   )
 }
+
+// export async function getStaticProps({ params }) {
+//   return {
+//     props: {
+//       AboutData
+//     }
+//   }
+// }
+

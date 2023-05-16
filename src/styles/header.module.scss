@@ -1,2 +1,33 @@
 @import "variables.module";
 
+.header {
+  display: flex;
+
+  .logoContainer {
+
+    .logoImg {
+
+    }
+  }
+
+  .menuBar {
+    width: 1.2rem;
+    height: 1px;
+    background-color: $color-Black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    &.top {
+
+    }
+
+    &.bottom {
+
+    }
+  }
+
+  .menuBtn {
+
+  }
+}
+

@@ -1,4 +1,4 @@
-export const AboutData = [
+const AboutData = [
   {
     id: 1,
     title: "LEXIM",

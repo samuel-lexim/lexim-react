@@ -1,12 +1,14 @@
-import Image from 'next/image'
 import styles from './page.module.scss';
 
-import AboutData from '@/data/About';
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
+import AboutData from '@/data/About';
 
 export default function Home() {
   return (
     <main>
+      <Navbar />
 
       {/* About List */}
       {AboutData.map((item, index) => {
@@ -107,6 +109,8 @@ export default function Home() {
       </div>
 
       */ }
+
+      <Footer />
 
     </main>
   )

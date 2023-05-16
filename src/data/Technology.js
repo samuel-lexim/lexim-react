@@ -1,4 +1,4 @@
-export const TechnologyData = [
+const TechnologyData = [
   {
     id: 1,
     title: "LEXIM",
