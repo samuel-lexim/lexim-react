@@ -1,5 +1,4 @@
-@import "header.module";
-@import "footer.module";
+@import "variables.module";
 
 .blueText {
   color: $color-Blue;
@@ -14,5 +13,9 @@
 }
 
 .main {
+  position: relative;
+}
 
+.bodyPage {
+  position: relative;
 }

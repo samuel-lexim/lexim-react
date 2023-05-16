@@ -3,7 +3,7 @@ import AboutData from '@/data/About';
 import AboutCss from '@/styles/pageAbout.module.scss'
 
 
-export default function About(children) {
+export default function About() {
   return (
     <Layout>
 
