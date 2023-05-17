@@ -1,37 +1,158 @@
 @import "variables.module";
 
 .header {
+  position: relative;
   display: flex;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 200;
 
   .logoContainer {
+    padding: 12px 10px 12px 20px;
 
     .logoImg {
-
-    }
-  }
-
-  .menuBar {
-    width: 1.2rem;
-    height: 1px;
-    background-color: $color-Black;
-    margin-top: 2px;
-    margin-bottom: 2px;
-
-    &.top {
-
-    }
-
-    &.bottom {
-
     }
   }
 
   .menuBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+
+  .menuBar {
+    width: 33px;
+    height: 2px;
+    background-color: $color-Black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition-duration: 1s;
+    transition-property: width;
 
   }
+
+  &.open {
+    &:not(.yellow) .menuBar {
+      background-color: $color-White;
+    }
+
+    .menuBar.top {
+      transform: translate3d(0px, 5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    }
+
+    .menuBar.bottom {
+      transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+    }
+
+    + .menuPanel {
+      display: block !important;
+    }
+  }
+
+  &.blue {
+    + .menuPanel {
+      background-color: $color-Blue;
+    }
+  }
+
+  &.yellow {
+    + .menuPanel {
+      background-color: $color-Yellow;
+
+      a {
+        color: $color-SoftBlack;
+      }
+
+      .bottomLine {
+        background: $color-SoftBlack;
+      }
+    }
+  }
+
 }
 
-@media screen and (min-width: $screen_m) {
-  
+.menuPanel {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-SoftBlack;
+  padding: 80px 20px 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  color: #fff;
+
+  .menuItem {
+    display: block;
+    padding: 10px 0;
+    line-height: 1;
+  }
+
+  a {
+    position: relative;
+    font-weight: 300;
+    font-size: 48px;
+  }
+
+  .bottomLine {
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition-duration: 1s;
+    transition-property: width;
+  }
+
+  a:hover {
+    .bottomLine {
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    .logoContainer {
+      padding-left: 50px;
+
+      img {
+        width: 29px;
+        height: 29px;
+      }
+    }
+
+    .menuBtn {
+      padding: 0 50px;
+    }
+  }
+
+  .menuPanel {
+    padding: 80px 50px 10px;
+
+    a {
+      font-size: 120px;
+    }
+
+    .menuItem {
+      padding: 0;
+    }
+
+    .bottomLine {
+      bottom: 15px;
+    }
+  }
+
 }
