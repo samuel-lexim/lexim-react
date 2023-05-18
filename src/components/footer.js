@@ -1,68 +1,24 @@
 import 'animate.css';
 import styles from '@/styles/footer.module.scss';
-import Image from 'next/image';
+import CtaButton from "@/components/ctaButton";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.ctaWrap}>
         <div>
-          <div>
-            <a className={styles.ctaLink} href={`#`}>
-              <span>SEND A MESSAGE</span>
-              <div className={styles.bottomLine}></div>
-              <div className={styles.arrow}>
-                <Image
-                  src="/images/arrow.svg"
-                  alt="SEND A MESSAGE"
-                  width={23}
-                  height={17}
-                  priority
-                />
-              </div>
-            </a>
-          </div>
-
-          <div>
-            <a className={styles.ctaLink} href={`#`}>
-              <span>EMAIL: hello@lexim.tech</span>
-              <div className={styles.bottomLine}></div>
-              <div className={styles.arrow}>
-                <Image
-                  src="/images/arrow.svg"
-                  alt="SEND A MESSAGE"
-                  width={23}
-                  height={17}
-                  priority
-                />
-              </div>
-            </a>
-          </div>
-
-          <div>
-            <a className={styles.ctaLink} href={`#`}>
-              <span>SCHEDULE A CALL</span>
-              <div className={styles.bottomLine}></div>
-              <div className={styles.arrow}>
-                <Image
-                  src="/images/arrow.svg"
-                  alt="SEND A MESSAGE"
-                  width={23}
-                  height={17}
-                  priority
-                />
-              </div>
-            </a>
-          </div>
+          <CtaButton text='SEND A MESSAGE' />
+          <CtaButton text='EMAIL: hello@lexim.tech' link='mailto: hello@lexim.tech' target='_blank' />
+          <CtaButton text='SCHEDULE A CALL' />
         </div>
       </div>
 
       <div className={styles.brandWrap}>
-        <p>LEXIM</p>
+        <span>LEXIM</span>
       </div>
 
       <div className={`${styles.copyrightWrap}`}>
-        <p>Copyright (c)2023 LEXIM</p>
+        <span>Copyright (c)2023 LEXIM</span>
       </div>
     </footer>
   );
