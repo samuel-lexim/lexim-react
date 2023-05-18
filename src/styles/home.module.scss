@@ -1,6 +1,14 @@
-@import "variables.module";
+//@import "variables.module";
 
-.main {
+.homeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  height: 100vh;
+}
+
+.innerSection {
 
 }
 

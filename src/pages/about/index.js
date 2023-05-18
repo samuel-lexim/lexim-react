@@ -1,19 +1,23 @@
 import Layout from "@/components/layout";
 import AboutData from '@/data/About';
-import AboutCss from '@/styles/pageAbout.module.scss'
-
+import styles from '@/styles/pageAbout.module.scss'
+import page from '@/styles/page.module.scss';
 
 export default function About() {
   return (
     <Layout>
 
+      <div className={'pageTitle'}>
+        <span>ABOUT</span>
+      </div>
+
       {/* About List */}
       {AboutData.map((item, index) => {
         return (
-          <div className={AboutCss.greenText} key={index}>
-            <h2 className="blueText">{item.title}</h2>
-            <p className={AboutCss.blueText}>{item.content}</p>
-          </div>
+          <section className={page.sectionScroll} data-key={index}>
+            <h2 className={styles.title}>{item.title}</h2>
+            <div className={styles.content}>{item.content}</div>
+          </section>
         );
       })}
 
@@ -21,11 +25,4 @@ export default function About() {
   )
 }
 
-// export async function getStaticProps({ params }) {
-//   return {
-//     props: {
-//       AboutData
-//     }
-//   }
-// }
 
