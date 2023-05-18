@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    if (isMenuOpen) {
+    if (!isMenuOpen) {
       if (backgroundColor === 'black') {
         setBackgroundColor('blue');
       } else if (backgroundColor === 'blue') {
