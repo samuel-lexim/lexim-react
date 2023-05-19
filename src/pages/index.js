@@ -2,6 +2,8 @@ import Layout from "@/components/layout";
 import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
 import CtaButton from "@/components/ctaButton";
+import CtaBlueButton from "@/components/ctaBlueButton";
+
 import ReactFullPage from "@fullpage/react-fullpage"; // Docs: https://alvarotrigo.com/fullPage
 import Footer from "@/components/footer";
 
@@ -23,10 +25,10 @@ export default function Home() {
                 <section className={`${page.sectionScroll} ${styles.homeSection}`} id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
                     <h4>Let’s reduce your operation costs by integrating your software.</h4>
-                    <h2 className={styles.h2}>We Can Help</h2>
+                    <h2 className={`${styles.mainHeading}`}>We Can Help</h2>
                     <div className={styles.content}>
                       <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
-                      <CtaButton text='Schedule a Call' link='//google.com'/>
+                      <CtaBlueButton text='Schedule a Call' link='//google.com'/>
                     </div>
                   </div>
                 </section>
@@ -49,7 +51,7 @@ export default function Home() {
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
                       <h3>And we do</h3>
-                      <p className={page.h2}>a lot more than that…</p>
+                      <p className='h2'>a lot more than that…</p>
                     </div>
                   </div>
                 </section>

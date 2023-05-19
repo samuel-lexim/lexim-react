@@ -14,16 +14,18 @@ export default function CtaBlueButton(
     <>
       <div className={`${styles.ctaButton} ${styles.blueButton} `}>
         <Link className={styles.ctaLink} href={link} target={target}>
-          <span>{text}</span>
-          <div className={styles.bottomLine}></div>
-          <div className={styles.arrow}>
-            <Image
-              src="/images/arrow.svg"
-              alt={text}
-              width={23}
-              height={17}
-              priority
-            />
+          <div className={styles.ctaLinkInner}>
+            <span>{text}</span>
+            <div className={styles.bottomLine}></div>
+            <div className={styles.arrow}>
+              <Image
+                src="/images/arrow-white.svg"
+                alt={text}
+                width={23}
+                height={17}
+                priority
+              />
+            </div>
           </div>
         </Link>
       </div>

@@ -2,7 +2,12 @@ import styles from '@/styles/cta.module.scss';
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CtaButton({text = 'Schedule a Call', link = '#', target = '_self'}) {
+export default function CtaButton(
+  {
+    text = 'Schedule a Call',
+    link = '#',
+    target = '_self'
+  }) {
   return (
     <>
       <div className={styles.ctaButton}>

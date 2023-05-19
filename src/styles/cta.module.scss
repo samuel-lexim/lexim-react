@@ -1,3 +1,5 @@
+@import "variables.module";
+
 .ctaButton {
   font-size: 18px;
 
@@ -10,7 +12,6 @@
     .arrow {
       width: 24px;
       height: 27px;
-      filter: brightness(0%);
       position: absolute;
       top: 0;
       bottom: auto;
@@ -63,5 +64,32 @@
 }
 
 .blueButton {
+  .ctaLink {
+    background: $color-Blue;
+    color: #fff;
+    border-radius: 10px;
+    padding: 7px 14px;
+
+    .ctaLinkInner {
+      position: relative;
+      display: inline-block;
+      padding-right: 28px;
+
+      > span {
+        //padding: 8px 13px;
+        //display: inline-block;
+      }
+
+      .bottomLine {
+        background: $color-White;
+      }
+
+      .arrow {
+        top: 1px;
+        right: -3px;
+      }
+    }
+  }
+
 
 }
