@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .fw-100 {
   font-weight: 100
 }
@@ -90,6 +94,12 @@ body.body main {
 
 .fp-watermark, .fp-watermark > a  {
   display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  body.body main {
+    padding-left: 10vw;
+  }
 }
 
 @media only screen and (min-width: 1440px) {

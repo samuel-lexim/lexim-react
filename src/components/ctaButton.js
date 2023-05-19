@@ -6,11 +6,12 @@ export default function CtaButton(
   {
     text = 'Schedule a Call',
     link = '#',
+    className = '',
     target = '_self'
   }) {
   return (
     <>
-      <div className={styles.ctaButton}>
+      <div className={`${styles.ctaButton} ${className}`}>
         <Link className={styles.ctaLink} href={link} target={target}>
           <span>{text}</span>
           <div className={styles.bottomLine}></div>

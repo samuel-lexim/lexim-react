@@ -21,7 +21,7 @@
       overflow: hidden;
 
       img {
-        transform: translate3d(-100%, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform: translate3d(-115%, 115%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
         transform-style: preserve-3d;
         transition-duration: 0.4s;
         transition-delay: 0.6s;
@@ -90,6 +90,39 @@
       }
     }
   }
+}
 
+@media screen and (min-width: 1440px) {
 
+  .blueButton {
+    font-size: 42px;
+
+    .ctaLink {
+      padding: 7px 32px;
+      border-radius: 20px;
+
+      .ctaLinkInner {
+        padding-right: 45px;
+
+        .arrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 9px;
+          right: 0;
+          width: 40px;
+          height: 40px;
+
+          img {
+            width: 30px !important;
+            height: auto;
+          }
+        }
+      }
+
+      .bottomLine {
+        bottom: 7px;
+      }
+    }
+  }
 }

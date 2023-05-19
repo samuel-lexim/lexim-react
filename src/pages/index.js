@@ -1,11 +1,12 @@
 import Layout from "@/components/layout";
 import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
-import CtaButton from "@/components/ctaButton";
 import CtaBlueButton from "@/components/ctaBlueButton";
 
 import ReactFullPage from "@fullpage/react-fullpage"; // Docs: https://alvarotrigo.com/fullPage
 import Footer from "@/components/footer";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   // const [sectionIndex, setSectionIndex] = useState(0);
@@ -54,7 +55,51 @@ export default function Home() {
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
                       <h4>And we do</h4>
-                      <h3 className='h2'>a lot more than that…</h3>
+                      <h3 className={styles._underLine}>a lot more than that…</h3>
+                    </div>
+
+                    <div className={styles.ourCustomers}>
+
+                      <div className={styles.customerItem}>
+                        <Link href='https://www.silverts.com'>
+                          <Image
+                            src="/images/customers/silverts.jpg"
+                            alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                            width={227} height={53}
+                          />
+                        </Link>
+                      </div>
+
+                      <div className={styles.customerItem}>
+                        <Link href='https://www.intertrend.com'>
+                          <Image
+                            src="/images/customers/intertrend.jpg"
+                            alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                            width={227} height={57}
+                          />
+                        </Link>
+                      </div>
+
+                      <div className={styles.customerItem}>
+                        <Link href='https://www.heartsoulscrubs.com'>
+                          <Image
+                            src="/images/customers/heartsoul.jpg"
+                            alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                            width={155} height={65}
+                          />
+                        </Link>
+                      </div>
+
+                      <div className={styles.customerItem}>
+                        <Link href='https://www.infinityscrubs.com'>
+                          <Image
+                            src="/images/customers/infinity.jpg"
+                            alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                            width={135} height={65}
+                          />
+                        </Link>
+                      </div>
+
                     </div>
                   </div>
                 </section>
@@ -65,15 +110,19 @@ export default function Home() {
                          id={sections[3]} data-index={3}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3>We focus on:</h3>
+                      <h3 className={styles._underLine}>We focus on:</h3>
                     </div>
 
-                    <div className={styles.content}>
-                      <p>Systems Integration</p>
-                      <p>Order Management Systems</p>
-                      <p>ERP Customization</p>
-                      <p>Enterprise E-Commerce</p>
+                    <div className={styles.content2Cols}>
+                      <div className={styles.leftColumn}></div>
+                      <div className={styles.rightColumn}>
+                        <p><Link href='/#'><span>Systems Integration</span></Link></p>
+                        <p><Link href='/#'><span>Order Management Systems</span></Link></p>
+                        <p><Link href='/#'><span>ERP Customization</span></Link></p>
+                        <p><Link href='/#'><span>Enterprise E-Commerce</span></Link></p>
+                      </div>
                     </div>
+
                   </div>
                 </section>
               </div>
@@ -83,14 +132,18 @@ export default function Home() {
                          id={sections[4]} data-index={4}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3>Here’s how we’ll plan your project:</h3>
+                      <h3 className={styles._underLine}>Here’s how we’ll<br/> plan your project:</h3>
                     </div>
 
-                    <div className={styles.content}>
-                      <p>1. We’ll understand your challenges</p>
-                      <p>2. Scope the project</p>
-                      <p>3. And build a team that’s customized for your specific needs</p>
+                    <div className={styles.content2Cols}>
+                      <div className={styles.leftColumn}></div>
+                      <div className={styles.rightColumn}>
+                        <p>1. We’ll understand your challenges</p>
+                        <p>2. Scope the project</p>
+                        <p>3. And build a team that’s customized for your specific needs</p>
+                      </div>
                     </div>
+
                   </div>
                 </section>
               </div>
@@ -100,18 +153,21 @@ export default function Home() {
                          id={sections[5]} data-index={5}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3>Let’s plan your project:</h3>
+                      <h3 className={styles._underLine}>Let’s plan your<br/> project:</h3>
                     </div>
 
-                    <p>What to expect:</p>
-
-                    <div className={styles.content}>
-                      <p>1. Thoughtful questions</p>
-                      <p>2. A thorough outline of the constraints and considerations</p>
-                      <p>3. An experienced point of view</p>
+                    <div className={styles.content2Cols}>
+                      <div className={styles.leftColumn}>
+                        <p>What to expect:</p>
+                      </div>
+                      <div className={styles.rightColumn}>
+                        <p>1. Thoughtful questions</p>
+                        <p>2. A thorough outline of the constraints and considerations</p>
+                        <p>3. An experienced point of view</p>
+                      </div>
                     </div>
 
-                    <CtaBlueButton href='#'/>
+                    <CtaBlueButton href='#' className={styles._absolute}/>
                   </div>
                 </section>
               </div>
@@ -121,17 +177,20 @@ export default function Home() {
                          id={sections[6]} data-index={6}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3>Let’s plan your project:</h3>
+                      <h3 className={styles._underLine}>Let’s plan your<br/> project:</h3>
                     </div>
 
-                    <p>What not to expect:</p>
-
-                    <div className={styles.content}>
-                      <p>1. An invoice for our conversation</p>
-                      <p>2. Empty promises without a timeline</p>
+                    <div className={styles.content2Cols}>
+                      <div className={styles.leftColumn}>
+                        <p>What not to expect:</p>
+                      </div>
+                      <div className={styles.rightColumn}>
+                        <p>1. An invoice for our conversation</p>
+                        <p>2. Empty promises without a timeline</p>
+                      </div>
                     </div>
 
-                    <CtaBlueButton href='#'/>
+                    <CtaBlueButton href='#' className={styles._absolute}/>
 
                   </div>
                 </section>
