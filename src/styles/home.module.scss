@@ -12,10 +12,26 @@
       margin-bottom: 60px;
     }
 
+    h4 {
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+  }
+
+  &[data-index="1"] {
     .content {
-      > p {
-        margin-bottom: 20px;
-      }
+      line-height: 1.25;
+    }
+  }
+
+  &[data-index="3"] {
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -86,8 +102,16 @@
 
 @media screen and (min-width: 768px) {
   .homeSection {
+
+    &[data-index="0"] {
+      .innerSection {
+        padding-right: 10vw;
+      }
+    }
+
     &[data-index="1"] {
       .content {
+        line-height: 1.25;
         max-width: 40vw;
         margin: auto;
         padding: 0;
@@ -147,6 +171,12 @@
 
 
 @media screen and (min-width: 1440px) {
+  .homeSection[data-index="0"] {
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
   .headingUnderLine {
     .homeHeading {
       h3 {

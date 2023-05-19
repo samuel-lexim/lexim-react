@@ -28,10 +28,16 @@ export default function Home() {
                   <div className={styles.innerSection}>
                     <h4>Let’s reduce your operation costs by integrating your software.</h4>
                     <h2 className={`${styles.mainHeading}`}>We Can Help</h2>
-                    <div className={styles.content}>
-                      <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
-                      <CtaBlueButton text='Schedule a Call' link='//google.com'/>
+
+                    <div className={styles.content2Cols}>
+                      <div className={styles.leftColumn}></div>
+                      <div className={styles.rightColumn}>
+                        <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
+                        <p>All without a fee.</p>
+                        <CtaBlueButton text='Schedule a Call' link='//google.com'/>
+                      </div>
                     </div>
+
                   </div>
                 </section>
               </div>
