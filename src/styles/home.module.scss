@@ -1,4 +1,4 @@
-//@import "variables.module";
+@import "variables.module";
 
 .homeSection {
   display: flex;
@@ -9,6 +9,14 @@
 
   .mainHeading {
 
+  }
+
+  .content {
+    padding-right: 30px;
+
+    > p {
+      margin-bottom: 20px;
+    }
   }
 
   &[data-index="0"] {
@@ -25,11 +33,31 @@
 }
 
 .innerSection {
+  width: 100%;
+}
+
+.headingUnderLine {
+  padding-right: 0;
+
+  .homeHeading {
+    padding-right: 30px;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $color-Black;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
 
 }
 
 
+@media screen and (min-width: 1440px) {
+  .headingUnderLine {
 
-@media screen and (min-width: 768px) {
-  
+    .homeHeading {
+      border-bottom-width: 2px;
+    }
+  }
 }
