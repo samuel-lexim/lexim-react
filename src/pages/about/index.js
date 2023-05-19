@@ -25,14 +25,6 @@ export default function About() {
 
       {/* About List */}
       {aboutItems}
-      {/*{AboutData.map((item) => {*/}
-      {/*  return (*/}
-      {/*    <section className={page.sectionScroll}>*/}
-      {/*      <h2 className={styles.title}>{item.title}</h2>*/}
-      {/*      <div className={styles.content}>{item.content}</div>*/}
-      {/*    </section>*/}
-      {/*  );*/}
-      {/*})}*/}
 
     </Layout>
   )

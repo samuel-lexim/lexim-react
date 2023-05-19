@@ -26,13 +26,15 @@ export default function Navbar() {
     <>
       <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : ''} `}>
         <div className={styles.logoContainer}>
-          <Image
-            src="/images/logo.svg"
-            alt="Lexim Global"
-            className={styles.logoImg}
-            width={23}
-            height={23}
-          />
+          <Link href='/'>
+            <Image
+              src="/images/logo.svg"
+              alt="Lexim Global"
+              className={styles.logoImg}
+              width={23}
+              height={23}
+            />
+          </Link>
         </div>
 
         <div className={styles.menuBtn} onClick={toggleMenu}>
