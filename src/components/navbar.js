@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/navbar.module.scss';
 import React, {useState} from 'react';
+import Link from 'next/link';
 
 export default function Navbar() {
 
@@ -42,45 +43,45 @@ export default function Navbar() {
 
       <div className={`${styles.menuPanel}`}>
         <div className={styles.menuItem}>
-          <a href='/about'>
+          <Link href='/about'>
             <span>ABOUT</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <a href='/technology'>
+          <Link href='/technology'>
             <span>TECHNOLOGY</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <a href='/partnerships'>
+          <Link href='/partnerships'>
             <span>PARTNERSHIPS</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <a href='/case-studies'>
+          <Link href='/case-studies'>
             <span>CASE STUDIES</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <a href='/testimonials'>
+          <Link href='/testimonials'>
             <span>TESTIMONIALS</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <a href='/contact'>
+          <Link href='/contact'>
             <span>CONTACT</span>
             <div className={styles.bottomLine}></div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* menuPanel */}

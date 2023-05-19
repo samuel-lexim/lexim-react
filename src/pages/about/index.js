@@ -4,6 +4,18 @@ import styles from '@/styles/pageAbout.module.scss'
 import page from '@/styles/page.module.scss';
 
 export default function About() {
+  const aboutItems = [];
+
+  for (let i = 0; i < AboutData.length; i++) {
+    const item = AboutData[i];
+    aboutItems.push(
+      <section className={page.sectionScroll}>
+        <h2 className={styles.title}>{item.title}</h2>
+        <div className={styles.content}>{item.content}</div>
+      </section>
+    );
+  }
+
   return (
     <Layout>
 
@@ -12,14 +24,15 @@ export default function About() {
       </div>
 
       {/* About List */}
-      {AboutData.map((item, index) => {
-        return (
-          <section className={page.sectionScroll} data-key={index}>
-            <h2 className={styles.title}>{item.title}</h2>
-            <div className={styles.content}>{item.content}</div>
-          </section>
-        );
-      })}
+      {aboutItems}
+      {/*{AboutData.map((item) => {*/}
+      {/*  return (*/}
+      {/*    <section className={page.sectionScroll}>*/}
+      {/*      <h2 className={styles.title}>{item.title}</h2>*/}
+      {/*      <div className={styles.content}>{item.content}</div>*/}
+      {/*    </section>*/}
+      {/*  );*/}
+      {/*})}*/}
 
     </Layout>
   )
