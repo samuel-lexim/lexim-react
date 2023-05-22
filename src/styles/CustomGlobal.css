@@ -75,7 +75,6 @@ p {
 
 body.body main {
   position: relative;
-  padding-left: 30px;
 }
 
 .pageTitle {
@@ -93,12 +92,22 @@ body.body main {
 }
 
 /* Home Effect */
+#fullPage .section {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 .fp-section.active ._lineTopEffect {
   width: 124vw;
 }
 
 .fp-section.active ._lineBottomEffect {
   width: 100vh;
+}
+
+.fp-section.active ._lineLeftEffect,
+.fp-section.active ._lineRightEffect {
+  width: 2000px;
 }
 
 .fp-section.active ._underLineEffect:after {
@@ -126,9 +135,6 @@ body.body main {
 
 
 @media only screen and (min-width: 768px) {
-  body.body main {
-    padding-left: 10vw;
-  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -150,10 +156,6 @@ body.body main {
 
   p {
     font-size: 42px;
-  }
-
-  body.body main {
-    padding-left: 200px;
   }
 
   .pageTitle {
