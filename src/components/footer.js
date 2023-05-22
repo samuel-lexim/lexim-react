@@ -1,6 +1,9 @@
 import 'animate.css';
 import styles from '@/styles/footer.module.scss';
 import CtaButton from "@/components/ctaButton";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
@@ -14,7 +17,15 @@ export default function Footer() {
       </div>
 
       <div className={styles.brandWrap}>
-        <span>LEXIM</span>
+        <Link href='/'>
+          <Image
+            src="/images/LEXIM.svg"
+            alt="Lexim Global"
+            className={styles.logoImg}
+            width={177}
+            height={41}
+          />
+        </Link>
       </div>
 
       <div className={`${styles.copyrightWrap}`}>
