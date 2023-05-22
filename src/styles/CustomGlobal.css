@@ -92,6 +92,24 @@ body.body main {
   display: none !important;
 }
 
+/* Home Effect */
+.fp-section.active ._lineTopEffect {
+  width: 124vw;
+}
+
+.fp-section.active ._lineBottomEffect {
+  width: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .fp-section.active ._lineTopEffect {
+    width: 100vh;
+  }
+}
+/* END - Home Effect */
+
+
+
 @media only screen and (min-width: 768px) {
   body.body main {
     padding-left: 10vw;

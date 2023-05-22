@@ -22,7 +22,11 @@ export default function Home() {
 
           return (
             <div id='fullPage'>
-              <div className='section'>
+              <div className={`${styles.fullPageSection} section`}>
+                <div className={styles.lineHome1}>
+                  <span className={`${styles._lineTop} _lineTopEffect`}></span>
+                  <span className={`${styles._lineBottom} _lineBottomEffect`}></span>
+                </div>
                 <section className={`${page.sectionScroll} ${styles.homeSection}`}
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
