@@ -65,7 +65,7 @@ export default function Home() {
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
                       <h4>And we do</h4>
-                      <h3 className={styles._underLine}>a lot more than that…</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect`}>a lot more than that…</h3>
                     </div>
 
                     <div className={styles.ourCustomers}>
@@ -120,7 +120,7 @@ export default function Home() {
                          id={sections[3]} data-index={3}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={styles._underLine}>We focus on:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect`}>We focus on:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -142,7 +142,7 @@ export default function Home() {
                          id={sections[4]} data-index={4}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={styles._underLine}>Here’s how we’ll<br/> plan your project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect`}>Here’s how we’ll<br/> plan your project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -163,7 +163,7 @@ export default function Home() {
                          id={sections[5]} data-index={5}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={styles._underLine}>Let’s plan your<br/> project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect`}>Let’s plan your<br/> project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -187,7 +187,7 @@ export default function Home() {
                          id={sections[6]} data-index={6}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={styles._underLine}>Let’s plan your<br/> project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect`}>Let’s plan your<br/> project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>

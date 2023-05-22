@@ -62,9 +62,10 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 100%;
+        width: 0;
         height: 1px;
         background: $color-Black;
+        transition: width 2s;
       }
     }
   }
@@ -157,16 +158,6 @@
     }
   }
 
-  .headingUnderLine {
-    .homeHeading {
-      h3 {
-        &._underLine:after {
-          width: calc(100% - 40px);
-        }
-      }
-    }
-  }
-
   .ourCustomers {
     flex-direction: row;
     justify-content: space-around;
@@ -235,7 +226,6 @@
     .homeHeading {
       h3 {
         &._underLine:after {
-          width: calc(100% - 80px);
           height: 2px;
         }
       }
