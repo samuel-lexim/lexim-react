@@ -74,6 +74,22 @@
       transform-origin: right;
     }
   }
+
+  &[data-index="2"] {
+    ._lineLeft {
+      top: 68px;
+      left: 108px;
+      transform: rotate(40deg);
+      transform-origin: left;
+    }
+
+    ._lineRight {
+      top: 70vh;
+      left: 108px;
+      transform: rotate(-40deg);
+      transform-origin: left;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -102,6 +118,24 @@
         height: 2px;
         top: 92px;
         right: 37vw;
+      }
+    }
+
+    &[data-index="2"] {
+      ._lineLeft {
+        height: 2px;
+        top: 68px;
+        left: 43.2vw;
+      }
+
+      ._lineRight {
+        height: 2px;
+        top: 68px;
+        right: 11.4vw;
+        left: auto;
+        transform-origin: right;
+        transform: rotate(-40deg);
+        max-width: calc(50vw + 50vh);
       }
     }
   }
