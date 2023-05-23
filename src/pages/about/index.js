@@ -150,7 +150,7 @@ export default function About() {
                         <p className='fw-300'>Our name, <b>Lexim, means "a vast storehouse of language"</b> and we aim to help businesses thrive in the tech-driven global economy.</p>
                       </div>
                       <div className='pad40'></div>
-                      <CtaBlueButton className='_backInBottom' text='Contact Us' link='#'/>
+                      <CtaBlueButton className='_rotateButton' text='Contact Us' link='#'/>
                     </div>
                   </div>
                 </section>
