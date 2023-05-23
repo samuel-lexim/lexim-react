@@ -1,5 +1,6 @@
 @import "variables.module";
 
+// Color
 .blueText {
   color: $color-Blue;
 }
@@ -12,6 +13,46 @@
   color: $color-Green;
 }
 
-.sectionScroll {
-
+.yellowHighlight {
+  background: $color-Yellow;
+  font-weight: 500;
 }
+
+.blueHighlight {
+  background: $color-Blue;
+  color: $color-White;
+  font-weight: 500;
+}
+
+.greenHighlight {
+  background: $color-Green;
+  color: $color-White;
+  font-weight: 500;
+}
+// # Color
+
+
+// Page Title
+.pageTitle {
+  position: absolute;
+  transform: rotate(90deg) translateY(-27%);
+  transform-origin: left;
+  top: 32px;
+  left: -1px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .pageTitle {
+    font-size: 8.5vw;
+    left: -4px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .pageTitle {
+    font-size: 120px;
+  }
+}
+// # Page Title

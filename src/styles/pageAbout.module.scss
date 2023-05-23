@@ -1,16 +1,134 @@
 @import "variables.module";
 
+.fullPageSection {
+  overflow: hidden;
+}
 
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 0;
+  height: 100vh;
+  overflow-x: hidden;
 
-.sectionScroll {
-  padding: 0 45px;
+  .innerSection {
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+  }
 
-  .title {
+  .logoImg {
+    margin: 0 0 20px;
+  }
+
+  ._heading {
 
   }
 
-  .content {
-
+  ._content {
+    padding-left: 30px;
   }
 }
 
+// Line
+.fullPageSection {
+  &[data-index="0"] {
+    ._lineLeft {
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background: #000;
+      top: 54px;
+      left: 40px;
+      transform: rotate(36deg);
+      transform-origin: left;
+      transition: width 3s 0.2s;
+    }
+
+    ._lineRight {
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background: #000;
+      top: 78vw;
+      margin-top: -15vw;
+      right: 0;
+      transform: rotate(-36deg);
+      transform-origin: top right;
+      transition: width 3s 0.2s;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fullPageSection {
+    &[data-index="0"] {
+      ._lineLeft {
+        height: 2px;
+        left: 36vw;
+      }
+
+      ._lineRight {
+        height: 2px;
+        top: 33vw;
+        right: 30px;
+      }
+    }
+  }
+}
+
+// END - Line
+
+// Our Customer
+.ourCustomers {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 20px;
+
+  .customerItem {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ourCustomers {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1100px;
+
+    .customerItem {
+      margin: 20px;
+    }
+  }
+}
+
+// # Our Customer
+
+// > Ipad
+@media screen and (min-width: 768px) {
+  .aboutSection {
+    align-items: center;
+    padding-top: 0;
+
+    .innerSection {
+      padding: 0 10vw 0 12vw;
+    }
+
+    .logoImg {
+      width: 36vw;
+      height: auto;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .aboutSection {
+    .logoImg {
+      width: 640px;
+      margin-bottom: 50px;
+    }
+  }
+}
