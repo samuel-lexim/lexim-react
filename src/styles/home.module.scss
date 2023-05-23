@@ -10,6 +10,7 @@
   align-items: center;
   padding-right: 30px;
   height: 100vh;
+  overflow-x: hidden;
 
   .innerSection {
     position: relative;
@@ -34,6 +35,10 @@
   }
 
   &[data-index="1"] {
+    .innerSection {
+      padding-left: 30px;
+    }
+
     .content {
       line-height: 1.25;
     }
@@ -156,6 +161,14 @@
   .headingUnderLine .homeHeading h3 br {
     display: none;
   }
+
+  .homeSection {
+    &[data-index="1"] {
+      .innerSection {
+        max-width: 400px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -164,7 +177,7 @@
       padding-left: 10vw;
     }
 
-      &[data-index="0"] {
+    &[data-index="0"] {
       .innerSection {
         padding-right: 10vw;
       }

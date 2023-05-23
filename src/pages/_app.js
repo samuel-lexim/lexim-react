@@ -1,4 +1,4 @@
-import '@/styles/animate.min.css';
+// import '@/styles/animate.min.css';
 import '@/styles/global.module.scss';
 import '@/styles/CustomGlobal.css';
 import Head from "next/head";

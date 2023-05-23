@@ -87,7 +87,7 @@ body.body main {
   font-size: 28px;
 }
 
-.fp-watermark, .fp-watermark > a  {
+.fp-watermark, .fp-watermark > a {
   display: none !important;
 }
 
@@ -114,6 +114,46 @@ body.body main {
   width: 100% !important;
 }
 
+.fp-section ._backInLeft {
+  position: relative;
+  left: -80vh;
+  transition: left 1s;
+}
+
+.fp-section.active ._backInLeft {
+  left: 0;
+}
+
+.fp-section ._backInRight {
+  position: relative;
+  right: -80vh;
+  transition: right 1s;
+}
+
+.fp-section.active ._backInRight {
+  right: 0;
+}
+
+.fp-section ._backInTop {
+  position: relative;
+  top: -80vh;
+  transition: top 1s;
+}
+
+.fp-section.active ._backInTop {
+  top: 0;
+}
+
+.fp-section ._backInBottom {
+  position: relative;
+  bottom: -80vh;
+  transition: bottom 1s;
+}
+
+.fp-section.active ._backInBottom {
+  bottom: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .fp-section.active ._lineTopEffect {
     width: 100vh;
@@ -130,8 +170,8 @@ body.body main {
   }
 
 }
-/* END - Home Effect */
 
+/* END - Home Effect */
 
 
 @media only screen and (min-width: 768px) {
