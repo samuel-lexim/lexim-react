@@ -73,7 +73,7 @@ export default function Home() {
                       <h3 className={`${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h3>
                     </div>
 
-                    <div className={styles.ourCustomers}>
+                    <div className={`${styles.ourCustomers} _rotateFromBottom`}>
 
                       <div className={styles.customerItem}>
                         <Link href='https://www.silverts.com'>
@@ -182,7 +182,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton href='#' className={styles._absolute}/>
+                    <CtaBlueButton href='#' className={`${styles._absolute} _rotateButton`}/>
                   </div>
                 </section>
               </div>
@@ -205,7 +205,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton href='#' className={styles._absolute}/>
+                    <CtaBlueButton href='#' className={`${styles._absolute} _rotateButton`}/>
 
                   </div>
                 </section>

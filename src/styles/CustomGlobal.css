@@ -91,7 +91,7 @@ body.body main {
   display: none !important;
 }
 
-/* Home Effect */
+/* Effect */
 #fullPage .section {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -153,6 +153,34 @@ body.body main {
 .fp-section.active ._backInBottom {
   bottom: 0;
 }
+
+.fp-section ._rotateFromBottom {
+  position: relative;
+  transform: rotate(180deg);
+  opacity: 0;
+  bottom: -80vh;
+  transition: transform 1s, opacity 1s, bottom 1s;
+}
+
+.fp-section.active ._rotateFromBottom {
+  opacity: 1;
+  bottom: 0;
+  transform: rotate(0deg);
+}
+
+.fp-section ._rotateButton > a{
+  position: relative;
+  transform: rotate(480deg);
+  opacity: 0;
+  transition: transform 2s, opacity 1s 0.5s;
+}
+
+.fp-section.active ._rotateButton > a{
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* # Effect */
 
 @media only screen and (min-width: 768px) {
   .fp-section.active ._lineTopEffect {
