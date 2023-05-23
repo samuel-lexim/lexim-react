@@ -27,7 +27,7 @@ export default function Home() {
                   <span className={`${styles._lineTop} _lineTopEffect`}></span>
                   <span className={`${styles._lineBottom} _lineBottomEffect`}></span>
                 </div>
-                <section className={`${page.sectionScroll} ${styles.homeSection}`}
+                <section className={` ${styles.homeSection}`}
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
                     <h4 className='_backInTop'>Let’s reduce your operation costs by integrating your software.</h4>
@@ -52,7 +52,7 @@ export default function Home() {
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${page.sectionScroll} ${styles.homeSection}`}
+                <section className={` ${styles.homeSection}`}
                          id={sections[1]} data-index={1}>
                   <div className={`${styles.innerSection} _backInLeft`}>
                     <div className={`${styles.content} `}>
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} data-index={2}>
-                <section className={`${page.sectionScroll} ${styles.homeSection} ${styles.headingUnderLine}`}
+                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
                     <div className={`${styles.homeHeading}`}>
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} data-index={3}>
-                <section className={`${page.sectionScroll} ${styles.homeSection} ${styles.headingUnderLine}`}
+                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[3]} data-index={3}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
@@ -143,7 +143,7 @@ export default function Home() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} data-index={4}>
-                <section className={`${page.sectionScroll} ${styles.homeSection} ${styles.headingUnderLine}`}
+                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[4]} data-index={4}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
@@ -164,7 +164,7 @@ export default function Home() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} data-index={5}>
-                <section className={`${page.sectionScroll} ${styles.homeSection} ${styles.headingUnderLine}`}
+                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[5]} data-index={5}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} data-index={6}>
-                <section className={`${page.sectionScroll} ${styles.homeSection} ${styles.headingUnderLine}`}
+                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[6]} data-index={6}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>

@@ -27,7 +27,7 @@ export default function About() {
             <div id='fullPage'>
 
               <div className={`${styles.fullPageSection} section`} id={sections[0]} data-index={0}>
-                <div>
+                <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
@@ -51,7 +51,7 @@ export default function About() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} id={sections[1]} data-index={1}>
-                <div>
+                <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
@@ -70,7 +70,7 @@ export default function About() {
               </div>
 
               <div className={`${styles.fullPageSection} section`} id={sections[2]} data-index={2}>
-                <div>
+                <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
@@ -135,7 +135,7 @@ export default function About() {
 
 
               <div className={`${styles.fullPageSection} section`} id={sections[3]} data-index={3}>
-                <div>
+                <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>

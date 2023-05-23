@@ -31,31 +31,47 @@
 }
 
 // Line
+.aboutLine {
+  ._lineLeft, ._lineRight, ._lineTop, ._lineBottom {
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width 3s 0.5s;
+  }
+}
+
 .fullPageSection {
   &[data-index="0"] {
     ._lineLeft {
-      position: absolute;
-      width: 0;
-      height: 1px;
-      background: #000;
       top: 54px;
       left: 40px;
       transform: rotate(36deg);
       transform-origin: left;
-      transition: width 3s 0.2s;
     }
 
     ._lineRight {
-      position: absolute;
-      width: 0;
-      height: 1px;
-      background: #000;
       top: 78vw;
       margin-top: -15vw;
       right: 0;
       transform: rotate(-36deg);
       transform-origin: top right;
-      transition: width 3s 0.2s;
+    }
+  }
+
+  &[data-index="1"] {
+    ._lineLeft {
+      top: 100px;
+      left: 90px;
+      transform: rotate(26deg);
+      transform-origin: left;
+    }
+
+    ._lineRight {
+      top: 80px;
+      right: 90px;
+      transform: rotate(-20deg);
+      transform-origin: right;
     }
   }
 }
@@ -72,6 +88,20 @@
         height: 2px;
         top: 33vw;
         right: 30px;
+      }
+    }
+
+    &[data-index="1"] {
+      ._lineLeft {
+        height: 2px;
+        top: 117px;
+        left: 24.6vw;
+      }
+
+      ._lineRight {
+        height: 2px;
+        top: 92px;
+        right: 37vw;
       }
     }
   }
