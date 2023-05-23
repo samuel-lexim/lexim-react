@@ -90,6 +90,22 @@
       transform-origin: left;
     }
   }
+
+  &[data-index="3"] {
+    ._lineLeft {
+      top: 140px;
+      left: 62px;
+      transform: rotate(30deg);
+      transform-origin: left;
+    }
+
+    ._lineRight {
+      top: 300px;
+      left: 97px;
+      transform: rotate(-30deg);
+      transform-origin: left;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -136,6 +152,24 @@
         transform-origin: right;
         transform: rotate(-40deg);
         max-width: calc(50vw + 50vh);
+      }
+    }
+
+    &[data-index="3"] {
+      ._lineLeft {
+        height: 2px;
+        top: 100px;
+        left: 31vw;
+      }
+
+      ._lineRight {
+        height: 2px;
+        top: 50px;
+        left: auto;
+        right: 32vw;
+        max-width: calc(50vh + 10vw);
+        transform-origin: right;
+        transform: rotate(-30deg);
       }
     }
   }
