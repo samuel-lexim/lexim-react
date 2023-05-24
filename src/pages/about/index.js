@@ -1,12 +1,13 @@
 // import AboutData from '@/data/About';
 import Layout from "@/components/layout";
-import styles from '@/styles/pageAbout.module.scss'
-import page from '@/styles/page.module.scss';
 import ReactFullPage from "@fullpage/react-fullpage";
 import CtaBlueButton from "@/components/ctaBlueButton";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/footer";
+
+import page from '@/styles/page.module.scss';
+import styles from '@/styles/pageAbout.module.scss'
 
 export default function About() {
 
@@ -20,7 +21,9 @@ export default function About() {
       </div>
 
       <ReactFullPage
-        navigation
+        navigation={true}
+        navigationPosition="left"
+        navigationClass="kog"
         render={({state, fullPageApi}) => {
 
           return (

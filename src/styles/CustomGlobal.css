@@ -298,3 +298,45 @@ p {
 }
 
 /* END - Effect */
+
+/* Pagination */
+body #fp-nav.fp-left {
+  top: 26vh;
+  left: 32px;
+}
+
+body #fp-nav ul li {
+  width: 25px;
+  height: 25px;
+  margin: 7px;
+}
+
+body #fp-nav ul li a span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+body #fp-nav ul li:hover a span,
+body #fp-nav ul li:hover a.active span,
+body #fp-nav ul li a.active span {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  background: #0827F5;
+  border-radius: 5px;
+  margin: 0;
+}
+
+body #fp-nav ul li:nth-child(2n):hover a span,
+body #fp-nav ul li:nth-child(2n):hover a.active span,
+body #fp-nav ul li:nth-child(2n) a.active span {
+  background: #F7F749;
+}
+
+/* END - Pagination */
