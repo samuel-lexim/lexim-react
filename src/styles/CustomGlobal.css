@@ -301,23 +301,34 @@ p {
 
 /* Pagination */
 body #fp-nav.fp-left {
-  top: 26vh;
-  left: 32px;
+  top: 240px;
+  left: 25px;
+}
+
+body #fp-nav ul li,
+body #fp-nav ul li a span,
+body #fp-nav ul li:hover a span,
+body #fp-nav ul li:hover a.active span,
+body #fp-nav ul li a.active span {
+  width: 25px;
+  height: 25px;
 }
 
 body #fp-nav ul li {
-  width: 25px;
-  height: 25px;
   margin: 7px;
 }
 
-body #fp-nav ul li a span {
-  width: 25px;
-  height: 25px;
+body #fp-nav ul li a span,
+body #fp-nav ul li:hover a span,
+body #fp-nav ul li:hover a.active span,
+body #fp-nav ul li a.active span {
   border: 1px solid #000;
-  background: #fff;
   border-radius: 5px;
   margin: 0;
+}
+
+body #fp-nav ul li a span {
+  background: #fff;
   top: 0;
   left: 0;
 }
@@ -325,18 +336,39 @@ body #fp-nav ul li a span {
 body #fp-nav ul li:hover a span,
 body #fp-nav ul li:hover a.active span,
 body #fp-nav ul li a.active span {
-  width: 25px;
-  height: 25px;
-  border: 1px solid #000;
   background: #0827F5;
-  border-radius: 5px;
-  margin: 0;
 }
 
 body #fp-nav ul li:nth-child(2n):hover a span,
 body #fp-nav ul li:nth-child(2n):hover a.active span,
 body #fp-nav ul li:nth-child(2n) a.active span {
   background: #F7F749;
+}
+
+@media only screen and (min-width: 768px) {
+  body #fp-nav ul li {
+    margin: 10px;
+  }
+
+  body #fp-nav ul li,
+  body #fp-nav ul li a span,
+  body #fp-nav ul li:hover a span,
+  body #fp-nav ul li:hover a.active span,
+  body #fp-nav ul li a.active span {
+    width: 40px;
+    height: 40px;
+  }
+
+  body #fp-nav.fp-left {
+    top: 310px;
+    left: calc(12vw - 9px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body #fp-nav.fp-left {
+    top: 390px;
+  }
 }
 
 /* END - Pagination */

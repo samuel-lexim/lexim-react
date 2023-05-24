@@ -1,9 +1,5 @@
 @import "variables.module";
 
-.fullPageSection {
-  overflow: hidden;
-}
-
 .aboutSection {
   display: flex;
   justify-content: center;
@@ -14,7 +10,7 @@
   .innerSection {
     position: relative;
     width: 100%;
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
   .logoImg {
@@ -27,6 +23,16 @@
 
   ._content {
     padding-left: 40px;
+  }
+}
+
+.fullPageSection {
+  overflow: hidden;
+
+  &[data-index='0'] {
+    .aboutSection {
+      padding-top: 102px;
+    }
   }
 }
 
@@ -205,9 +211,13 @@
 
 // > Ipad
 @media screen and (min-width: 768px) {
+
   .aboutSection {
-    align-items: center;
-    padding-top: 0;
+    padding-top: 130px;
+
+    ._content {
+      padding-left: 60px;
+    }
 
     .innerSection {
       padding: 0 10vw 0 12vw;
@@ -219,14 +229,31 @@
       margin-bottom: 40px;
     }
   }
-}
 
+  .fullPageSection {
+    &[data-index='0'] {
+      .aboutSection {
+        padding-top: 98px;
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 1440px) {
   .aboutSection {
+    padding-top: 115px;
+
     .logoImg {
       width: 640px;
       margin-bottom: 50px;
+    }
+  }
+
+  .fullPageSection {
+    &[data-index='0'] {
+      .aboutSection {
+        padding-top: 78px;
+      }
     }
   }
 }
