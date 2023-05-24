@@ -57,13 +57,13 @@
   .homeHeading {
     margin-bottom: 40px;
 
-    h3 {
+    ._underLine {
       position: relative;
       padding-right: 30px;
       line-height: 1;
       padding-bottom: 20px;
 
-      &._underLine:after {
+      &:after {
         content: '';
         position: absolute;
         right: 0;
@@ -71,7 +71,7 @@
         width: 0;
         height: 1px;
         background: $color-Black;
-        transition: width 2s;
+        transition: width 5s;
       }
     }
   }
@@ -106,54 +106,42 @@
 }
 
 .lineHome {
-  ._lineTop {
+  ._lineTop, ._lineBottom, ._lineLeft, ._lineRight {
     position: absolute;
     width: 0;
     height: 1px;
     background: #000;
+    transition: width 5s;
+  }
+
+  ._lineTop {
     top: 50vh;
     margin-top: 50px;
     right: 0;
     transform: rotate(40deg);
     transform-origin: right;
-    transition: width 3s 0.2s;
   }
 
   ._lineBottom {
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #000;
     top: 50vh;
     margin-top: -50px;
     right: 0;
     transform: rotate(-40deg);
     transform-origin: top right;
-    transition: width 3s 0.2s;
   }
 
   ._lineLeft {
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #000;
     top: 20vw;
     right: 10vw;
     transform: rotate(-25deg);
     transform-origin: right;
-    transition: width 3s 0.2s;
   }
 
   ._lineRight {
-    position: absolute;
-    width: 0;
-    height: 1px;
-    background: #000;
     top: 20vw;
     left: 12vw;
     transform: rotate(20deg);
     transform-origin: left;
-    transition: width 3s 0.2s;
   }
 }
 
@@ -273,8 +261,8 @@
 
   .headingUnderLine {
     .homeHeading {
-      h3 {
-        &._underLine:after {
+      ._underLine {
+        &:after {
           height: 2px;
         }
       }
