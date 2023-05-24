@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : ''} `}>
+      <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed} `}>
         <div className={styles.logoContainer}>
           <Link href='/'>
             <Image
