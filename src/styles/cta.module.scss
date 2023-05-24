@@ -67,26 +67,43 @@
   .ctaLink {
     background: $color-Blue;
     color: #fff;
+    border: 2px solid;
     border-radius: 10px;
-    padding: 7px 14px;
+    padding: 6px 14px;
 
     .ctaLinkInner {
       position: relative;
       display: inline-block;
-      padding-right: 28px;
-
-      > span {
-        //padding: 8px 13px;
-        //display: inline-block;
-      }
+      padding-right: 22px;
 
       .bottomLine {
+        display: none;
         background: $color-White;
       }
 
       .arrow {
-        top: 1px;
-        right: -3px;
+        top: 6px;
+        right: 0;
+        width: 23px;
+        height: 13px;
+
+        img {
+          transform: none;
+          transition: none;
+        }
+      }
+    }
+
+    svg {
+      width: 23px;
+      height: auto;
+    }
+
+    &:hover {
+      background: #fff;
+      color: $color-Blue;
+      svg path {
+         fill: $color-Blue;
       }
     }
   }
@@ -102,7 +119,7 @@
       border-radius: 20px;
 
       .ctaLinkInner {
-        padding-right: 45px;
+        padding-right: 50px;
 
         .arrow {
           display: flex;
@@ -120,8 +137,8 @@
         }
       }
 
-      .bottomLine {
-        bottom: 7px;
+      svg {
+        width: auto;
       }
     }
   }
