@@ -21,7 +21,7 @@ export default function Home() {
         render={({state, fullPageApi}) => {
 
           return (
-            <div id='fullPage'>
+            <div id='fullPage' className='fw-500'>
               <div className={`${styles.fullPageSection} section`} data-index={0}>
                 <div className={styles.lineHome}>
                   <span className={`${styles._lineTop} _lineTopEffect`}></span>
@@ -30,7 +30,7 @@ export default function Home() {
                 <section className={` ${styles.homeSection}`}
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
-                    <h4 className='_backInTop'>Let’s reduce your operation costs by integrating your software.</h4>
+                    <h3 className='_backInTop lh-1_05'>Let’s reduce your operation costs by integrating your software.</h3>
                     <h2 className={`${styles.mainHeading} _backInLeft`}>We Can Help</h2>
 
                     <div className={styles.content2Cols}>
@@ -69,8 +69,8 @@ export default function Home() {
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
                     <div className={`${styles.homeHeading}`}>
-                      <h4 className='_backInRight'>And we do</h4>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h3>
+                      <h3 className='_backInRight'>And we do</h3>
+                      <h2 className={`${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
 
                     <div className={`${styles.ourCustomers} _rotateFromBottom`}>
