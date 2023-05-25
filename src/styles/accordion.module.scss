@@ -1,0 +1,77 @@
+@import "variables.module";
+
+.accordionWrap {
+
+}
+
+.accordionHeader {
+  position: relative;
+  border-top: 2px solid #000;
+  padding: 10px 10px 3px;
+  font-size: 30px;
+  line-height: 1.1;
+
+  ._heading {
+    margin-right: 4px;
+  }
+}
+
+.accordionContent {
+  padding: 15px;
+  line-height: 1.25;
+}
+
+.downArrow {
+  height: 22px;
+  width: auto;
+  transition: transform 1s;
+}
+
+.expanded {
+  .accordionHeader {
+    background: $color-Yellow;
+  }
+
+  .downArrow {
+    transform: rotate(-180deg);
+    transform-style: preserve-3d;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .accordionHeader {
+    font-size: 4vw;
+    padding: 15px 20px 5px;
+
+    ._heading {
+      margin-right: 6px;
+    }
+  }
+
+  .accordionContent {
+    padding: 15px 10vw 15px 40px;
+  }
+
+  .downArrow {
+    height: 2.7vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .accordionHeader {
+    font-size: 64px;
+    padding: 15px 30px 5px;
+
+    ._heading {
+      margin-right: 10px;
+    }
+  }
+
+  .accordionContent {
+    padding: 20px 10vw 20px 50px;
+  }
+
+  .downArrow {
+    height: 45px;
+  }
+}

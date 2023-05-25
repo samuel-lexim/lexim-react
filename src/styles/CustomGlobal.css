@@ -2,7 +2,7 @@
   font-family: "SuisseIntl";
   src: url('../fonts/SuisseIntl-Medium.otf'),
     url('../fonts/SuisseIntl-Medium.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 

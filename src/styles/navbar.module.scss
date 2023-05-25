@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
+  background: $color-White;
   z-index: 900;
 
   .logoContainer {
@@ -38,6 +39,9 @@
   }
 
   &.closed {
+    background: #fff;
+    transition: background-color 0.1s 1.5s;
+
     + .menuPanel {
       padding: 0;
       height: 0;
@@ -51,6 +55,8 @@
   }
 
   &.open {
+    background: inherit;
+
     &:not(.yellow) .menuBar {
       background-color: $color-White;
     }
@@ -120,7 +126,7 @@
   a {
     position: relative;
     font-weight: 300;
-    font-size: 48px;
+    font-size: 34px;
     display: inline-block;
     transform-style: preserve-3d;
   }
@@ -142,6 +148,14 @@
     }
   }
 
+}
+
+@media screen and (min-width: 768px) {
+  .menuPanel {
+    a {
+      font-size: 6vw;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
