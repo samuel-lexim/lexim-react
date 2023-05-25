@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} FontSui`}>
       <div className={styles.ctaWrap}>
         <div>
           <CtaButton text='SEND A MESSAGE' />

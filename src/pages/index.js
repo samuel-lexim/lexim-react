@@ -9,16 +9,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
-  // const [sectionIndex, setSectionIndex] = useState(0);
   const sections = ['Home0', 'Home1', 'Home2', 'Home3', 'Home4', 'Home5', 'Home6', 'Home7'];
 
   return (
     <Layout>
 
-      {/*<div className={'pageTitle'}><span>HOME</span></div>*/}
-
       <ReactFullPage
-        render={({state, fullPageApi}) => {
+        render={({state}) => {
 
           return (
             <div id='fullPage' className='fw-500'>
@@ -31,7 +28,7 @@ export default function Home() {
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
                     <h3 className='_backInTop lh-1_05'>Let’s reduce your operation costs by integrating your software.</h3>
-                    <h2 className={`${styles.mainHeading} _backInLeft`}>We Can Help</h2>
+                    <h2 className={`${styles.mainHeading} _backInLeft FontSui`}>We Can Help</h2>
 
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
@@ -68,7 +65,7 @@ export default function Home() {
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
-                    <div className={`${styles.homeHeading}`}>
+                    <div className={`${styles.homeHeading} FontSui`}>
                       <h3 className='_backInRight'>And we do</h3>
                       <h2 className={`${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
@@ -125,7 +122,7 @@ export default function Home() {
                          id={sections[3]} data-index={3}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft`}>We focus on:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>We focus on:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -147,7 +144,7 @@ export default function Home() {
                          id={sections[4]} data-index={4}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft`}>Here’s how we’ll<br/> plan your project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>Here’s how we’ll<br/> plan your project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -168,7 +165,7 @@ export default function Home() {
                          id={sections[5]} data-index={5}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft`}>Let’s plan your<br/> project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>Let’s plan your<br/> project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -192,7 +189,7 @@ export default function Home() {
                          id={sections[6]} data-index={6}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect`}>Let’s plan your<br/> project:</h3>
+                      <h3 className={`${styles._underLine} _underLineEffect FontSui`}>Let’s plan your<br/> project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>

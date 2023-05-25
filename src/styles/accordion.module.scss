@@ -10,6 +10,12 @@
   padding: 10px 10px 3px;
   font-size: 30px;
   line-height: 1.1;
+  font-family: 'FontSui', FontRoc, sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-Yellow;
+  }
 
   ._heading {
     margin-right: 4px;
