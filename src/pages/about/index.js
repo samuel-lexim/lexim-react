@@ -23,7 +23,6 @@ export default function About() {
       <ReactFullPage
         navigation={true}
         navigationPosition="left"
-        navigationClass="kog"
         render={({state, fullPageApi}) => {
 
           return (

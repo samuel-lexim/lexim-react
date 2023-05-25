@@ -38,8 +38,8 @@
   position: absolute;
   transform: rotate(90deg) translateY(-27%);
   transform-origin: left;
-  top: 32px;
-  left: -1px;
+  top: 0;
+  left: -2px;
   font-weight: 600;
   font-size: 28px;
 }
@@ -47,13 +47,14 @@
 @media only screen and (min-width: 768px) {
   .pageTitle {
     font-size: 8.5vw;
-    left: -3px;
+    left: -9px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .pageTitle {
     font-size: 120px;
+    left: -10px;
   }
 }
 
