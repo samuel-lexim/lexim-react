@@ -395,3 +395,10 @@ body #fp-nav ul li:nth-child(2n) a.active span {
 }
 
 /* END - Pagination */
+
+/* Page Title */
+.pageAbout ._title {
+  margin-top: 10px;
+}
+
+/* # Page Title */

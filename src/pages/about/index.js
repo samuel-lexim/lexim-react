@@ -14,9 +14,9 @@ export default function About() {
   const sections = ['About0', 'About1', 'About2', 'About3', 'About4', 'About5', 'About6', 'About7'];
 
   return (
-    <Layout>
+    <Layout className='pageAbout'>
 
-      <div className={`${page.pageTitle}`}>
+      <div className={`${page.pageTitle} _title`}>
         <span>ABOUT</span>
       </div>
 

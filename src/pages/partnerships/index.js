@@ -8,9 +8,9 @@ import styles from '@/styles/pagePartnerships.module.scss';
 export default function Partnerships() {
 
   return (
-    <Layout>
+    <Layout className='pagePartnerships'>
 
-      <div className={`${page.pageTitle}`}>
+      <div className={`${page.pageTitle} _title`}>
         <span>PARTNERSHIPS</span>
       </div>
 

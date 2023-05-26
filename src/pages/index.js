@@ -12,7 +12,7 @@ export default function Home() {
   const sections = ['Home0', 'Home1', 'Home2', 'Home3', 'Home4', 'Home5', 'Home6', 'Home7'];
 
   return (
-    <Layout>
+    <Layout className='pageHome'>
 
       <ReactFullPage
         render={({state}) => {
