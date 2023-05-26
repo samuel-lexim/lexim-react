@@ -38,23 +38,54 @@
   position: absolute;
   transform: rotate(90deg) translateY(-27%);
   transform-origin: left;
-  top: 40px;
-  left: -2px;
+  top: 34px;
+  left: -4px;
   font-weight: 600;
   font-size: 28px;
 }
 
+.pageWrap {
+  min-height: 88vh;
+  padding-top: calc(5vw + 50px);
+  padding-left: calc(5vw + 18px);
+}
+
 @media only screen and (min-width: 768px) {
   .pageTitle {
-    font-size: 7vw;
-    top: 20px;
-    left: -10px;
+    font-size: 60px;
+    top: 11px;
+    left: -7px;
+  }
+
+  .pageWrap {
+    padding-top: calc(6vw + 50px);
+    padding-left: calc(6vw + 50px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .pageTitle {
+    font-size: 80px;
+    top: -4px;
+    left: -8px;
+  }
+
+  .pageWrap {
+    padding-top: calc(6vw + 50px);
+    padding-left: calc(6vw + 64px);
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .pageTitle {
     font-size: 100px;
+    left: -11px;
+    top: -12px
+  }
+
+  .pageWrap {
+    padding-top: 155px;
+    padding-left: 170px;
   }
 }
 

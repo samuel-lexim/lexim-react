@@ -16,7 +16,7 @@ export default function Partnerships() {
 
       <div id='fullPage'>
 
-        <div className={`${styles.partnerSection}`}>
+        <div className={`${styles.partnerSection} ${page.pageWrap}`}>
           <div className={styles.innerSection}>
 
             <div className={styles.blackLine}></div>
