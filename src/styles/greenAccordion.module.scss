@@ -119,7 +119,9 @@
   }
 
   .accordionContent {
-    padding: 0 10vw 15px 40px;
+    padding-left: calc(5vw + 30px);
+    padding-right: 20px;
+    padding-bottom: 15px;
 
     * {
       font-size: 3vw;
@@ -159,7 +161,9 @@
   }
 
   .accordionContent {
-    padding: 20px 10vw 20px 50px;
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-bottom: 20px;
   }
 
   .downArrow {
