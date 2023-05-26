@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const GreenAccordion = ({
     children, className, title,
-    layout = 'normal',
+    layout = 'normal', // columnContent
     prefixTitle = false,
     showContent = true,
     useArrow = true
@@ -15,7 +15,7 @@ const GreenAccordion = ({
   };
 
   return (
-    <div className={`${styles.accordionWrap} ${className} 
+    <div className={`${styles.accordionWrap} ${styles[layout]} 
         ${isExpanded ? styles.expanded : styles.closed} 
         ${prefixTitle ? styles.hasPrefix : styles.noPrefix} 
         ${showContent ? styles.showContent : styles.emptyContent}`}>

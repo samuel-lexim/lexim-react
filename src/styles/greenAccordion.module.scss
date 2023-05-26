@@ -1,6 +1,8 @@
 @import "variables.module";
 
 .accordionWrap {
+  border-top: 2px solid #000;
+
   &.hasPrefix {
     .headingContainer {
       padding-left: 15px;
@@ -8,15 +10,12 @@
   }
 
   &.emptyContent {
-    .accordionHeader {
-      background-color: $color-Yellow;
-    }
+    background-color: $color-Yellow;
   }
 }
 
 .accordionHeader {
   position: relative;
-  border-top: 2px solid #000;
   padding: 10px 10px 3px;
   font-size: 26px;
   line-height: 1.1;
@@ -56,7 +55,7 @@
 .downArrow {
   height: 17px;
   width: auto;
-  transition: transform 1s;
+  transition: transform 1s, opacity 1s;
 }
 
 .emptyContent .downArrow {
@@ -65,7 +64,7 @@
 
 .showContent {
 
-  .accordionHeader:hover {
+  &:hover {
     background: $color-Green;
   }
 
@@ -77,6 +76,7 @@
     }
 
     .downArrow {
+      opacity: 0;
       transform: rotate(-180deg);
       transform-style: preserve-3d;
     }
@@ -84,7 +84,6 @@
 }
 
 .closed {
-
 }
 
 .noPrefix {
@@ -132,10 +131,27 @@
   .downArrow {
     height: 2.7vw;
   }
+
+  .columnContent {
+    position: relative;
+    display: flex;
+
+    .accordionHeader {
+      flex: auto;
+    }
+
+    .accordionContent {
+      flex: 60% 0;
+      padding-left: 0;
+      padding-top: 5px;
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .accordionWrap {
+    padding-top: 20px;
+
     &.hasPrefix {
       .headingContainer {
         padding-left: 50px;
@@ -169,6 +185,4 @@
   .downArrow {
     height: 45px;
   }
-
-
 }

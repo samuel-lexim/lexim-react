@@ -23,7 +23,7 @@ export default function Technology() {
 
             <GreenAccordion title="CORE COMPETENCIES" showContent={false} useArrow={false} />
 
-            <GreenAccordion prefixTitle='01.' title="PLATFORMS">
+            <GreenAccordion prefixTitle='01.' title="PLATFORMS" layout='columnContent'>
               <div>
                 <p>Windows</p>
                 <p>Android</p>
@@ -32,7 +32,7 @@ export default function Technology() {
               </div>
             </GreenAccordion>
 
-            <GreenAccordion prefixTitle='02.' title="CLOUD">
+            <GreenAccordion prefixTitle='02.' title="CLOUD" layout='columnContent'>
               <p>AWS</p>
               <p>Google Cloud</p>
               <p>Azure</p>
