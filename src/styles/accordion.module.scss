@@ -1,9 +1,5 @@
 @import "variables.module";
 
-.accordionWrap {
-
-}
-
 .accordionHeader {
   position: relative;
   border-top: 2px solid #000;
@@ -41,6 +37,21 @@
   .downArrow {
     transform: rotate(-180deg);
     transform-style: preserve-3d;
+  }
+}
+
+.closed {
+
+}
+
+.accordionWrap {
+  &.fullContent {
+    .accordionHeader {
+      background: $color-Yellow;
+    }
+    .accordionContent {
+      padding: 0 !important;
+    }
   }
 }
 

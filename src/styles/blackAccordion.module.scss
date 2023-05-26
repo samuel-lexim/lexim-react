@@ -1,0 +1,191 @@
+@import "variables.module";
+
+.accordionWrap {
+  background-color: $color-SoftBlack;
+  color: $color-White;
+
+  //border-top: 2px solid #000;
+
+  &.hasPrefix {
+    .headingContainer {
+      padding-left: 15px;
+    }
+  }
+
+  &.emptyContent {
+    //background-color: $color-SoftBlack;
+  }
+}
+
+.accordionHeader {
+  position: relative;
+  padding: 10px 10px 3px;
+  font-size: 26px;
+  line-height: 1.1;
+  font-family: 'FontSui', FontRoc, sans-serif;
+  cursor: pointer;
+}
+
+.prefixTitle {
+  position: absolute;
+  top: 14px;
+  left: 4px;
+  font-size: 45%;
+}
+
+.headingContainer {
+  ._heading {
+    display: inline;
+    margin-right: 4px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.accordionContent {
+  padding: 0 25px 15px;
+  line-height: 1.14;
+
+  * {
+    font-size: 20px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.downArrow {
+  height: 17px;
+  width: auto;
+  transition: transform 1s, opacity 1s;
+}
+
+.emptyContent .downArrow {
+  display: none;
+}
+
+.showContent {
+
+  &:hover {
+    background: $color-SoftBlack;
+  }
+
+  &.expanded {
+    background: $color-SoftBlack;
+
+    ._heading {
+      font-weight: 700;
+    }
+
+    .downArrow {
+      opacity: 0;
+      transform: rotate(-180deg);
+      transform-style: preserve-3d;
+    }
+  }
+}
+
+.closed {
+}
+
+.noPrefix {
+
+}
+
+@media screen and (min-width: 768px) {
+  .accordionWrap {
+    &.hasPrefix {
+      .headingContainer {
+        padding-left: 3.3vw;
+      }
+    }
+  }
+
+  .accordionHeader {
+    padding: 15px 20px 5px;
+  }
+
+  .prefixTitle {
+    font-size: 1.8vw;
+    top: 18px;
+    left: 21px;
+  }
+
+  .headingContainer {
+    ._heading {
+      line-height: 1;
+      font-size: 4vw;
+      margin-right: 6px;
+    }
+  }
+
+  .accordionContent {
+    padding-left: calc(5vw + 30px);
+    padding-right: 20px;
+    padding-bottom: 15px;
+
+    * {
+      font-size: 3vw;
+      line-height: 1;
+    }
+  }
+
+  .downArrow {
+    height: 2.7vw;
+  }
+
+  .columnContent {
+    position: relative;
+    display: flex;
+
+    .accordionHeader {
+      flex: auto;
+    }
+
+    .accordionContent {
+      flex: 60% 0;
+      padding-left: 0;
+      padding-top: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .accordionWrap {
+    padding-top: 20px;
+
+    &.hasPrefix {
+      .headingContainer {
+        padding-left: 50px;
+      }
+    }
+  }
+
+  .prefixTitle {
+    font-size: 24px;
+    top: 24px;
+    left: 32px;
+  }
+
+  .accordionHeader {
+    padding: 15px 30px 5px;
+  }
+
+  .headingContainer {
+    ._heading {
+      font-size: 64px;
+      margin-right: 10px;
+    }
+  }
+
+  .accordionContent {
+    padding-left: 120px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
+
+  .downArrow {
+    height: 45px;
+  }
+}
