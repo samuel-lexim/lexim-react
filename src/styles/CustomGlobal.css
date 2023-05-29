@@ -401,9 +401,10 @@ body.about #fp-nav {
 
 
 @media only screen and (min-width: 1440px) {
-  body #fp-nav.fp-left {
-    top: 390px;
+  body.about #fp-nav.fp-left {
+    top: calc(30vh + 163px);
     left: calc(12vw - 9px);
+    transform: translateY(0);
   }
 
   body #fp-nav ul li,

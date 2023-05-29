@@ -264,7 +264,7 @@
 
 @media screen and (min-width: 1440px) {
   .aboutSection {
-    padding-top: 115px;
+    padding-top: 30vh;
 
     .logoImg {
       width: 640px;
@@ -275,7 +275,7 @@
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: 78px;
+        padding-top: calc(30vh - 38px);
       }
     }
   }
