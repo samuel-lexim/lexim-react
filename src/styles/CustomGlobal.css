@@ -426,6 +426,11 @@ body.scrollHidden header {
   left: -42px;
 }
 
+.blackSlickSlider .slick-dots li {
+  font-size: 0;
+  line-height: 0;
+}
+
 .blackSlickSlider .slick-dots li::marker {
   display: none;
   font-size: 0;
@@ -446,5 +451,16 @@ body.scrollHidden header {
 .blackSlickSlider .slick-dots li.slick-active button {
   background: #0827F5;
   border-color: #0827F5;
+}
+
+@media only screen and (min-width: 1440px) {
+  .blackSlickSlider .slick-dots {
+    left: -63px;
+  }
+
+  .blackSlickSlider .slick-dots li button {
+    width: 40px;
+    height: 40px;
+  }
 }
 /* # Black Slick */
