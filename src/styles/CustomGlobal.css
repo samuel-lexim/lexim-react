@@ -324,7 +324,6 @@ p {
 
 /* Pagination */
 body #fp-nav.fp-left {
-  top: 240px;
   left: 25px;
 }
 
@@ -368,6 +367,10 @@ body #fp-nav ul li:nth-child(2n) a.active span {
   background: #F7F749;
 }
 
+body.about #fp-nav {
+  top: 240px;
+}
+
 @media only screen and (min-width: 768px) {
   body #fp-nav ul li {
     margin: 10px;
@@ -378,19 +381,38 @@ body #fp-nav ul li:nth-child(2n) a.active span {
   body #fp-nav ul li:hover a span,
   body #fp-nav ul li:hover a.active span,
   body #fp-nav ul li a.active span {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   body #fp-nav.fp-left {
-    top: 310px;
     left: calc(12vw - 9px);
   }
+
+  body.about #fp-nav {
+    top: calc(30vw + 158px);
+  }
 }
+@media only screen and (min-width: 1200px) {
+  body.about #fp-nav {
+    top: calc(20vw + 158px);
+  }
+}
+
 
 @media only screen and (min-width: 1440px) {
   body #fp-nav.fp-left {
     top: 390px;
+    left: calc(12vw - 9px);
+  }
+
+  body #fp-nav ul li,
+  body #fp-nav ul li a span,
+  body #fp-nav ul li:hover a span,
+  body #fp-nav ul li:hover a.active span,
+  body #fp-nav ul li a.active span {
+    width: 40px;
+    height: 40px;
   }
 }
 

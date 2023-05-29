@@ -27,7 +27,6 @@ export default function About() {
 
           return (
             <div id='fullPage'>
-
               <div className={`${styles.fullPageSection} section`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
@@ -92,9 +91,9 @@ export default function About() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.silverts.com'>
                           <Image
-                            src="/images/customers/silverts.jpg"
+                            src="/images/customers/silverts.png"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                            width={227} height={53}
+                            width={194} height={70}
                           />
                         </Link>
                       </div>
@@ -102,9 +101,9 @@ export default function About() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.intertrend.com'>
                           <Image
-                            src="/images/customers/intertrend.jpg"
+                            src="/images/customers/intertrend.png"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                            width={227} height={57}
+                            width={230} height={70}
                           />
                         </Link>
                       </div>
@@ -112,9 +111,9 @@ export default function About() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.heartsoulscrubs.com'>
                           <Image
-                            src="/images/customers/heartsoul.jpg"
+                            src="/images/customers/heartsoul.png"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                            width={155} height={65}
+                            width={160} height={70}
                           />
                         </Link>
                       </div>
@@ -122,9 +121,9 @@ export default function About() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.infinityscrubs.com'>
                           <Image
-                            src="/images/customers/infinity.jpg"
+                            src="/images/customers/infinity.png"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                            width={135} height={65}
+                            width={139} height={70}
                           />
                         </Link>
                       </div>
@@ -134,7 +133,6 @@ export default function About() {
                   </div>
                 </section>
               </div>
-
 
               <div className={`${styles.fullPageSection} section`} id={sections[3]} data-index={3}>
                 <div className={styles.aboutLine}>
@@ -149,7 +147,7 @@ export default function About() {
                     <div className={`${styles._content}`}>
                       <div className={`_backInRight`}>
                         <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam and soon in Seoul, Korea.</p>
-                        <p className='fw-300'>Our name, <b>Lexim, means "a vast storehouse of language"</b> and we aim to help businesses thrive in the tech-driven global economy.</p>
+                        <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global economy.</p>
                       </div>
                       <div className='pad40'></div>
                       <CtaBlueButton className='_rotateButton' text='Contact Us' link='#'/>
