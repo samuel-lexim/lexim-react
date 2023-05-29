@@ -67,7 +67,7 @@
   .ctaLink {
     background: $color-Blue;
     color: #fff;
-    border: 2px solid;
+    border: 2px solid #0827F5;
     border-radius: 10px;
     padding: 6px 14px;
 
@@ -102,6 +102,7 @@
     &:hover {
       background: #fff;
       color: $color-Blue;
+      border-color: #fff;
       svg path {
          fill: $color-Blue;
       }

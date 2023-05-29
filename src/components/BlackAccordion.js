@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from '@/styles/blackAccordion.module.scss';
-import Image from "next/image";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
 const BlackAccordion = ({
     children, className, title,
@@ -9,16 +11,69 @@ const BlackAccordion = ({
     showContent = true,
     useArrow = true
   }) => {
+
+  // Toggle
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleAccordion = () => {
     setIsExpanded(!isExpanded);
   };
+  // End - Toggle
+
+  // Scroll slider
+  const settings = {
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    verticalSwiping: true,
+    // vertical: true,
+  };
+  const scrollableDivRef = useRef(null);
+  const sliderRef = useRef(null); // Reference to the Slider component
+  const [isMouseInside, setIsMouseInside] = useState(false);
+
+  useEffect(() => {
+    const handleMouseEnter = () => {
+      setIsMouseInside(true);
+      document.body.classList.add('scrollHidden') ; // Disable global scroll
+    };
+
+    const handleMouseLeave = () => {
+      setIsMouseInside(false);
+      document.body.classList.remove('scrollHidden'); // Enable global scroll
+    };
+
+    const handleWheel = (event) => {
+      const delta = Math.sign(event.deltaY);
+      if (delta > 0) {
+        // Scroll down
+        sliderRef.current.slickNext(); // Go to the next slide
+      } else if (delta < 0) {
+        // Scroll up
+        sliderRef.current.slickPrev(); // Go to the previous slide
+      }
+    }
+
+    const scrollableDiv = scrollableDivRef.current;
+    scrollableDiv.addEventListener('mouseenter', handleMouseEnter);
+    scrollableDiv.addEventListener('mouseleave', handleMouseLeave);
+    scrollableDiv.addEventListener('wheel', handleWheel);
+
+    return () => {
+      scrollableDiv.removeEventListener('wheel', handleWheel);
+      scrollableDiv.removeEventListener('mouseenter', handleMouseEnter);
+      scrollableDiv.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
 
   return (
-    <div className={`${styles.accordionWrap} ${styles[layout]} 
+    <div className={`${styles.accordionWrap} ${styles[layout]} blackSlickSlider
         ${isExpanded ? styles.expanded : styles.closed} 
         ${prefixTitle ? styles.hasPrefix : styles.noPrefix} 
-        ${showContent ? styles.showContent : styles.emptyContent}`}>
+        ${showContent ? styles.showContent : styles.emptyContent}
+        ${isExpanded && showContent ? styles.openedContent : styles.closedContent } 
+        `}>
 
       <div className={styles.accordionHeader} onClick={toggleAccordion}>
         <div className={`${styles.headingContainer} `}>
@@ -34,7 +89,12 @@ const BlackAccordion = ({
         </div>
       </div>
 
-      {isExpanded && showContent ? <div className={styles.accordionContent}>{children}</div> : ``}
+      <div ref={scrollableDivRef} className={styles.accordionContent}>
+        <Slider {...settings} ref={sliderRef}>
+        {children}
+        </Slider>
+      </div>
+
     </div>
   );
 };
