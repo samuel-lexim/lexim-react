@@ -1,7 +1,10 @@
 @import "variables.module";
 
 .ctaButton {
-  font-size: 18px;
+
+  span {
+    font-size: 18px;
+  }
 
   .ctaLink {
     position: relative;
@@ -82,7 +85,7 @@
       }
 
       .arrow {
-        top: 6px;
+        top: 1px;
         right: 0;
         width: 23px;
         height: 13px;
@@ -102,7 +105,6 @@
     &:hover {
       background: #fff;
       color: $color-Blue;
-      border-color: #fff;
       svg path {
          fill: $color-Blue;
       }
@@ -113,7 +115,10 @@
 @media screen and (min-width: 1440px) {
 
   .blueButton {
-    font-size: 42px;
+
+    span {
+      font-size: 42px;
+    }
 
     .ctaLink {
       padding: 7px 32px;
@@ -126,7 +131,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          top: 9px;
+          top: 3px;
           right: 0;
           width: 40px;
           height: 40px;

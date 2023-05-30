@@ -62,24 +62,25 @@ export default function Technology() {
 
           <BlackAccordion title="SYSTEMS INTEGRATION" useArrow={false}>
             <div>
+              <p>
               Many companies use different IT solutions for different tasks, but as business functions expand, they become overwhelmed by disjointed tools that can’t share data with each other.
-              That’s why Systems Integration is so important to connect these different pieces of technology into a single ecosystem.
+              That’s why Systems Integration is so important to connect these different pieces of technology into a single ecosystem.</p>
             </div>
 
             <div>
-              Systems Integration involves <span className={page.yellowText}>connecting business software, applications, and databases together</span> so that data can be pushed and pulled between them. Businesses use many different
+              <p>Systems Integration involves <span className={page.yellowText}>connecting business software, applications, and databases together</span> so that data can be pushed and pulled between them. Businesses use many different
               systems for sales, accounting, inventory or fulfillment, but these systems don't always work together. System integration solves this problem by connecting different systems
-              together.
+                together.</p>
             </div>
 
             <div>
-              This allows businesses to automate tasks, like moving data between systems, getting notifications when certain things happen, and generating reports. By doing this, businesses can
-              improve their performance, gain more insight into their operations, and make better decisions.
+              <p>This allows businesses to automate tasks, like moving data between systems, getting notifications when certain things happen, and generating reports. By doing this, businesses can
+                improve their performance, gain more insight into their operations, and make better decisions.</p>
             </div>
 
             <div>
-              System Integration can also help businesses use new technology without having to sunset their old systems, as well as connect to 3rd Party systems (such as PayPal to take
-              payments). Businesses can even connect to other businesses like suppliers and retailers to have data flowing from end to end.
+              <p>System Integration can also help businesses use new technology without having to sunset their old systems, as well as connect to 3rd Party systems (such as PayPal to take
+                payments). Businesses can even connect to other businesses like suppliers and retailers to have data flowing from end to end.</p>
 
               <div className='pad20'></div>
               <CtaBlueButton text='Learn More' />

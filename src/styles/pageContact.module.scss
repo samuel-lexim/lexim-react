@@ -1,0 +1,60 @@
+@import "variables.module";
+
+// MOBILE
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 0;
+  height: 100vh;
+  overflow-x: hidden;
+
+  .innerSection {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  ._content {
+    padding-left: 0;
+  }
+}
+
+.fullPageSection {
+  overflow: hidden;
+}
+
+// > IPAD
+@media screen and (min-width: 768px) {
+  .contactSection {
+    padding-top: 30vw;
+
+    .innerSection {
+      padding: 0 6vw 0 12vw;
+      text-align: right;
+    }
+
+    ._content {
+      line-height: 1.1;
+      max-width: 298px;
+      text-align: left;
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contactSection {
+    padding-top: 20vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contactSection {
+    padding-top: 30vh;
+
+    ._content {
+      max-width: 483px;
+    }
+
+  }
+}

@@ -423,6 +423,11 @@ body.about #fp-nav {
 .pageAbout ._title {
   margin-top: 10px;
 }
+
+body.contact ._title {
+  margin-top: 10px;
+}
+
 /* # Page Title */
 
 /* Black Slick */
