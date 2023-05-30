@@ -14,12 +14,12 @@
 }
 
 .slick-prev {
-  right: 100px;
+  right: 70px;
   background-image: url("/images/arrow-left.svg");
 }
 
 .slick-next {
-  right: 30px;
+  right: 0;
   background-image: url("/images/arrow-right.svg");
 }
 
@@ -34,11 +34,7 @@
     background-size: 60px;
   }
 
-  .slick-next {
-    right: 20vw;
-  }
-
   .slick-prev {
-    right: calc(110px + 20vw);
+    right: 110px;
   }
 }
