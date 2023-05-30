@@ -1,0 +1,44 @@
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -50px;
+  font-size: 0;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.slick-prev {
+  right: 100px;
+  background-image: url("/images/arrow-left.svg");
+}
+
+.slick-next {
+  right: 30px;
+  background-image: url("/images/arrow-right.svg");
+}
+
+.slick-arrow.slick-disabled {
+  opacity: 0.4;
+  cursor: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .slick-arrow {
+    width: 110px;
+    background-size: 60px;
+  }
+
+  .slick-next {
+    right: 20vw;
+  }
+
+  .slick-prev {
+    right: calc(110px + 20vw);
+  }
+}

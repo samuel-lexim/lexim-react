@@ -6,7 +6,7 @@ import Image from "next/image";
 import Footer from "@/components/footer";
 
 import page from '@/styles/page.module.scss';
-import styles from '@/styles/pageContact.module.scss'
+import styles from '@/styles/pageContact.module.scss';
 
 export default function Contact() {
 
@@ -14,7 +14,7 @@ export default function Contact() {
     <Layout className='pageContact'>
 
       <div className={`${page.pageTitle} _title`}>
-        <span>Contact</span>
+        <span>CONTACT</span>
       </div>
 
       <ReactFullPage

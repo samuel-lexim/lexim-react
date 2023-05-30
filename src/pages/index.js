@@ -35,7 +35,7 @@ export default function Home() {
                       <div className={`${styles.rightColumn} _backInBottom`}>
                         <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
                         <p>All without a fee.</p>
-                        <CtaBlueButton text='Schedule a Call' link='https://google.com'/>
+                        <CtaBlueButton text='Schedule a Call' link='/contact'/>
                       </div>
                     </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton href='#' className={`${styles._absolute} _rotateButton`}/>
+                    <CtaBlueButton link='/contact' className={`${styles._absolute} _rotateButton`}/>
                   </div>
                 </section>
               </div>
@@ -202,7 +202,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton href='#' className={`${styles._absolute} _rotateButton`}/>
+                    <CtaBlueButton link='/contact' className={`${styles._absolute} _rotateButton`}/>
 
                   </div>
                 </section>
@@ -210,13 +210,11 @@ export default function Home() {
                 <Footer/>
               </div>
 
-
             </div>
           );
 
         }}
       />
-
 
     </Layout>
   )
