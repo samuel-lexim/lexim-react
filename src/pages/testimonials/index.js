@@ -59,7 +59,9 @@ export default function Testimonials() {
           <Slider {...settings} className={styles.testimonialSlider}>
             <div className={styles.testimonial}>
               <div className={`${styles._content} fw-300 lh-1_1`}>
-                <p>“<span className='fw-700'>InterTrend</span> is a global advertising agency with comprehensive creative, broadcast, and print capabilities. Their innovative commercials and online video campaigns are recognized worldwide for their impact and effectiveness. With the support of LEXIM, Intertrend not only built a stunning agency website, but also custom mobile apps to enhance their client partnerships. Intertrend highly recommends Lexim for any of your web or mobile app needs.”</p>
+                <p>“<span className='fw-700'>InterTrend</span> is a global advertising agency with comprehensive creative, broadcast, and print capabilities. Their innovative commercials and online
+                  video campaigns are recognized worldwide for their impact and effectiveness. With the support of LEXIM, Intertrend not only built a stunning agency website, but also custom mobile
+                  apps to enhance their client partnerships. Intertrend highly recommends Lexim for any of your web or mobile app needs.”</p>
               </div>
             </div>
 
@@ -71,7 +73,8 @@ export default function Testimonials() {
 
             <div className={styles.testimonial}>
               <div className={`${styles._content} fw-300 lh-1`}>
-                <p><span className='fw-700'>Infinity Scrubs</span> is designed for active, luxurious functionality in the medical profession. It's products expands to nurses and medical staff worldwide. </p>
+                <p><span className='fw-700'>Infinity Scrubs</span> is designed for active, luxurious functionality in the medical profession. It's products expands to nurses and medical staff
+                  worldwide. </p>
                 <div className='pad20'></div>
                 <p><span className='fw-700'>HeartSoul Scrubs</span> is a sibling brand of Infinity Scrubs. It also provides top-grade medical apparel for those in the professional field. </p>
               </div>
@@ -79,7 +82,8 @@ export default function Testimonials() {
 
             <div className={styles.testimonial}>
               <div className={`${styles._content} fw-300 lh-1`}>
-                <p><span className='fw-700'>Teletron USA Luxury & Lifestyle</span> is a business for various products that consist of electronics and appliances that advocate for a luxurious lifestyle of comfort and quality.</p>
+                <p><span className='fw-700'>Teletron USA Luxury & Lifestyle</span> is a business for various products that consist of electronics and appliances that advocate for a luxurious lifestyle
+                  of comfort and quality.</p>
               </div>
             </div>
 
