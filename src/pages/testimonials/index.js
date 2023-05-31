@@ -14,6 +14,7 @@ export default function Testimonials() {
     infinite: false,
     arrows: true,
     dots: false,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
