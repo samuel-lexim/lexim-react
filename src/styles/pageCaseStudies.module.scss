@@ -1,0 +1,122 @@
+@import "variables.module";
+
+// MOBILE
+.caseStudiesWrap {
+  padding: 100px 0 0 45px;
+  min-height: 100vh;
+}
+
+.caseSection {
+  width: 100%;
+}
+
+.caseArticle {
+
+}
+
+// > IPAD
+@media screen and (min-width: 768px) {
+  .caseStudiesWrap {
+    padding-top: 11vw;
+    padding-left: 12vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .caseStudiesWrap {
+    padding-top: 160px;
+    padding-left: 180px;
+  }
+}
+
+// START - Detail page - slug.js
+.articleTitle {
+  font-size: 46px;
+  border-bottom: 2px solid;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.property {
+  line-height: 1.25;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+}
+
+.leftHeading {
+  color: $color-Blue;
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+.rightContent {
+  h4 {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .articleTitle {
+    margin-bottom: 20px;
+  }
+
+  .property {
+    display: flex;
+  }
+
+  .leftHeading {
+    flex: 30%;
+  }
+
+  .rightContent {
+    flex: 70%;
+
+    h4 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .articleTitle {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .property {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 120px;
+  }
+
+  .leftHeading {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .rightContent {
+    h4 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+}
+
+// END - DETAIL PAGE - slug.js
