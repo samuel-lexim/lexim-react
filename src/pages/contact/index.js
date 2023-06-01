@@ -1,9 +1,9 @@
 import Layout from "@/components/layout";
 import ReactFullPage from "@fullpage/react-fullpage";
 import CtaBlueButton from "@/components/ctaBlueButton";
-import Link from "next/link";
-import Image from "next/image";
-import Footer from "@/components/footer";
+// import Link from "next/link";
+// import Image from "next/image";
+// import Footer from "@/components/footer";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageContact.module.scss';
@@ -30,7 +30,6 @@ export default function Contact() {
                     <div className='pad20'></div>
                     <h1 className={`_backInRight FontSui fw-500 lh-1`}>We’re here to help</h1>
                     <div className='pad20'></div>
-
 
                     <div className={`${styles._content} lh-1`}>
                       <div className={`_backInBottom`}>
