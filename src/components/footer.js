@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
 
       <div className={`${styles.copyrightWrap}`}>
-        <span>Copyright (c)2023 LEXIM</span>
+        <span>Copyright &#169; 2023 LEXIM</span>
       </div>
     </footer>
   );
