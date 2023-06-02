@@ -430,7 +430,8 @@ body.contact ._title {
   margin-top: 10px;
 }
 
-.pageCaseStudies ._title {
+.pageCaseStudies ._title,
+.pageSystemIntegration ._title {
   margin-top: 2px;
 }
 
