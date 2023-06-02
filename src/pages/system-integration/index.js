@@ -61,7 +61,7 @@ export default function SystemIntegration() {
           <div className={styles._pad3}></div>
 
           <h3 className={styles.h3Heading}>Here are the key steps to system integration we offer, in conjunction with your web development team, marketing, and IT.</h3>
-          <div className={styles._pad2}></div>
+          <div className={styles._pad1}></div>
           <div className={styles.leftPadding}>
             <p>1. Planning and feasibility analysis</p>
             <p>2. Architecture modeling</p>
