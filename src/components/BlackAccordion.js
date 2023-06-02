@@ -63,6 +63,7 @@ const BlackAccordion = ({
       scrollableDiv.removeEventListener('wheel', handleWheel);
       scrollableDiv.removeEventListener('mouseenter', handleMouseEnter);
       scrollableDiv.removeEventListener('mouseleave', handleMouseLeave);
+      document.body.classList.remove('scrollHidden');
     };
   }, []);
 

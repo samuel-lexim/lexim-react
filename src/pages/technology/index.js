@@ -83,7 +83,7 @@ export default function Technology() {
                 payments). Businesses can even connect to other businesses like suppliers and retailers to have data flowing from end to end.</p>
 
               <div className='pad20'></div>
-              <CtaBlueButton text='Learn More' />
+              <CtaBlueButton text='Learn More' link='/system-integration' />
             </div>
           </BlackAccordion>
 
