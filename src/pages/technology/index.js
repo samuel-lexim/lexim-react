@@ -22,7 +22,7 @@ export default function Technology() {
 
           <div className={styles.blackLine}></div>
 
-          <Accordion title="CORE COMPETENCIES" layout='fullContent' useArrow={false}>
+          <Accordion title="CORE COMPETENCIES" layout='fullContent' useArrow={false} isOpen={true}>
             <GreenAccordion prefixTitle='01.' title="PLATFORMS" layout='columnContent'>
               <p>Windows</p>
               <p>Android</p>

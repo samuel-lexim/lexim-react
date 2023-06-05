@@ -1,14 +1,19 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styles from '@/styles/accordion.module.scss';
 
 const Accordion = ({
     title, children, className, layout ='',
-    useArrow = true
+    useArrow = true,
+    isOpen = false
   }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleAccordion = () => {
     setIsExpanded(!isExpanded);
   };
+
+  useEffect(() => {
+    setIsExpanded(isOpen);
+  }, []);
 
   return (
     <div className={`${styles.accordionWrap} ${className} ${styles[layout]} 
