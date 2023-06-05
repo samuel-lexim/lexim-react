@@ -226,17 +226,17 @@ p {
   overflow-x: hidden;
 }
 
-.fp-section.active ._lineTopEffect,
-.fp-section.active ._lineBottomEffect {
+.fp-section.active:not(.initNotRunEffect) ._lineTopEffect,
+.fp-section.active:not(.initNotRunEffect) ._lineBottomEffect {
   width: 124vh !important;
 }
 
-.fp-section.active ._lineLeftEffect,
-.fp-section.active ._lineRightEffect {
+.fp-section.active:not(.initNotRunEffect) ._lineLeftEffect,
+.fp-section.active:not(.initNotRunEffect) ._lineRightEffect {
   width: 2000px !important;
 }
 
-.fp-section.active ._underLineEffect:after {
+.fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
   width: 100% !important;
 }
 
@@ -246,7 +246,7 @@ p {
   transition: left 1s;
 }
 
-.fp-section.active ._backInLeft {
+.fp-section.active:not(.initNotRunEffect) ._backInLeft {
   left: 0;
 }
 
@@ -256,7 +256,7 @@ p {
   transition: right 1s;
 }
 
-.fp-section.active ._backInRight {
+.fp-section.active:not(.initNotRunEffect) ._backInRight {
   right: 0;
 }
 
@@ -266,7 +266,7 @@ p {
   transition: top 1s;
 }
 
-.fp-section.active ._backInTop {
+.fp-section.active:not(.initNotRunEffect) ._backInTop {
   top: 0;
 }
 
@@ -276,7 +276,7 @@ p {
   transition: bottom 1s;
 }
 
-.fp-section.active ._backInBottom {
+.fp-section.active:not(.initNotRunEffect) ._backInBottom {
   bottom: 0;
 }
 
@@ -288,7 +288,7 @@ p {
   transition: transform 1s, opacity 1s, bottom 1s;
 }
 
-.fp-section.active ._rotateFromBottom {
+.fp-section.active:not(.initNotRunEffect) ._rotateFromBottom {
   opacity: 1;
   bottom: 0;
   transform: rotate(0deg);
@@ -301,23 +301,23 @@ p {
   transition: transform 2s, opacity 1s 0.5s;
 }
 
-.fp-section.active ._rotateButton > a {
+.fp-section.active:not(.initNotRunEffect) ._rotateButton > a {
   opacity: 1;
   transform: rotate(0deg);
 }
 
 @media only screen and (min-width: 768px) {
-  .fp-section.active ._lineTopEffect {
+  .fp-section.active:not(.initNotRunEffect) ._lineTopEffect {
     width: 100vh;
   }
 
-  .fp-section.active ._underLineEffect:after {
+  .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
     width: calc(100% - 40px) !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .fp-section.active ._underLineEffect:after {
+  .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
     width: calc(100% - 80px) !important;
   }
 }

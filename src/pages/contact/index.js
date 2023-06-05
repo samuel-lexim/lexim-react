@@ -7,8 +7,23 @@ import CtaBlueButton from "@/components/ctaBlueButton";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageContact.module.scss';
+import {useEffect} from "react";
 
 export default function Contact() {
+
+
+  // START - Run effect in the first time page load
+  const initNotRunEffect = () => {
+    const sections = document.querySelector('.fp-section');
+    setTimeout(() => {
+      sections.classList.remove('initNotRunEffect');
+    }, 500);
+  };
+
+  useEffect(() => {
+    initNotRunEffect(); // Run the function only once after the component mounts
+  }, []);
+  // END - Run effect in the first time page load
 
   return (
     <Layout className='pageContact'>
@@ -22,7 +37,7 @@ export default function Contact() {
 
           return (
             <div id='fullPage'>
-              <div className={`${styles.fullPageSection} section`} data-index={0}>
+              <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
 
                 <section className={`${styles.contactSection}`}>
                   <div className={styles.innerSection}>

@@ -8,10 +8,24 @@ import Footer from "@/components/footer";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
+import {useEffect} from "react";
 
 export default function About() {
 
   const sections = ['About0', 'About1', 'About2', 'About3', 'About4', 'About5', 'About6', 'About7'];
+
+  // START - Run effect in the first time page load
+  const initNotRunEffect = () => {
+    const sections = document.querySelector('.fp-section');
+    setTimeout(() => {
+      sections.classList.remove('initNotRunEffect');
+    }, 500);
+  };
+
+  useEffect(() => {
+    initNotRunEffect(); // Run the function only once after the component mounts
+  }, []);
+  // END - Run effect in the first time page load
 
   return (
     <Layout className='pageAbout'>
@@ -27,7 +41,7 @@ export default function About() {
 
           return (
             <div id='fullPage'>
-              <div className={`${styles.fullPageSection} section`} id={sections[0]} data-index={0}>
+              <div className={`${styles.fullPageSection} section initNotRunEffect`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>

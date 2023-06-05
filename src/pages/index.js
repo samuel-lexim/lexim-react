@@ -1,15 +1,31 @@
 import Layout from "@/components/layout";
+import {useEffect} from "react";
 import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
 import CtaBlueButton from "@/components/ctaBlueButton";
 
-import ReactFullPage from "@fullpage/react-fullpage"; // Docs: https://alvarotrigo.com/fullPage
+// Docs: https://alvarotrigo.com/fullPage/docs/
+import ReactFullPage from "@fullpage/react-fullpage";
+
 import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   const sections = ['Home0', 'Home1', 'Home2', 'Home3', 'Home4', 'Home5', 'Home6', 'Home7'];
+
+  // START - Run effect in the first time page load
+  const initNotRunEffect = () => {
+    const sections = document.querySelector('.fp-section');
+    setTimeout(() => {
+      sections.classList.remove('initNotRunEffect');
+    }, 500);
+  };
+
+  useEffect(() => {
+    initNotRunEffect(); // Run the function only once after the component mounts
+  }, []);
+  // END - Run effect in the first time page load
 
   return (
     <Layout className='pageHome'>
@@ -19,7 +35,7 @@ export default function Home() {
 
           return (
             <div id='fullPage' className='fw-500'>
-              <div className={`${styles.fullPageSection} section`} data-index={0}>
+              <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
                 <div className={styles.lineHome}>
                   <span className={`${styles._lineTop} _lineTopEffect`}></span>
                   <span className={`${styles._lineBottom} _lineBottomEffect`}></span>
