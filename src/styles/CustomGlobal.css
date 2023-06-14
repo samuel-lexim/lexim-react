@@ -326,7 +326,7 @@ p {
 
 /* Pagination */
 body #fp-nav.fp-left {
-  left: 25px;
+  left: 55px;
 }
 
 body #fp-nav ul li,
@@ -388,7 +388,7 @@ body.about #fp-nav {
   }
 
   body #fp-nav.fp-left {
-    left: calc(12vw - 9px);
+    left: calc(6vw + 44px);
   }
 
   body.about #fp-nav {
@@ -405,7 +405,7 @@ body.about #fp-nav {
 @media only screen and (min-width: 1440px) {
   body.about #fp-nav.fp-left {
     top: calc(30vh + 163px);
-    left: calc(12vw - 9px);
+    left: 168px;
     transform: translateY(0);
   }
 

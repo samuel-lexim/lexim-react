@@ -40,7 +40,7 @@ export default function About() {
         render={({state, fullPageApi}) => {
 
           return (
-            <div id='fullPage'>
+            <div id='fullPage' className={page.pageWrap}>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>

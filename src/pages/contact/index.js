@@ -37,7 +37,7 @@ export default function Contact() {
 
           return (
             <div id='fullPage'>
-              <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
+              <div className={`${styles.fullPageSection} ${page.pageWrap} section initNotRunEffect`} data-index={0}>
 
                 <section className={`${styles.contactSection}`}>
                   <div className={styles.innerSection}>

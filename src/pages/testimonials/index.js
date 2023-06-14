@@ -36,7 +36,7 @@ export default function Testimonials() {
         <span>TESTIMONIALS</span>
       </div>
 
-      <div className={`${styles.testimonialsWrap}`}>
+      <div className={`${styles.testimonialsWrap} ${page.pageWrap}`}>
 
         <section className={`${styles.testimonialsSection}`}>
 
