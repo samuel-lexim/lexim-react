@@ -149,87 +149,104 @@ a {
   font-weight: 900;
 }
 
-h1, .h1 {
-  font-size: 50px;
+p, .s24_42 {
+  font-size: 24px;
 }
 
-h2, .h2 {
-  font-size: 40px;
+.s26_42 {
+  font-size: 26px;
 }
 
-h3, .h3 {
+.s28_42 {
+  font-size: 28px;
+}
+
+.s30 {
   font-size: 30px;
 }
 
 h4, .h4 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
-p {
-  font-size: 24px;
-}
-
-.s140 {
-  font-size: 60px;
-}
-
-.s120 {
-  font-size: 55px;
-}
-
-.s100 {
-  font-size: 50px;
-}
-
-.s64 {
+.s40, .s40_64, .s40_100 {
   font-size: 40px;
 }
 
-.s42 {
-  font-size: 24px;
+h3, .h3, .s50, .s50_140 {
+  font-size: 50px;
 }
 
+h2, .h2, .s60 {
+  font-size: 60px;
+}
+
+h1, .h1, .s70 {
+  font-size: 70px;
+}
+
+
 @media only screen and (min-width: 768px) {
-  h1, .h1 {
+  p, .s24_42, .s26_42 {
+    font-size: 30px;
+  }
+
+  .s28_42 {
+    font-size: 32px;
+  }
+
+  .s30 {
+    font-size: 42px;
+  }
+
+  h4, .h4, .s40_64 {
+    font-size: 45px;
+  }
+
+  .s40 {
+    font-size: 56px;
+  }
+
+  h3, .h3, .s50, .s40_100 {
     font-size: 70px;
   }
 
-  h2, .h2 {
-    font-size: 55px;
+  h2, .h2, .s60 {
+    font-size: 84px;
   }
 
-  h3, .h3 {
-    font-size: 50px;
-  }
-
-  h4, .h4 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 24px;
+  h1, .h1, .s70, .s50_140 {
+    font-size: 98px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  h1, .h1, .s140 {
-    font-size: 140px;
+  p, .s24_42, .s26_42, .s28_42 {
+    font-size: 42px;
   }
 
-  h2, .h2, .s120 {
-    font-size: 120px;
+  .s30 {
+    font-size: 60px;
   }
 
-  h3, .h3, .s100 {
-    font-size: 100px;
-  }
-
-  h4, .h4, .s64 {
+  h4, .h4, .s40_64 {
     font-size: 64px;
   }
 
-  p, .s42 {
-    font-size: 42px;
+  .s40 {
+    font-size: 80px;
+  }
+
+  h3, .h3, .s50, .s40_100 {
+    font-size: 100px;
+  }
+
+  h2, .h2, .s60 {
+    font-size: 120px;
+  }
+
+  h1, .h1, .s70, .s50_140 {
+    font-size: 140px;
   }
 }
 
@@ -332,13 +349,13 @@ p {
   }
 
   .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
-    width: calc(100% - 40px) !important;
+    width: calc(100% - 100px) !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
-    width: calc(100% - 80px) !important;
+    width: calc(100% - 150px) !important;
   }
 }
 
@@ -415,6 +432,7 @@ body.about #fp-nav {
     top: calc(30vw + 158px);
   }
 }
+
 @media only screen and (min-width: 1200px) {
   body.about #fp-nav {
     top: calc(20vw + 158px);
@@ -518,4 +536,5 @@ body.scrollHidden header {
     height: 40px;
   }
 }
+
 /* # Black Slick */

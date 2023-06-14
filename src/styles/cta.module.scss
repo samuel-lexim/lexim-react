@@ -2,7 +2,7 @@
 
 .ctaButton {
 
-  span {
+  .span {
     font-size: 18px;
   }
 
@@ -67,6 +67,7 @@
 }
 
 .blueButton {
+
   .ctaLink {
     background: $color-Blue;
     color: #fff;
@@ -77,7 +78,7 @@
     .ctaLinkInner {
       position: relative;
       display: inline-block;
-      padding-right: 22px;
+      padding-right: 30px;
 
       .bottomLine {
         display: none;
@@ -85,10 +86,10 @@
       }
 
       .arrow {
-        top: 1px;
+        top: 7px;
         right: 0;
-        width: 23px;
-        height: 13px;
+        width: 24px;
+        height: 18px;
 
         img {
           transform: none;
@@ -105,36 +106,47 @@
     &:hover {
       background: #fff;
       color: $color-Blue;
+
       svg path {
-         fill: $color-Blue;
+        fill: $color-Blue;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blueButton {
+    .ctaLink {
+      .ctaLinkInner {
+        padding-right: 36px;
+
+        .arrow {
+          top: 9px;
+          width: 25px;
+          height: 20px;
+        }
       }
     }
   }
 }
 
 @media screen and (min-width: 1440px) {
-
   .blueButton {
-
-    span {
-      font-size: 42px;
-    }
-
     .ctaLink {
       padding: 7px 32px;
       border-radius: 20px;
 
       .ctaLinkInner {
-        padding-right: 50px;
+        padding-right: 45px;
 
         .arrow {
           display: flex;
           justify-content: center;
           align-items: center;
-          top: 3px;
+          top: 11px;
           right: 0;
-          width: 40px;
-          height: 40px;
+          width: 30px;
+          height: 30px;
 
           img {
             width: 30px !important;

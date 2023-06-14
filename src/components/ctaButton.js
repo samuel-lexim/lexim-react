@@ -13,7 +13,7 @@ export default function CtaButton(
     <>
       <div className={`${styles.ctaButton} ${className}`}>
         <Link className={styles.ctaLink} href={link} target={target}>
-          <span>{text}</span>
+          <span className={styles.span}>{text}</span>
           <div className={styles.bottomLine}></div>
           <div className={styles.arrow}>
             <Image
