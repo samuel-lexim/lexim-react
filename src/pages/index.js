@@ -43,7 +43,7 @@ export default function Home() {
                 <section className={` ${styles.homeSection}`}
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
-                    <h3 className='_backInTop lh-1_05'>Let’s reduce your operation costs by integrating your software.</h3>
+                    <h3 className={`${styles.subHeading} _backInTop lh-1_05 `}>Let’s reduce your operation costs by integrating your software.</h3>
                     <h2 className={`${styles.mainHeading} _backInLeft FontSui`}>We Can Help</h2>
 
                     <div className={styles.content2Cols}>
@@ -82,8 +82,8 @@ export default function Home() {
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
                     <div className={`${styles.homeHeading} FontSui`}>
-                      <h3 className='_backInRight'>And we do</h3>
-                      <h2 className={`${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
+                      <h3 className={`${styles.subHeading} _backInRight`}>And we do</h3>
+                      <h2 className={`${styles.mainHeading} ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
 
                     <div className={`${styles.ourCustomers} _rotateFromBottom`}>
@@ -138,7 +138,7 @@ export default function Home() {
                          id={sections[3]} data-index={3}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>We focus on:</h3>
+                      <h3 className={`${styles.mainHeading} ${styles._underLine} _underLineEffect _backInLeft FontSui`}>We focus on:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -160,7 +160,8 @@ export default function Home() {
                          id={sections[4]} data-index={4}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>Here’s how we’ll<br/> plan your project:</h3>
+                      <h3 className={`${styles.mainHeading} ${styles._underLine} _underLineEffect _backInLeft FontSui`}>
+                        Here’s how we’ll<br/> plan your project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>
@@ -181,7 +182,7 @@ export default function Home() {
                          id={sections[5]} data-index={5}>
                   <div className={styles.innerSection}>
                     <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect _backInLeft FontSui`}>Let’s plan your<br/> project:</h3>
+                      <h3 className={`${styles.mainHeading} ${styles._underLine} _underLineEffect _backInLeft FontSui`}>Let’s plan your<br/> project:</h3>
                     </div>
 
                     <div className={styles.content2Cols}>

@@ -169,6 +169,26 @@ p {
   font-size: 24px;
 }
 
+.s140 {
+  font-size: 60px;
+}
+
+.s120 {
+  font-size: 55px;
+}
+
+.s100 {
+  font-size: 50px;
+}
+
+.s64 {
+  font-size: 40px;
+}
+
+.s42 {
+  font-size: 24px;
+}
+
 @media only screen and (min-width: 768px) {
   h1, .h1 {
     font-size: 70px;
@@ -192,23 +212,23 @@ p {
 }
 
 @media only screen and (min-width: 1440px) {
-  h1, .h1 {
+  h1, .h1, .s140 {
     font-size: 140px;
   }
 
-  h2, .h2 {
+  h2, .h2, .s120 {
     font-size: 120px;
   }
 
-  h3, .h3 {
+  h3, .h3, .s100 {
     font-size: 100px;
   }
 
-  h4, .h4 {
+  h4, .h4, .s64 {
     font-size: 64px;
   }
 
-  p {
+  p, .s42 {
     font-size: 42px;
   }
 }

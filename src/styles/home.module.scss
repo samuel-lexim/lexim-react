@@ -18,6 +18,14 @@
     padding-left: 30px;
   }
 
+  .mainHeading {
+    font-size: 50px;
+  }
+
+  .subHeading {
+    font-size: 40px;
+  }
+
   &[data-index="0"] {
     .mainHeading {
       margin-bottom: 60px;
@@ -179,6 +187,13 @@
         padding: 0;
       }
     }
+
+    &[data-index="2"] {
+      .mainHeading {
+        padding-left: 40px;
+        margin: 0 0 0 auto;
+      }
+    }
   }
 
   .ourCustomers {
@@ -253,9 +268,30 @@
 
 
 @media screen and (min-width: 1440px) {
-  .homeSection[data-index="0"] {
-    p {
-      margin-bottom: 30px;
+  .homeSection {
+    .mainHeading {
+      font-size: 100px;
+    }
+
+    .subHeading {
+      font-size: 64px;
+    }
+
+    &[data-index="0"] {
+      p {
+        margin-bottom: 30px;
+      }
+    }
+
+    &[data-index="2"] {
+      .subHeading {
+        font-size: 100px;
+      }
+      .mainHeading {
+        font-size: 140px;
+        padding-left: 80px;
+        margin: 0 0 0 auto;
+      }
     }
   }
 
