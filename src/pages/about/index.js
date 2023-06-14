@@ -73,7 +73,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} _backInLeft FontSui`}>IT SOLUTIONS</h2>
+                    <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
 
                     <div className={`${styles._content} _backInRight`}>
                       <p className='fw-500'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
@@ -92,7 +92,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} _backInRight FontSui`}>OUR CLIENTS</h2>
+                    <h2 className={`${styles._heading} s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
 
                     <div className={`${styles._content} _backInLeft`}>
                       <p className='fw-300'>Our clients range <span className='fw-500'>from startups to Fortune 500s</span> in <span className={`${page.blueText} fw-500 `}>media, fashion, consumer, lifestyle, finance,
@@ -156,7 +156,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} _backInLeft FontSui`}>LOS ANGELES</h2>
+                    <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>LOS ANGELES</h2>
 
                     <div className={`${styles._content}`}>
                       <div className={`_backInRight`}>
