@@ -195,7 +195,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton link='/contact' className={`${styles._absolute} _rotateButton`}/>
+                    <CtaBlueButton link='/contact' className={`${styles._absolute} `}/>
                   </div>
                 </section>
 

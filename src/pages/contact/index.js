@@ -51,7 +51,7 @@ export default function Contact() {
                         <p className='fw-300 h4 '>Book your free consult today.</p>
                       </div>
                       <div className='pad20'></div>
-                      <CtaBlueButton className='_rotateButton' text='Schedule a Call' link='#'/>
+                      <CtaBlueButton className='' text='Schedule a Call' link='#'/>
                     </div>
                   </div>
 
