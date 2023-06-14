@@ -21,7 +21,7 @@ export default function Partnerships() {
 
             <div className={styles.blackLine}></div>
 
-            <Accordion title="SALESFORCE COMMERCE CLOUD">
+            <Accordion title="SALESFORCE">
               <p>Lexim is a leading provider of Salesforce Commerce Cloud and ERP onboarding services for businesses. Our team of experts has extensive experience in helping businesses of all sizes smoothly transition to ERP systems, including Salesforce Commerce Cloud. Our goal is to make the ERP implementation process as seamless as possible, ensuring our clients’ business operations continue uninterrupted. With our tailored onboarding services, businesses can get up and running on their chosen ERP platform in no time, while also taking advantage of all its powerful features. Our services include configuration, data migration, custom development, training, and ongoing support to ensure our clients are fully utilizing the platform to its fullest potential. Let us help you make the switch to an ERP system today and streamline your business operations for optimal success.</p>
             </Accordion>
 

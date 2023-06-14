@@ -198,33 +198,11 @@ export default function Home() {
                     <CtaBlueButton link='/contact' className={`${styles._absolute} _rotateButton`}/>
                   </div>
                 </section>
-              </div>
-
-              <div className={`${styles.fullPageSection} section`} data-index={6}>
-                <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
-                         id={sections[6]} data-index={6}>
-                  <div className={styles.innerSection}>
-                    <div className={styles.homeHeading}>
-                      <h3 className={`${styles._underLine} _underLineEffect FontSui`}>Let’s plan your<br/> project:</h3>
-                    </div>
-
-                    <div className={styles.content2Cols}>
-                      <div className={styles.leftColumn}>
-                        <p className='_backInLeft'>What not to expect:</p>
-                      </div>
-                      <div className={styles.rightColumn}>
-                        <p className='_backInRight'>1. An invoice for our conversation</p>
-                        <p className='_backInRight'>2. Empty promises without a timeline</p>
-                      </div>
-                    </div>
-
-                    <CtaBlueButton link='/contact' className={`${styles._absolute} _rotateButton`}/>
-
-                  </div>
-                </section>
 
                 <Footer/>
+
               </div>
+
 
             </div>
           );
