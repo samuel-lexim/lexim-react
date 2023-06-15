@@ -17,11 +17,9 @@ export default function SystemIntegration() {
         <section className={`${styles.systemSection}`}>
           <div className={`${styles.leftPadding} ${styles.noPadInXs}`}>
             <p className='s24_30'>According to Gartner, data is the most valuable commodity available to organizations, and increasing access to good quality data enables operational improvement,
-              better insight into
-              performance, and improved decision making.</p>
+              better insight into performance, and improved decision making.</p>
             <p className='s24_30'>The issue many organizations face is the lack of synchronization between the different systems that produce data, whether for sales, accounting, marketing,
-              production, or distribution.
-              When there is an app for everything, an organization might have a dozen apps that don’t communicate with each other.</p>
+              production, or distribution. When there is an app for everything, an organization might have a dozen apps that don’t communicate with each other.</p>
           </div>
 
           <div className={styles._pad4}></div>
@@ -45,7 +43,6 @@ export default function SystemIntegration() {
               width={1203} height={389}
             />
           </div>
-
 
           <div className={styles._pad3}></div>
 
@@ -112,8 +109,7 @@ export default function SystemIntegration() {
             <div className={styles._pad2}></div>
 
             <p className='s24_42'>Our tailored services for systems integration include configuration, data migration, custom development, training, and ongoing support to ensure our clients are fully
-              utilizing each
-              platform to its fullest potential.</p>
+              utilizing each platform to its fullest potential.</p>
             <div className={styles._pad1}></div>
             <p className='s24_42'>We understand that each business has unique needs, and we take the time to understand those needs to provide a customized systems integration experience.</p>
             <div className={styles._pad1}></div>
