@@ -9,6 +9,30 @@
 }
 
 @font-face {
+  font-family: "FontSui";
+  src: url('../fonts/SuisseIntl-Light.otf'),
+  url('../fonts/SuisseIntl-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontSui";
+  src: url('../fonts/SuisseIntl-SemiBold.otf'),
+  url('../fonts/SuisseIntl-SemiBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontSui";
+  src: url('../fonts/SuisseIntl-SemiBold.otf'),
+  url('../fonts/SuisseIntl-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "FontRoc";
   src: url('../fonts/RocGrotesk-Medium.otf');
   font-weight: 500;
