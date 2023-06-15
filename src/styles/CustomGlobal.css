@@ -330,50 +330,68 @@ h1, .h1, .s70 {
 
 .fp-section ._backInLeft {
   position: relative;
-  left: -80vh;
-  transition: left 1s;
+  left: -300px;
+  opacity: 0;
+  transition: left 1s 0.5s, opacity 1s 0.5s;
 }
 
 .fp-section.active:not(.initNotRunEffect) ._backInLeft {
   left: 0;
+  opacity: 1;
 }
 
 .fp-section ._backInRight {
   position: relative;
-  right: -80vh;
-  transition: right 1s;
+  right: -300px;
+  opacity: 0;
+  transition: right 1s 0.5s, opacity 1s 0.5s;
 }
 
 .fp-section.active:not(.initNotRunEffect) ._backInRight {
   right: 0;
+  opacity: 1;
 }
 
 .fp-section ._backInTop {
   position: relative;
-  top: -80vh;
-  transition: top 1s;
+  top: -200px;
+  opacity: 0;
+  transition: top 1s 0.5s, opacity 1s 0.5s;
 }
 
 .fp-section.active:not(.initNotRunEffect) ._backInTop {
   top: 0;
+  opacity: 1;
 }
 
 .fp-section ._backInBottom {
   position: relative;
-  bottom: -80vh;
-  transition: bottom 1s;
+  bottom: -200px;
+  opacity: 0;
+  transition:  opacity 1s 0.5s, bottom 1s 0.5s;
 }
 
 .fp-section.active:not(.initNotRunEffect) ._backInBottom {
   bottom: 0;
+  opacity: 1;
 }
+
+.fp-section ._fadeOutIn {
+  opacity: 0;
+  transition:  opacity 1s 1s ease-in-out;
+}
+
+.fp-section.active:not(.initNotRunEffect) ._fadeOutIn {
+  opacity: 1;
+}
+
 
 .fp-section ._rotateFromBottom {
   position: relative;
   transform: rotate(180deg);
   opacity: 0;
-  bottom: -80vh;
-  transition: transform 1s, opacity 1s, bottom 1s;
+  bottom: -200px;
+  transition: transform 1s 0.5s, opacity 1s 0.5s, bottom 1s 0.5s;
 }
 
 .fp-section.active:not(.initNotRunEffect) ._rotateFromBottom {
@@ -423,7 +441,7 @@ body #fp-nav ul li:hover a span,
 body #fp-nav ul li:hover a.active span,
 body #fp-nav ul li a.active span {
   width: 25px;
-  height: 25px;
+  height: 22px;
 }
 
 body #fp-nav ul li {
@@ -472,7 +490,8 @@ body.about #fp-nav {
   body #fp-nav ul li:hover a.active span,
   body #fp-nav ul li a.active span {
     width: 30px;
-    height: 30px;
+    height: 27px;
+    border-radius: 7px;
   }
 
   body #fp-nav.fp-left {
@@ -504,7 +523,8 @@ body.about #fp-nav {
   body #fp-nav ul li:hover a.active span,
   body #fp-nav ul li a.active span {
     width: 40px;
-    height: 40px;
+    height: 36px;
+    border-radius: 10px;
   }
 }
 

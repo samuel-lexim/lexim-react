@@ -196,7 +196,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton link='/contact' className={`${styles._absolute} `}/>
+                    <CtaBlueButton link='/contact' className={`${styles._absolute} _fadeOutIn`}/>
                   </div>
                 </section>
 
