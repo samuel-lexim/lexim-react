@@ -31,7 +31,7 @@
 
   &[data-index='0'] {
     .aboutSection {
-      padding-top: 102px;
+      padding-top: 109px;
     }
   }
 }
@@ -221,7 +221,7 @@
 @media screen and (min-width: 768px) {
 
   .aboutSection {
-    padding-top: 30vw;
+    padding-top: 26vw;
 
     ._content {
       padding-left: 60px;
@@ -242,7 +242,7 @@
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: 25vw;
+        padding-top: 26.5vw;
       }
     }
   }
@@ -250,13 +250,13 @@
 
 @media screen and (min-width: 1200px) {
   .aboutSection {
-    padding-top: 20vw;
+    padding-top: 17vw;
   }
 
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: 15vw;
+        padding-top: 14vw;
       }
     }
   }

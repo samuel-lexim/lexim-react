@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed} `}>
+      <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed}`}>
         <div className={styles.logoContainer}>
           <Link href='/'>
             <Image
@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      <div className={`${styles.menuPanel}`}>
+      <div className={`${styles.menuPanel} FontSui`}>
         <div className={styles.menuItem}>
           <Link href='/about'>
             <span>ABOUT</span>
