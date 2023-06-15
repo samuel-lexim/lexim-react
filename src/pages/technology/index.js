@@ -4,6 +4,7 @@ import GreenAccordion from "@/components/GreenAccordion";
 import BlackAccordion from "@/components/BlackAccordion";
 import Footer from "@/components/footer";
 import CtaBlueButton from "@/components/ctaBlueButton";
+import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
@@ -13,9 +14,7 @@ export default function Technology() {
   return (
     <Layout className='pageTechnology'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>TECHNOLOGY</span>
-      </div>
+      <PageTitle title='TECHNOLOGY' />
 
       <div className={`${styles.technologySection} ${page.pageWrap}`}>
         <div className={styles.innerSection}>

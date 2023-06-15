@@ -1,6 +1,6 @@
 import Layout from "@/components/layout";
 import CtaBlueButton from "@/components/ctaBlueButton";
-
+import PageTitle from "@/components/PageTitle";
 import Footer from "@/components/footer";
 
 import page from '@/styles/page.module.scss';
@@ -11,9 +11,7 @@ export default function SystemIntegration() {
   return (
     <Layout className='pageSystemIntegration'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>SYSTEM INTEGRATION</span>
-      </div>
+      <PageTitle title='SYSTEM INTEGRATION' />
 
       <div className={`${styles.systemWrap}`}>
         <section className={`${styles.systemSection}`}>

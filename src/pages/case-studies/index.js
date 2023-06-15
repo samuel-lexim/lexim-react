@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import ArticleList from "@/components/ArticleList";
 import Footer from "@/components/footer";
+import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageCaseStudies.module.scss';
@@ -12,9 +13,7 @@ export default function CaseStudies() {
   return (
     <Layout className='pageCaseStudies'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>CASE STUDIES</span>
-      </div>
+      <PageTitle title='CASE STUDIES' />
 
       <div className={`${styles.caseStudiesWrap} ${page.pageWrap}`}>
         <section className={`${styles.caseSection}`}>

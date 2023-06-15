@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import ReactFullPage from "@fullpage/react-fullpage";
 import CtaBlueButton from "@/components/ctaBlueButton";
+import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageContact.module.scss';
@@ -25,10 +26,7 @@ export default function Contact() {
   return (
     <Layout className='pageContact'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>CONTACT</span>
-      </div>
-
+      <PageTitle title='CONTACT' />
 
         <div className={`${styles.fullPageSection} ${page.pageWrap} section initNotRunEffect`}>
 

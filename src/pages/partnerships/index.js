@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import Accordion from "@/components/Accordion";
 import Footer from "@/components/footer";
+import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pagePartnerships.module.scss';
@@ -10,9 +11,7 @@ export default function Partnerships() {
   return (
     <Layout className='pagePartnerships'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>PARTNERSHIPS</span>
-      </div>
+      <PageTitle title='PARTNERSHIPS' />
 
       <div id='fullPage'>
 

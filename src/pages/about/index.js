@@ -5,6 +5,7 @@ import CtaBlueButton from "@/components/ctaBlueButton";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/footer";
+import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
@@ -30,9 +31,7 @@ export default function About() {
   return (
     <Layout className='pageAbout'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>ABOUT</span>
-      </div>
+      <PageTitle title='ABOUT' />
 
       <ReactFullPage
         navigation={true}

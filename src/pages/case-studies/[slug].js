@@ -3,6 +3,7 @@ import Layout from '@/components/layout';
 import CaseStudiesData from "@/data/CaseStudies";
 import Footer from "@/components/footer";
 import Link from 'next/link';
+import PageTitle from "@/components/PageTitle";
 
 import page from "@/styles/page.module.scss";
 import styles from '@/styles/pageCaseStudies.module.scss';
@@ -16,9 +17,7 @@ export default function ArticlePage() {
 
   return (
     <Layout className='pageCaseStudies pageCaseStudiesSlug'>
-      <div className={`${page.pageTitle} _title`}>
-        <span>CASE STUDIES</span>
-      </div>
+      <PageTitle title='CASE STUDIES' />
 
       <div className={`${styles.caseStudiesWrap}`}>
 

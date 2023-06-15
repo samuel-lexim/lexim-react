@@ -34,14 +34,22 @@
 
 
 // Page Title
+.initNotRunEffect {
+}
+
 .pageTitle {
   position: absolute;
   transform: rotate(90deg) translateY(-27%);
   transform-origin: left;
   top: 34px;
-  left: -4px;
   font-weight: 600;
   font-size: 40px;
+  left: -100px;
+  transition: left 1s;
+
+  &:not(.initNotRunEffect) {
+    left: -4px;
+  }
 }
 
 .pageWrap {
@@ -54,7 +62,10 @@
   .pageTitle {
     font-size: 60px;
     top: 11px;
-    left: -7px;
+
+    &:not(.initNotRunEffect) {
+      left: -7px;
+    }
   }
 
   .pageWrap {
@@ -67,7 +78,10 @@
   .pageTitle {
     font-size: 80px;
     top: -4px;
-    left: -8px;
+
+    &:not(.initNotRunEffect) {
+      left: -8px;
+    }
   }
 
   .pageWrap {
@@ -79,8 +93,11 @@
 @media only screen and (min-width: 1440px) {
   .pageTitle {
     font-size: 100px;
-    left: -11px;
-    top: -12px
+    top: -12px;
+
+    &:not(.initNotRunEffect) {
+      left: -11px;
+    }
   }
 
   .pageWrap {

@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import CtaBlueButton from "@/components/ctaBlueButton";
 import Footer from "@/components/footer";
+import PageTitle from "@/components/PageTitle";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -32,9 +33,7 @@ export default function Testimonials() {
   return (
     <Layout className='pageTestimonials'>
 
-      <div className={`${page.pageTitle} _title`}>
-        <span>TESTIMONIALS</span>
-      </div>
+      <PageTitle title='TESTIMONIALS' />
 
       <div className={`${styles.testimonialsWrap} ${page.pageWrap}`}>
 
