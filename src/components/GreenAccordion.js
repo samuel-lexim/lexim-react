@@ -22,7 +22,7 @@ const GreenAccordion = ({
       <div className={styles.accordionHeader} onClick={toggleAccordion}>
         <div className={`${styles.headingContainer} `}>
           <span className={styles.prefixTitle}>{prefixTitle}</span>
-          <h2 className={`${styles._heading}`}>{title}</h2>
+          <h2 className={`${styles._heading} s40_64`}>{title}</h2>
           {useArrow &&
             <svg className={styles.downArrow} width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -33,7 +33,7 @@ const GreenAccordion = ({
         </div>
       </div>
 
-      {isExpanded && showContent ? <div className={styles.accordionContent}>{children}</div> : ``}
+      {isExpanded && showContent ? <div className={`${styles.accordionContent} s28_42`}>{children}</div> : ``}
     </div>
   );
 };

@@ -5,7 +5,7 @@
 
   &.hasPrefix {
     .headingContainer {
-      padding-left: 15px;
+      padding-left: 22px;
     }
   }
 
@@ -17,9 +17,9 @@
 .accordionHeader {
   position: relative;
   padding: 10px 10px 3px;
-  font-size: 26px;
   line-height: 1.1;
   font-family: 'FontSui', FontRoc, sans-serif;
+  font-weight: 300;
   cursor: pointer;
 }
 
@@ -27,25 +27,22 @@
   position: absolute;
   top: 14px;
   left: 4px;
-  font-size: 45%;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .headingContainer {
   ._heading {
     display: inline;
     margin-right: 4px;
-    font-size: 24px;
-    font-weight: 500;
+    font-weight: 300;
   }
 }
 
 .accordionContent {
-  padding: 0 25px 15px;
+  padding: 0 20px 15px 34px;
   line-height: 1.14;
-
-  * {
-    font-size: 20px;
-  }
+  font-weight: 300;
 
   p {
     margin-top: 10px;
@@ -53,7 +50,7 @@
 }
 
 .downArrow {
-  height: 17px;
+  height: 28px;
   width: auto;
   transition: transform 1s, opacity 1s;
 }
@@ -72,7 +69,7 @@
     background: $color-Green;
 
     ._heading {
-      font-weight: 700;
+      font-weight: 500;
     }
 
     .downArrow {
@@ -104,7 +101,7 @@
   }
 
   .prefixTitle {
-    font-size: 1.8vw;
+    font-size: 17px;
     top: 18px;
     left: 21px;
   }
@@ -112,7 +109,6 @@
   .headingContainer {
     ._heading {
       line-height: 1;
-      font-size: 4vw;
       margin-right: 6px;
     }
   }
@@ -123,13 +119,12 @@
     padding-bottom: 15px;
 
     * {
-      font-size: 3vw;
       line-height: 1;
     }
   }
 
   .downArrow {
-    height: 2.7vw;
+    height: 30px;
   }
 
   .columnContent {
@@ -161,7 +156,7 @@
 
   .prefixTitle {
     font-size: 24px;
-    top: 24px;
+    top: 17px;
     left: 32px;
   }
 
@@ -171,7 +166,6 @@
 
   .headingContainer {
     ._heading {
-      font-size: 64px;
       margin-right: 10px;
     }
   }

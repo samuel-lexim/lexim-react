@@ -4,9 +4,7 @@
   position: relative;
   border-top: 2px solid #000;
   padding: 10px 10px 3px;
-  font-size: 30px;
   line-height: 1.1;
-  font-family: 'FontSui', FontRoc, sans-serif;
   cursor: pointer;
 
   &:hover {
@@ -57,7 +55,6 @@
 
 @media screen and (min-width: 768px) {
   .accordionHeader {
-    font-size: 4vw;
     padding: 15px 20px 5px;
 
     ._heading {
@@ -76,7 +73,6 @@
 
 @media screen and (min-width: 1440px) {
   .accordionHeader {
-    font-size: 64px;
     padding: 15px 30px 5px;
 
     ._heading {

@@ -17,9 +17,9 @@ const Accordion = ({
 
   return (
     <div className={`${styles.accordionWrap} ${className} ${styles[layout]} 
-      ${isExpanded ? styles.expanded : styles.closed}`}>
+      ${isExpanded ? styles.expanded : styles.closed} FontSui`}>
       <div className={styles.accordionHeader} onClick={toggleAccordion}>
-        <span className={styles._heading}>{title}</span>
+        <span className={`${styles._heading} s40_64`}>{title}</span>
         {useArrow &&
           <svg className={styles.downArrow} width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

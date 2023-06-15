@@ -164,7 +164,7 @@ p, .s24_42 {
   font-size: 26px;
 }
 
-.s28_42 {
+.s28_42, .s28_42 * {
   font-size: 28px;
 }
 
@@ -179,6 +179,10 @@ h4, .h4 {
 
 .s40, .s40_64, .s40_100 {
   font-size: 40px;
+}
+
+.s42_64 {
+  font-size: 42px;
 }
 
 .s46_120 {
@@ -206,7 +210,7 @@ h1, .h1, .s70 {
     font-size: 30px;
   }
 
-  .s28_42 {
+  .s28_42, .s28_42 * {
     font-size: 32px;
   }
 
@@ -214,7 +218,7 @@ h1, .h1, .s70 {
     font-size: 42px;
   }
 
-  h4, .h4, .s40_64 {
+  h4, .h4, .s40_64, .s42_64 {
     font-size: 45px;
   }
 
@@ -236,7 +240,7 @@ h1, .h1, .s70 {
 }
 
 @media only screen and (min-width: 1440px) {
-  p, .s24_42, .s26_42, .s28_42 {
+  p, .s24_42, .s26_42, .s28_42, .s28_42 * {
     font-size: 42px;
   }
 
@@ -244,7 +248,7 @@ h1, .h1, .s70 {
     font-size: 60px;
   }
 
-  h4, .h4, .s40_64 {
+  h4, .h4, .s40_64, .s42_64 {
     font-size: 64px;
   }
 
