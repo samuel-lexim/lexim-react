@@ -2,6 +2,7 @@ import Layout from "@/components/layout";
 import CtaBlueButton from "@/components/ctaBlueButton";
 import PageTitle from "@/components/PageTitle";
 import Footer from "@/components/footer";
+import Image from "next/image";
 
 import styles from '@/styles/pageSystemIntegraion.module.scss';
 
@@ -36,7 +37,15 @@ export default function SystemIntegration() {
           </div>
 
           <div className={styles._pad1}></div>
-          <div className={styles.grayBg}></div>
+
+          <div className={styles.img100}>
+            <Image
+              src="/images/system-integration/integration-platform.png"
+              alt='Lexim systems integration'
+              width={1203} height={389}
+            />
+          </div>
+
 
           <div className={styles._pad3}></div>
 
@@ -55,13 +64,37 @@ export default function SystemIntegration() {
           <div className='s34_42'>
             <h3 className={styles.h3Heading}>Our expert team can coordinate with yours to stand up any framework, including:</h3>
             <h3 className={styles.blueH3}>Point to Point</h3>
-            <div className={styles.grayBg}></div>
+
+            <div className={styles.img100}>
+              <Image
+                src="/images/system-integration/integration-platform.png"
+                alt='Lexim systems integration'
+                width={1203} height={389}
+              />
+            </div>
+
             <div className={styles._pad1}></div>
             <h3 className={styles.blueH3}>Hub and spoke</h3>
-            <div className={styles.grayBg}></div>
+
+            <div className={styles.img100}>
+              <Image
+                src="/images/system-integration/integration-platform.png"
+                alt='Lexim systems integration'
+                width={1203} height={389}
+              />
+            </div>
+
             <div className={styles._pad1}></div>
             <h3 className={styles.blueH3}>Enterprise Service Bus (ESB)</h3>
-            <div className={styles.grayBg}></div>
+
+            <div className={styles.img100}>
+              <Image
+                src="/images/system-integration/integration-platform.png"
+                alt='Lexim systems integration'
+                width={1203} height={389}
+              />
+            </div>
+
           </div>
 
           <div className={styles._pad3}></div>
