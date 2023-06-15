@@ -10,7 +10,7 @@
   .innerSection {
     position: relative;
     width: 100%;
-    padding-right: 30px;
+    padding-right: 10px;
   }
 
   .logoImg {
@@ -184,38 +184,49 @@
 // END - Line
 
 // Our Customer
-.ourCustomers {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 40px;
+//.ourCustomers {
+//  display: flex;
+//  flex-wrap: wrap;
+//  padding-left: 40px;
+//
+//  .customerItem {
+//    margin-bottom: 25px;
+//    flex: auto;
+//    padding: 10px;
+//  }
+//}
+//
+//@media only screen and (max-width: 560px) {
+//  .ourCustomers {
+//    .customerItem {
+//      img {
+//        max-width: 100%;
+//        height: auto;
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (min-width: 768px) {
+//  .ourCustomers {
+//    flex-direction: row;
+//    justify-content: space-around;
+//    padding-left: 60px;
+//  }
+//}
+// # Our Customer
 
+// Our Customer Slider
+.ourCustomers {
   .customerItem {
-    margin-bottom: 25px;
-    flex: auto;
     padding: 10px;
   }
+   img {
+     margin: 0 auto;
+   }
 }
 
-@media only screen and (max-width: 560px) {
-  .ourCustomers {
-    .customerItem {
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ourCustomers {
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 60px;
-  }
-}
-
-// # Our Customer
+// # Our customer slider
 
 // > Ipad
 @media screen and (min-width: 768px) {

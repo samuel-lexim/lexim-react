@@ -11,9 +11,46 @@ import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
 import {useEffect} from "react";
 
-export default function About() {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
+export default function About() {
   const sections = ['About0', 'About1', 'About2', 'About3', 'About4', 'About5', 'About6', 'About7'];
+
+  // slider
+  const settings = {
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '40px',
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: '30px',
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: '20px'
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '10px'
+        }
+      },
+    ]
+  };
 
   // START - Run effect in the first time page load
   const initNotRunEffect = () => {
@@ -31,7 +68,7 @@ export default function About() {
   return (
     <Layout className='pageAbout'>
 
-      <PageTitle title='ABOUT' />
+      <PageTitle title='ABOUT'/>
 
       <ReactFullPage
         navigation={true}
@@ -100,47 +137,48 @@ export default function About() {
 
                     <div className='pad20'></div>
 
-                    <div className={`${styles.ourCustomers} _rotateFromBottom`}>
-                      <div className={styles.customerItem}>
-                        <Link href='https://www.silverts.com'>
-                          <Image
-                            src="/images/customers/silverts.png"
-                            alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                            width={194} height={70}
-                          />
-                        </Link>
-                      </div>
+                    <div className={`${styles.ourCustomers}`}>
+                      <Slider {...settings} className={styles.aboutSlider}>
+                        <div className={styles.customerItem}>
+                          <Link href='https://www.silverts.com'>
+                            <Image
+                              src="/images/customers/silverts.png"
+                              alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                              width={194} height={70}
+                            />
+                          </Link>
+                        </div>
 
-                      <div className={styles.customerItem}>
-                        <Link href='https://www.intertrend.com'>
-                          <Image
-                            src="/images/customers/intertrend.png"
-                            alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                            width={230} height={70}
-                          />
-                        </Link>
-                      </div>
+                        <div className={styles.customerItem}>
+                          <Link href='https://www.intertrend.com'>
+                            <Image
+                              src="/images/customers/intertrend.png"
+                              alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                              width={230} height={70}
+                            />
+                          </Link>
+                        </div>
 
-                      <div className={styles.customerItem}>
-                        <Link href='https://www.heartsoulscrubs.com'>
-                          <Image
-                            src="/images/customers/heartsoul.png"
-                            alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                            width={160} height={70}
-                          />
-                        </Link>
-                      </div>
+                        <div className={styles.customerItem}>
+                          <Link href='https://www.heartsoulscrubs.com'>
+                            <Image
+                              src="/images/customers/heartsoul.png"
+                              alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                              width={160} height={70}
+                            />
+                          </Link>
+                        </div>
 
-                      <div className={styles.customerItem}>
-                        <Link href='https://www.infinityscrubs.com'>
-                          <Image
-                            src="/images/customers/infinity.png"
-                            alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                            width={139} height={70}
-                          />
-                        </Link>
-                      </div>
-
+                        <div className={styles.customerItem}>
+                          <Link href='https://www.infinityscrubs.com'>
+                            <Image
+                              src="/images/customers/infinity.png"
+                              alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                              width={139} height={70}
+                            />
+                          </Link>
+                        </div>
+                      </Slider>
                     </div>
 
                   </div>
@@ -160,7 +198,8 @@ export default function About() {
                     <div className={`${styles._content}`}>
                       <div className={`_backInRight`}>
                         <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam and soon in Seoul, Korea.</p>
-                        <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global economy.</p>
+                        <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
+                          economy.</p>
                       </div>
                       <div className='pad40'></div>
                       <CtaBlueButton className='_fadeOutIn' text='Contact Us' link='/contact'/>
