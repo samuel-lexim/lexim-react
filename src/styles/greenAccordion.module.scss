@@ -60,11 +60,6 @@
 }
 
 .showContent {
-
-  &:hover {
-    background: $color-Green;
-  }
-
   &.expanded {
     background: $color-Green;
 
@@ -139,6 +134,14 @@
       flex: 60% 0;
       padding-left: 0;
       padding-top: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .showContent {
+    &:hover {
+      background: $color-Green;
     }
   }
 }
