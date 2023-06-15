@@ -24,14 +24,12 @@
   .statNumber {
     line-height: 1;
     color: $color-Blue;
-    font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
   }
 
   .statText {
     line-height: 1;
-    font-size: 35px;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -57,12 +55,10 @@
     .statNumber {
       text-align: right;
       padding-right: 5px;
-      font-size: 7vw;
       text-transform: lowercase;
     }
 
     .statText {
-      font-size: 3.5vw;
       padding-left: 5px;
       text-transform: initial;
     }
@@ -88,12 +84,10 @@
     margin-bottom: 0;
 
     .statNumber {
-      font-size: 120px;
       padding-right: 10px;
     }
 
     .statText {
-      font-size: 64px;
       padding-left: 10px;
     }
   }
@@ -105,7 +99,6 @@
 
   ._content {
     p {
-      font-size: 30px;
     }
   }
 }
