@@ -41,9 +41,10 @@
   position: absolute;
   transform: rotate(90deg) translateY(-27%);
   transform-origin: left;
-  top: 34px;
+  white-space: nowrap;
   font-weight: 600;
   font-size: 40px;
+  top: 34px;
   left: -100px;
   transition: left 1s;
 

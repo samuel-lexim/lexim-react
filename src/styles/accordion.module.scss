@@ -7,9 +7,6 @@
   line-height: 1.1;
   cursor: pointer;
 
-  &:hover {
-    background: $color-Yellow;
-  }
 
   ._heading {
     margin-right: 4px;
@@ -47,6 +44,7 @@
     .accordionHeader {
       background: $color-Yellow;
     }
+
     .accordionContent {
       padding: 0 !important;
     }
@@ -68,6 +66,14 @@
 
   .downArrow {
     height: 2.7vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordionHeader {
+    &:hover {
+      background: $color-Yellow;
+    }
   }
 }
 
