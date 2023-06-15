@@ -5,7 +5,6 @@
   border-bottom: 2px solid;
   color: $color-Black;
   padding: 15px 7px 5px;
-  font-size: 30px;
   line-height: 1.1;
   font-family: 'FontSui', FontRoc, sans-serif;
   cursor: pointer;
@@ -24,7 +23,6 @@
 }
 
 .itemTitle {
-  font-size: 40px;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -34,7 +32,6 @@
 
 .subHeading {
   font-family: 'FontRoc', FontSui, sans-serif;
-  font-size: 28px;
   font-weight: 300;
   display: inline;
   margin-right: 10px;
@@ -50,8 +47,8 @@
 
   .subHeading {
     margin-right: 15px;
+    font-family: 'FontSui', 'FontRoc', sans-serif;
   }
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -66,14 +63,6 @@
     &.isLast {
       border-bottom: 4px solid;
     }
-  }
-
-  .itemTitle {
-    font-size: 64px;
-  }
-
-  .subHeading {
-    font-size: 42px;
   }
 
   .itemContent svg {

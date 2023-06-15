@@ -2,7 +2,6 @@
 
 // MOBILE
 .caseStudiesWrap {
-  padding-top: 100px;
   min-height: 100vh;
 }
 
@@ -10,28 +9,10 @@
   width: 100%;
 }
 
-.caseArticle {
-
-}
-
-// > IPAD
-@media screen and (min-width: 768px) {
-  .caseStudiesWrap {
-    padding-top: 11vw;
-    padding-left: 12vw;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .caseStudiesWrap {
-    padding-top: 160px;
-    padding-left: 180px;
-  }
-}
+.caseArticle {}
 
 // START - Detail page - slug.js
 .articleTitle {
-  font-size: 46px;
   border-bottom: 2px solid;
   line-height: 1;
   text-transform: uppercase;
@@ -50,8 +31,7 @@
   margin-bottom: 20px;
 
   h2 {
-    font-size: 24px;
-    font-weight: 300;
+    font-weight: 500;
   }
 }
 
@@ -77,7 +57,6 @@
   align-items: center;
 
   span {
-    font-size: 26px;
     margin-left: 5px;
   }
 }
@@ -101,12 +80,15 @@
     h4 {
       font-size: 30px;
     }
+
+    p {
+      font-size: 24px;
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
   .articleTitle {
-    font-size: 120px;
     margin-bottom: 20px;
   }
 
@@ -114,12 +96,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
     padding-right: 120px;
-  }
-
-  .leftHeading {
-    h2 {
-      font-size: 30px;
-    }
   }
 
   .rightContent {
@@ -138,7 +114,6 @@
 
   .backLinkInner {
     span {
-      font-size: 42px;
       margin-left: 10px;
     }
 
