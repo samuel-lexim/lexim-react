@@ -41,14 +41,14 @@ export default function Contact() {
 
                 <section className={`${styles.contactSection}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`_backInLeft h4 FontSui fw-300 lh-1`}>No problem is too big or small.</h2>
+                    <h2 className={`${styles.s40_64} _backInLeft  FontSui fw-500 lh-1`}>No problem is too big or small.</h2>
                     <div className='pad20'></div>
-                    <h1 className={`_backInRight FontSui fw-500 lh-1`}>We’re here to help</h1>
+                    <h1 className={`${styles.s50_140} _backInRight FontSui fw-500 lh-1`}>We’re here to help</h1>
                     <div className='pad20'></div>
 
                     <div className={`${styles._content} lh-1`}>
                       <div className={`_backInBottom`}>
-                        <p className='fw-300 h4 '>Book your free consult today.</p>
+                        <p className='fw-500 s24_64 lh-1_2'>Book your free consult today.</p>
                       </div>
                       <div className='pad20'></div>
                       <CtaBlueButton className='' text='Schedule a Call' link='#'/>

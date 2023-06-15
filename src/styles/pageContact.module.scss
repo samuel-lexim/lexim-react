@@ -4,7 +4,7 @@
 .contactSection {
   display: flex;
   justify-content: center;
-  padding: 120px 0 0;
+  padding: 115px 0 0;
   height: 100vh;
   overflow-x: hidden;
 
@@ -22,39 +22,65 @@
 .fullPageSection {
   overflow: hidden;
 }
+.s40_64 {
+  font-size: 40px;
+}
+
+.s50_140 {
+  font-size: 50px;
+}
 
 // > IPAD
 @media screen and (min-width: 768px) {
+  .s40_64 {
+    font-size: 5vw;
+  }
+
+  .s50_140 {
+    font-size: 8.5vw;
+  }
+
   .contactSection {
-    padding-top: 30vw;
+    padding-top: 15vh;
 
     .innerSection {
-      padding: 0 6vw 0 12vw;
+      padding: 0 60px 0 0;
       text-align: right;
     }
 
     ._content {
       line-height: 1.1;
-      max-width: 298px;
+      max-width: 350px;
       text-align: left;
       margin: 0 0 0 auto;
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .contactSection {
-    padding-top: 20vw;
+    padding-top: 30vh;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .contactSection {
-    padding-top: 30vh;
+  .s40_64 {
+    font-size: 64px;
+  }
 
-    ._content {
-      max-width: 483px;
+  .s50_140 {
+    font-size: 140px;
+  }
+
+  .contactSection {
+    padding-top: 300px;
+
+    .innerSection {
+      padding-right: 90px;
     }
 
+    ._content {
+      max-width: 490px;
+    }
   }
 }
