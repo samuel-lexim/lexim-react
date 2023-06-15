@@ -75,7 +75,7 @@ export default function SystemIntegration() {
             <div className={styles._pad1}></div>
             <p>We understand that each business has unique needs, and we take the time to understand those needs to provide a customized systems integration experience.</p>
             <div className={styles._pad1}></div>
-            <CtaBlueButton text='Contact Us' link='/contact'/>
+            <CtaBlueButton className='_fadeOutIn' text='Contact Us' link='/contact'/>
           </div>
         </section>
 

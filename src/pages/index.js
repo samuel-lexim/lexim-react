@@ -51,7 +51,7 @@ export default function Home() {
                       <div className={`${styles.rightColumn} _backInBottom`}>
                         <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
                         <p>All without a fee.</p>
-                        <CtaBlueButton text='Schedule a Call' link='/contact'/>
+                        <CtaBlueButton className='_fadeOutIn' text='Schedule a Call' link='/contact'/>
                       </div>
                     </div>
 
