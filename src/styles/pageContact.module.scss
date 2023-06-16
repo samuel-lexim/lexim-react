@@ -30,6 +30,16 @@
   font-size: 50px;
 }
 
+@media only screen and (max-width: 389px) {
+  .s40_64 {
+    font-size: 24px;
+  }
+
+  .s50_140 {
+    font-size: 30px;
+  }
+}
+
 // > IPAD
 @media only screen and (min-width: 768px) {
   .s40_64 {
