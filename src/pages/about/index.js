@@ -83,7 +83,7 @@ export default function About() {
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${styles.aboutSection}`}>
+                <section className={`${styles.aboutSection} ${page.pageWrapTop}`}>
                   <div className={styles.innerSection}>
                     <Link href='/' className='_backInTop'>
                       <Image

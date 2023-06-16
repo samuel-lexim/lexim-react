@@ -28,12 +28,6 @@
 
 .fullPageSection {
   overflow: hidden;
-
-  &[data-index='0'] {
-    .aboutSection {
-      padding-top: 109px;
-    }
-  }
 }
 
 // Line
@@ -114,7 +108,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .fullPageSection {
     &[data-index="0"] {
       ._lineLeft {
@@ -207,7 +201,7 @@
 //  }
 //}
 //
-//@media screen and (min-width: 768px) {
+//@media only screen and (min-width: 768px) {
 //  .ourCustomers {
 //    flex-direction: row;
 //    justify-content: space-around;
@@ -229,7 +223,7 @@
 // # Our customer slider
 
 // > Ipad
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
   .aboutSection {
     padding-top: 26vw;
@@ -259,7 +253,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .aboutSection {
     padding-top: 17vw;
   }
@@ -273,7 +267,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .aboutSection {
     padding-top: 30vh;
 
