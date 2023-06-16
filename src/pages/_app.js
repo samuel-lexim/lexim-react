@@ -17,7 +17,7 @@ export default function App({Component, pageProps}) {
   if (slug === '') {
     slug = 'home';
   }
-  slug = slug.replace(/#/g, '');
+  slug = slug.replace(/#/g, ''); // remove #
 
   useEffect(() => {
     document.body.classList.add(slug); // Add the slug as a class to the body tag
