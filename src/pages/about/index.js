@@ -107,10 +107,10 @@ export default function About() {
                     <div className={`${styles.contentWrap} _backInBottom`}>
 
                       <ul className={styles.virtualNav}>
-                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                        <li className={styles.activatedDot}><a href='javascript:void(0)' onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
@@ -133,10 +133,10 @@ export default function About() {
 
                     <div className={`${styles.contentWrap} _backInRight`}>
                       <ul className={styles.virtualNav}>
-                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
-                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a href='javascript:void(0)' onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
@@ -161,10 +161,10 @@ export default function About() {
 
                     <div className={`${styles.contentWrap} _backInLeft`}>
                       <ul className={styles.virtualNav}>
-                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
-                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a href='javascript:void(0)' onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
@@ -235,10 +235,10 @@ export default function About() {
 
                     <div className={`${styles.contentWrap}`}>
                       <ul className={styles.virtualNav}>
-                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
-                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
-                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li><a href='javascript:void(0)' onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a href='javascript:void(0)' onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
