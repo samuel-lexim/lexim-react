@@ -596,17 +596,16 @@ body.about #fp-nav {
 /* END - Pagination */
 
 /* Page Title */
-.pageAbout ._title {
-  margin-top: 10px;
-}
-
-body.contact ._title {
-  margin-top: 10px;
-}
-
 .pageCaseStudies ._title,
 .pageSystemIntegration ._title {
   margin-top: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .pageAbout ._title,
+  body.contact ._title {
+    margin-top: 10px;
+  }
 }
 
 /* # Page Title */

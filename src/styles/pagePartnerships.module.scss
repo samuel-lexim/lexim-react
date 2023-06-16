@@ -1,7 +1,7 @@
 @import "variables.module";
 
 .partnerSection {
-  min-height: 500px;
+  min-height: 360px;
 
   .innerSection {
     position: relative;
@@ -14,7 +14,19 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .partnerSection {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .partnerSection {
+    min-height: 650px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
+  .partnerSection {
+    min-height: 800px;
+  }
 }
