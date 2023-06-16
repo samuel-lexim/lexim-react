@@ -43,7 +43,7 @@ export default function Contact() {
                 <p className='fw-500 s24_64 lh-1_2'>Book your free consult today.</p>
               </div>
               <div className='pad20'></div>
-              <CtaBlueButton className='_fadeOutIn' text='Schedule a Call' link='#'/>
+              <CtaBlueButton className='_fadeOutIn' contactForm={true} />
             </div>
           </div>
 

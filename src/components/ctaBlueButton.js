@@ -1,20 +1,29 @@
-import styles from '@/styles/cta.module.scss';
-import Image from "next/image";
 import Link from "next/link";
+import Head from 'next/head';
+import styles from '@/styles/cta.module.scss';
 
-export default function CtaBlueButton(
-  {
-    text = 'Schedule a Call',
-    link = '#',
-    className = '',
-    blue = false,
-    target = '_self'
-  }
-) {
+const CtaBlueButton = ({
+  text = 'Schedule a Call',
+  link = '#',
+  className = '',
+  blue = false,
+  target = '_self',
+  contactForm = false
+}) => {
   return (
     <>
+      {contactForm && (
+        <Head>
+          <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+          <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        </Head>
+      )}
+
       <div className={`${styles.ctaButton} ${styles.blueButton} ${className}`}>
-        <Link className={styles.ctaLink} href={link} target={target}>
+        <Link className={styles.ctaLink} target={target}
+              onClick={() => Calendly.initPopupWidget({url: 'https://calendly.com/lexim-support'})}
+              href={link} passHref>
+
           <div className={styles.ctaLinkInner}>
             <span className='s26_42 fw-500'>{text}</span>
             <div className={styles.bottomLine}></div>
@@ -24,8 +33,11 @@ export default function CtaBlueButton(
               </svg>
             </div>
           </div>
+
         </Link>
       </div>
     </>
-  )
+  );
 };
+
+export default CtaBlueButton;

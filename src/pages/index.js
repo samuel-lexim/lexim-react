@@ -51,7 +51,7 @@ export default function Home() {
                       <div className={`${styles.rightColumn} _backInBottom`}>
                         <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
                         <p>All without a fee.</p>
-                        <CtaBlueButton className='_fadeOutIn' text='Schedule a Call' link='/contact'/>
+                        <CtaBlueButton className='_fadeOutIn' text='Schedule a Call' contactForm={true}/>
                       </div>
                     </div>
 
@@ -196,7 +196,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <CtaBlueButton link='/contact' className={`${styles._absolute} _fadeOutIn`}/>
+                    <CtaBlueButton contactForm={true} className={`${styles._absolute} _fadeOutIn`}/>
                   </div>
                 </section>
 
