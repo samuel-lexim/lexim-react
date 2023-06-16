@@ -16,7 +16,7 @@ export default function SystemIntegration() {
       <PageTitle title='SYSTEM INTEGRATION'/>
 
       <div className={`${styles.systemWrap}`}>
-        <section className={`${styles.systemSection} ${page.pageWrap}`}>
+        <section className={`${styles.systemSection} ${page.pageWrapLeft}`}>
           <div className={`${styles.leftPadding} ${styles.noPadInXs}`}>
             <p className='s24_30'>According to Gartner, data is the most valuable commodity available to organizations, and increasing access to good quality data enables operational improvement,
               better insight into performance, and improved decision making.</p>

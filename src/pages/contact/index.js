@@ -29,7 +29,7 @@ export default function Contact() {
 
       <PageTitle title='CONTACT'/>
 
-      <div className={`${styles.fullPageSection} ${page.pageWrap} section initNotRunEffect`}>
+      <div className={`${styles.fullPageSection} ${page.pageWrapLeft} section initNotRunEffect`}>
 
         <section className={`${styles.contactSection} `}>
           <div className={styles.innerSection}>

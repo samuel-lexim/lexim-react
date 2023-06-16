@@ -53,8 +53,8 @@
   }
 }
 
-.pageWrap {
-  min-height: 88vh;
+.pageWrapLeft {
+  //min-height: 88vh;
   padding-left: 60px;
 }
 
@@ -63,7 +63,7 @@
 }
 
 @media only screen and (max-width: 389px) {
-  .pageWrap {
+  .pageWrapLeft {
     padding-left: 45px;
   }
 }
@@ -78,7 +78,7 @@
     }
   }
 
-  .pageWrap {
+  .pageWrapLeft {
     padding-left: calc(6vw + 50px);
   }
 
@@ -97,7 +97,7 @@
     }
   }
 
-  .pageWrap {
+  .pageWrapLeft {
     padding-left: calc(6vw + 64px);
   }
 
@@ -116,7 +116,7 @@
     }
   }
 
-  .pageWrap {
+  .pageWrapLeft {
     padding-left: 170px;
   }
 

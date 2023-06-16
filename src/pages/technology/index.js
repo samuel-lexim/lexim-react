@@ -16,7 +16,7 @@ export default function Technology() {
 
       <PageTitle title='TECHNOLOGY' />
 
-      <div className={`${styles.technologySection} ${page.pageWrap}`}>
+      <div className={`${styles.technologySection} ${page.pageWrapLeft}`}>
         <div className={styles.innerSection}>
 
           <div className={styles.blackLine}></div>

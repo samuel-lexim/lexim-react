@@ -35,7 +35,7 @@ export default function Testimonials() {
 
       <PageTitle title='TESTIMONIALS' />
 
-      <div className={`${styles.testimonialsWrap} ${page.pageWrap}`}>
+      <div className={`${styles.testimonialsWrap} ${page.pageWrapLeft}`}>
 
         <section className={`${styles.testimonialsSection}`}>
 

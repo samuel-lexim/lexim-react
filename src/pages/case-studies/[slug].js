@@ -19,7 +19,7 @@ export default function ArticlePage() {
     <Layout className='pageCaseStudies pageCaseStudiesSlug'>
       <PageTitle title='CASE STUDIES' />
 
-      <div className={`${styles.caseStudiesWrap} ${page.pageWrap}`}>
+      <div className={`${styles.caseStudiesWrap} ${page.pageWrapLeft}`}>
 
         <div className={`${styles.caseArticle} ${page.pageWrapTop}`}>
           {article && (

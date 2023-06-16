@@ -76,14 +76,14 @@ export default function About() {
         render={({state, fullPageApi}) => {
 
           return (
-            <div id='fullPage' className={page.pageWrap}>
+            <div id='fullPage'>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${styles.aboutSection} ${page.pageWrapTop}`}>
+                <section className={`${styles.aboutSection} ${page.pageWrapLeft} ${page.pageWrapTop}`}>
                   <div className={styles.innerSection}>
                     <Link href='/' className='_backInTop'>
                       <Image
@@ -107,7 +107,7 @@ export default function About() {
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${styles.aboutSection}`}>
+                <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
 
@@ -126,7 +126,7 @@ export default function About() {
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${styles.aboutSection}`}>
+                <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
 
@@ -191,7 +191,7 @@ export default function About() {
                   <span className={`${styles._lineRight} _lineRightEffect`}></span>
                 </div>
 
-                <section className={`${styles.aboutSection}`}>
+                <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>LOS ANGELES</h2>
 
