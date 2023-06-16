@@ -126,7 +126,6 @@
   a {
     position: relative;
     font-weight: 300;
-    font-size: 48px;
     display: inline-block;
     transform-style: preserve-3d;
   }
@@ -151,11 +150,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .menuPanel {
-    a {
-      font-size: 6vw;
-    }
-  }
+
 }
 
 @media only screen and (min-width: 1440px) {
@@ -176,10 +171,6 @@
 
   .menuPanel {
     padding: 80px 50px 10px;
-
-    a {
-      font-size: 120px;
-    }
 
     .menuItem {
       padding: 0;

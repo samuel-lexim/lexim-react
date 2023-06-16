@@ -67,7 +67,6 @@
 }
 
 .blueButton {
-
   .ctaLink {
     background: $color-Blue;
     color: #fff;
@@ -110,6 +109,24 @@
 
       svg path {
         fill: $color-Blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 389px) {
+  .blueButton {
+    .ctaLink {
+      padding: 6px 14px;
+
+      .ctaLinkInner {
+        padding-right: 22px;
+        .arrow {
+          top: 0;
+          right: 0;
+          width: 24px;
+          height: 12px;
+        }
       }
     }
   }

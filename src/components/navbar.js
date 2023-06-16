@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      <div className={`${styles.menuPanel} FontSui`}>
+      <div className={`${styles.menuPanel} FontSui s48_120`}>
         <div className={styles.menuItem}>
           <Link href='/about'>
             <span>ABOUT</span>
