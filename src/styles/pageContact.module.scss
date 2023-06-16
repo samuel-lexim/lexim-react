@@ -31,7 +31,7 @@
 }
 
 // > IPAD
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .s40_64 {
     font-size: 5vw;
   }
@@ -57,13 +57,13 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .contactSection {
     padding-top: 130px;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .s40_64 {
     font-size: 64px;
   }

@@ -94,7 +94,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accordionWrap {
     &.hasPrefix {
       .headingContainer {
@@ -151,7 +151,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .accordionWrap {
     padding-top: 20px;
 

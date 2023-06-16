@@ -36,7 +36,7 @@
 }
 
 // > IPAD
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .testimonialsWrap {
     padding-top: 60px;
     padding-left: 12vw;
@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .testimonialsWrap {
     padding-left: 180px;
     padding-right: 110px;

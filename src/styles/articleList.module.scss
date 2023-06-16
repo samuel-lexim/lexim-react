@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .articleListWrap {
     border-bottom: 2px solid;
     padding: 30px 10px 7px;
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .articleListWrap {
     border-bottom: 4px solid;
     padding: 40px 15px 10px;

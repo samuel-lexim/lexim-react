@@ -150,7 +150,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .menuPanel {
     a {
       font-size: 6vw;
@@ -158,7 +158,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .header {
     .logoContainer {
       padding-left: 50px;

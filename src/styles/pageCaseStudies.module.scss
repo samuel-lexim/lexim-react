@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .articleTitle {
     margin-bottom: 20px;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .articleTitle {
     margin-bottom: 20px;
   }
