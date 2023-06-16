@@ -16,7 +16,7 @@ export default function CaseStudies() {
       <PageTitle title='CASE STUDIES' />
 
       <div className={`${styles.caseStudiesWrap} ${page.pageWrap}`}>
-        <section className={`${styles.caseSection}`}>
+        <section className={`${styles.caseSection} ${page.pageWrapTop}`}>
           {CaseStudiesData.map((article, index) => (
             <ArticleList
               key={article.slug}

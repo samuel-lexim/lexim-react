@@ -21,7 +21,7 @@ export default function ArticlePage() {
 
       <div className={`${styles.caseStudiesWrap} ${page.pageWrap}`}>
 
-        <div className={styles.caseArticle}>
+        <div className={`${styles.caseArticle} ${page.pageWrapTop}`}>
           {article && (
             <>
               <h1 className={`${styles.articleTitle} FontSui s46_120`}>{article.title}</h1>
