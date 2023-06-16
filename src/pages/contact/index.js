@@ -1,5 +1,4 @@
 import Layout from "@/components/layout";
-import ReactFullPage from "@fullpage/react-fullpage";
 import CtaBlueButton from "@/components/ctaBlueButton";
 import PageTitle from "@/components/PageTitle";
 

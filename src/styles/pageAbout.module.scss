@@ -16,17 +16,25 @@
   }
 
   ._heading {
-
-  }
-
-  ._content {
-    padding-left: 40px;
   }
 }
 
 .fullPageSection {
   overflow: hidden;
 }
+
+// Our Customer Slider
+.ourCustomers {
+  .customerItem {
+    padding: 10px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+// # Our customer slider
 
 // Line
 .aboutLine {
@@ -175,61 +183,126 @@
 
 // END - Line
 
-// Our Customer
-//.ourCustomers {
-//  display: flex;
-//  flex-wrap: wrap;
-//  padding-left: 40px;
-//
-//  .customerItem {
-//    margin-bottom: 25px;
-//    flex: auto;
-//    padding: 10px;
-//  }
-//}
-//
-//@media only screen and (max-width: 560px) {
-//  .ourCustomers {
-//    .customerItem {
-//      img {
-//        max-width: 100%;
-//        height: auto;
-//      }
-//    }
-//  }
-//}
-//
-//@media only screen and (min-width: 768px) {
-//  .ourCustomers {
-//    flex-direction: row;
-//    justify-content: space-around;
-//    padding-left: 60px;
-//  }
-//}
-// # Our Customer
 
-// Our Customer Slider
-.ourCustomers {
-  .customerItem {
-    padding: 10px;
+// Content
+.contentWrap {
+  display: flex;
+
+  .virtualNav {
+    list-style: none;
+    margin-right: 7px;
+    margin-top: 3px;
+
+    li {
+      margin-bottom: 7px;
+      width: 18px;
+      height: 16px;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    .activatedDot {
+      &:nth-child(2n+1) a {
+        background-color: $color-Blue;
+      }
+
+      &:nth-child(2n) a {
+        background-color: $color-Yellow;
+      }
+    }
   }
-   img {
-     margin: 0 auto;
-   }
+
+  ._rightContent {
+
+  }
 }
 
-// # Our customer slider
+@media only screen and (min-width: 390px) {
+  .contentWrap {
+    .virtualNav {
+      margin-right: 10px;
+      margin-top: 5px;
 
-// > Ipad
+      li {
+        width: 25px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contentWrap {
+    line-height: 1.1;
+
+    .virtualNav {
+      margin-right: 15px;
+      margin-top: 3px;
+
+      li {
+        width: 30px;
+        height: 27px;
+      }
+
+      a {
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contentWrap {
+    .virtualNav {
+      li {
+        &:hover {
+          &:nth-child(2n+1) a {
+            background-color: $color-Blue;
+          }
+
+          &:nth-child(2n) a {
+            background-color: $color-Yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contentWrap {
+    .virtualNav {
+      margin-top: 5px;
+
+      li {
+        width: 40px;
+        height: 36px;
+      }
+
+      a {
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+// End Content
+
+
 @media only screen and (min-width: 768px) {
 
   .aboutSection {
     padding-top: 26vw;
-
-    ._content {
-      padding-left: 60px;
-      line-height: 1.1;
-    }
 
     .innerSection {
       padding-right: 10vw;

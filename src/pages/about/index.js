@@ -1,5 +1,6 @@
-// import AboutData from '@/data/About';
 import Layout from "@/components/layout";
+
+// Docs: https://alvarotrigo.com/fullPage/docs/
 import ReactFullPage from "@fullpage/react-fullpage";
 import CtaBlueButton from "@/components/ctaBlueButton";
 import Link from "next/link";
@@ -9,7 +10,7 @@ import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -65,6 +66,15 @@ export default function About() {
   }, []);
   // END - Run effect in the first time page load
 
+  // Create virtual buttons to click to scroll page
+  const fullPageRef = useRef(null);
+  const clickToScrollPage = (index) => {
+    const fpNavLinks = document.querySelectorAll("#fp-nav a");
+    if (fpNavLinks[index]) {
+      fpNavLinks[index].click();
+    }
+  };
+
   return (
     <Layout className='pageAbout'>
 
@@ -72,7 +82,7 @@ export default function About() {
 
       <ReactFullPage
         navigation={true}
-        navigationPosition="left"
+        navigationPosition="right"
         render={({state, fullPageApi}) => {
 
           return (
@@ -94,8 +104,18 @@ export default function About() {
                         height={48}
                       />
                     </Link>
-                    <div className={`${styles._content} _backInBottom`}>
-                      <p>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
+                    <div className={`${styles.contentWrap} _backInBottom`}>
+
+                      <ul className={styles.virtualNav}>
+                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                      </ul>
+
+                      <div className={styles._rightContent}>
+                        <p>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
+                      </div>
                     </div>
                   </div>
                 </section>
@@ -111,10 +131,19 @@ export default function About() {
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
 
-                    <div className={`${styles._content} _backInRight`}>
+                    <div className={`${styles.contentWrap} _backInRight`}>
+                      <ul className={styles.virtualNav}>
+                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
+                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                      </ul>
+
+                      <div className={styles._rightContent}>
                       <p className='fw-500'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
                       <p className='fw-300'>We provide custom development that connects <span className={page.yellowHighlight}>ERP, OMS, and enterprise e-commerce</span>. You’ll be surprised at how
                         quickly we work, often delivering projects ahead of schedule, and how affordable we are for any size budget.</p>
+                      </div>
                     </div>
                   </div>
                 </section>
@@ -130,9 +159,18 @@ export default function About() {
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
 
-                    <div className={`${styles._content} _backInLeft`}>
-                      <p className='fw-300'>Our clients range <span className='fw-500'>from startups to Fortune 500s</span> in <span className={`${page.blueText} fw-500 `}>media, fashion, consumer, lifestyle, finance,
+                    <div className={`${styles.contentWrap} _backInLeft`}>
+                      <ul className={styles.virtualNav}>
+                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
+                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                      </ul>
+
+                      <div className={styles._rightContent}>
+                        <p className='fw-300'>Our clients range <span className='fw-500'>from startups to Fortune 500s</span> in <span className={`${page.blueText} fw-500 `}>media, fashion, consumer, lifestyle, finance,
                         consumer electronics, government, international business, travel/hospitality</span>, and more.</p>
+                      </div>
                     </div>
 
                     <div className='pad20'></div>
@@ -195,14 +233,23 @@ export default function About() {
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>LOS ANGELES</h2>
 
-                    <div className={`${styles._content}`}>
-                      <div className={`_backInRight`}>
-                        <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam and soon in Seoul, Korea.</p>
-                        <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
-                          economy.</p>
+                    <div className={`${styles.contentWrap}`}>
+                      <ul className={styles.virtualNav}>
+                        <li><Link href='#' onClick={() => clickToScrollPage(0)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(1)}><span></span></Link></li>
+                        <li><Link href='#' onClick={() => clickToScrollPage(2)}><span></span></Link></li>
+                        <li className={styles.activatedDot}><Link href='#' onClick={() => clickToScrollPage(3)}><span></span></Link></li>
+                      </ul>
+
+                      <div className={styles._rightContent}>
+                        <div className={`_backInRight`}>
+                          <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam and soon in Seoul, Korea.</p>
+                          <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
+                            economy.</p>
+                        </div>
+                        <div className='pad40'></div>
+                        <CtaBlueButton className='_fadeOutIn' text='Contact Us' link='/contact'/>
                       </div>
-                      <div className='pad40'></div>
-                      <CtaBlueButton className='_fadeOutIn' text='Contact Us' link='/contact'/>
                     </div>
                   </div>
                 </section>

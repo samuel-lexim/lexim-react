@@ -496,6 +496,10 @@ h1, .h1, .s70 {
 /* END - Effect */
 
 /* Pagination */
+body.about #fp-nav {
+  display: none;
+}
+
 body #fp-nav.fp-left {
   left: 55px;
 }

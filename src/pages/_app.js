@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import {useRouter} from 'next/router';
+import {useEffect} from 'react';
 
-// import '@/styles/animate.min.css';
 import '@/styles/global.module.scss';
 import '@/styles/CustomGlobal.css';
 
@@ -15,9 +14,11 @@ export default function App({Component, pageProps}) {
   // START - add className to body
   const router = useRouter();
   let slug = router.asPath.substring(1).replace('/', ''); // Extract the slug from the current page's URL
-  if(slug === '') {
+  if (slug === '') {
     slug = 'home';
   }
+  slug = slug.replace(/#/g, '');
+
   useEffect(() => {
     document.body.classList.add(slug); // Add the slug as a class to the body tag
     return () => {
