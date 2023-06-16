@@ -38,9 +38,10 @@ export default function SystemIntegration() {
 
           <div className={styles.img100}>
             <Image
-              src="/images/system-integration/integration-platform.png"
+              src="/images/system-integration/platform.png"
               alt='Lexim systems integration'
-              width={1203} height={389}
+              width={1920} height={720}
+              unoptimized
             />
           </div>
 
@@ -64,9 +65,10 @@ export default function SystemIntegration() {
 
             <div className={styles.img100}>
               <Image
-                src="/images/system-integration/integration-platform.png"
-                alt='Lexim systems integration'
-                width={1203} height={389}
+                src="/images/system-integration/point-to-point.png"
+                alt='Point to Point'
+                width={1920} height={720}
+                unoptimized
               />
             </div>
 
@@ -75,9 +77,10 @@ export default function SystemIntegration() {
 
             <div className={styles.img100}>
               <Image
-                src="/images/system-integration/integration-platform.png"
-                alt='Lexim systems integration'
-                width={1203} height={389}
+                src="/images/system-integration/hub-and-spoke.png"
+                alt='Hub and spoke'
+                width={1920} height={720}
+                unoptimized
               />
             </div>
 
@@ -86,9 +89,10 @@ export default function SystemIntegration() {
 
             <div className={styles.img100}>
               <Image
-                src="/images/system-integration/integration-platform.png"
-                alt='Lexim systems integration'
-                width={1203} height={389}
+                src="/images/system-integration/ESB.png"
+                alt='Enterprise Service Bus'
+                width={1920} height={720}
+                unoptimized
               />
             </div>
 
