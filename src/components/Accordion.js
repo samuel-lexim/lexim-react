@@ -2,24 +2,27 @@ import React, {useState, useEffect} from 'react';
 import styles from '@/styles/accordion.module.scss';
 
 const Accordion = ({
-    title, children, className, layout ='',
+    data = [],
+    className, layout ='',
     useArrow = true,
     isOpen = false
   }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const toggleAccordion = () => {
-    setIsExpanded(!isExpanded);
+  const [activeIndex, setActiveIndex] = useState(isOpen ? 0 : -1);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
-  useEffect(() => {
-    setIsExpanded(isOpen);
-  }, []);
-
   return (
-    <div className={`${styles.accordionWrap} ${className} ${styles[layout]} 
-      ${isExpanded ? styles.expanded : styles.closed} FontSui`}>
-      <div className={styles.accordionHeader} onClick={toggleAccordion}>
-        <span className={`${styles._heading} s40_64`}>{title}</span>
+    <>
+    {data.map((child, index) => (
+      <div
+        key={index}
+        className={`${styles.accordionWrap} ${className} ${styles[layout]} 
+        ${index === activeIndex ? styles.expanded : styles.closed}`}
+      >
+      <div className={styles.accordionHeader} onClick={() => toggleAccordion(index)}>
+        <span className={`${styles._heading} s40_64 FontSui`}>{child.title}</span>
         {useArrow &&
           <svg className={styles.downArrow} width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -28,8 +31,15 @@ const Accordion = ({
           </svg>
         }
       </div>
-      {isExpanded && <div className={styles.accordionContent}>{children}</div>}
+      {index === activeIndex && (
+        <div
+          className={`${styles.accordionContent}`}
+          dangerouslySetInnerHTML={{ __html: child.content }}
+        ></div>
+      )}
     </div>
+    ))}
+    </>
   );
 };
 
