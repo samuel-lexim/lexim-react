@@ -3,7 +3,6 @@
 // MOBILE
 .systemWrap {
   padding-top: 120px;
-  padding-left: 60px;
   padding-right: 30px;
 
   p {
@@ -71,11 +70,16 @@
   }
 }
 
+@media only screen and (max-width: 389px) {
+  .systemWrap {
+    padding-top: 85px;
+  }
+}
+
 // > IPAD
 @media only screen and (min-width: 768px) {
   .systemWrap {
     padding-top: 10vw;
-    padding-left: 10vw;
     padding-right: 0;
   }
 
@@ -114,7 +118,6 @@
 @media only screen and (min-width: 1440px) {
   .systemWrap {
     padding-top: 180px;
-    padding-left: 225px;
   }
 
   ._pad4 {
