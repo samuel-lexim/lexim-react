@@ -16,6 +16,7 @@
   padding: 15px;
   line-height: 1.25;
   font-weight: 300;
+  display: none;
 }
 
 .downArrow {
@@ -25,8 +26,14 @@
 }
 
 .expanded {
-  .accordionHeader {
-    background: $color-Yellow;
+  &:not(.black) {
+    .accordionHeader {
+      background: $color-Yellow;
+    }
+  }
+
+  .accordionContent {
+    display: block;
   }
 
   .downArrow {
@@ -36,10 +43,12 @@
 }
 
 .closed {
-
+  .accordionContent {
+    display: none;
+  }
 }
 
-.accordionWrap {
+.accordionWrap:not(.black) {
   &.fullContent {
     .accordionHeader {
       background: $color-Yellow;
@@ -48,6 +57,27 @@
     .accordionContent {
       padding: 0 !important;
     }
+  }
+}
+
+.prefixTitle {
+  position: absolute;
+  top: 14px;
+  left: 4px;
+  font-size: 45%;
+}
+
+
+.black {
+  &.accordionWrap {
+    background-color: $color-SoftBlack;
+    color: $color-White;
+  }
+
+  .accordionContent {
+    height: calc(100vh - 160px);
+    padding: 20px 20px 15px 50px;
+    line-height: 1.14;
   }
 }
 
@@ -67,12 +97,27 @@
   .downArrow {
     height: 2.7vw;
   }
+
+  .black {
+    .accordionContent {
+      height: calc(100vh - 50px - 6vw - 40px - 8vw);
+      padding-left: calc(5vw + 30px);
+      padding-right: 50px;
+      padding-bottom: 15px;
+
+      p {
+        line-height: 1;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-  .accordionHeader {
-    &:hover {
-      background: $color-Yellow;
+  .accordionWrap:not(.black) {
+    .accordionHeader {
+      &:hover {
+        background: $color-Yellow;
+      }
     }
   }
 }
@@ -92,5 +137,13 @@
 
   .downArrow {
     height: 45px;
+  }
+
+  .black {
+    .accordionContent {
+      padding-left: 120px;
+      padding-right: 50px;
+      padding-bottom: 20px;
+    }
   }
 }

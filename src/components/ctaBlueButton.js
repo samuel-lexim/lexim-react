@@ -16,7 +16,7 @@ export default function CtaBlueButton(
       <div className={`${styles.ctaButton} ${styles.blueButton} ${className}`}>
         <Link className={styles.ctaLink} href={link} target={target}>
           <div className={styles.ctaLinkInner}>
-            <span className='s26_42'>{text}</span>
+            <span className='s26_42 fw-500'>{text}</span>
             <div className={styles.bottomLine}></div>
             <div className={styles.arrow}>
               <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
