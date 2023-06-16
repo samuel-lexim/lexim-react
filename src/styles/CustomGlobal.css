@@ -236,6 +236,59 @@ h1, .h1, .s70 {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 389px) {
+  p, .s24_42, .s24_30, .s24_64 {
+    font-size: 14px;
+  }
+
+  .s26_42 {
+    font-size: 16px;
+  }
+
+  .s28_42, .s28_42 * {
+    font-size: 17px;
+  }
+
+  .s30 {
+    font-size: 18px;
+  }
+
+  h4, .h4 {
+    font-size: 19px;
+  }
+
+  .s34_42, .s34_42 * {
+    font-size: 20px;
+  }
+
+  .s40, .s40_64, .s40_100 {
+    font-size: 24px;
+  }
+
+  .s42_64 {
+    font-size: 25px;
+  }
+
+  .s46_120 {
+    font-size: 27px;
+  }
+
+  .s48_120 {
+    font-size: 29px;
+  }
+
+  h3, .h3, .s50, .s50_140 {
+    font-size: 30px;
+  }
+
+  h2, .h2, .s60 {
+    font-size: 36px;
+  }
+
+  h1, .h1, .s70 {
+    font-size: 42px;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .s24_30 {
@@ -434,7 +487,7 @@ h1, .h1, .s70 {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
     width: calc(100% - 150px) !important;
   }
