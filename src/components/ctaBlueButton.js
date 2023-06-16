@@ -4,7 +4,7 @@ import styles from '@/styles/cta.module.scss';
 
 const CtaBlueButton = ({
   text = 'Schedule a Call',
-  link = '#',
+  link = 'javascript:void(0)',
   className = '',
   blue = false,
   target = '_self',
@@ -20,9 +20,9 @@ const CtaBlueButton = ({
       )}
 
       <div className={`${styles.ctaButton} ${styles.blueButton} ${className}`}>
-        <Link className={styles.ctaLink} target={target}
+        <a className={styles.ctaLink} target={target}
               onClick={() => Calendly.initPopupWidget({url: 'https://calendly.com/lexim-support'})}
-              href={link} passHref>
+              href={link}>
 
           <div className={styles.ctaLinkInner}>
             <span className='s26_42 fw-500'>{text}</span>
@@ -34,7 +34,7 @@ const CtaBlueButton = ({
             </div>
           </div>
 
-        </Link>
+        </a>
       </div>
     </>
   );
