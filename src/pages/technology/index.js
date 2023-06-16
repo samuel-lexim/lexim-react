@@ -8,7 +8,6 @@ import PageTitle from "@/components/PageTitle";
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
 import accordionStyle from '@/styles/accordion.module.scss';
-import blackAccordionStyles from '@/styles/blackAccordion.module.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
