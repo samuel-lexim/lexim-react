@@ -236,7 +236,8 @@ h1, .h1, .s70 {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 389px) {
+  /* x 0.6 */
   p, .s24_42, .s24_30, .s24_64 {
     font-size: 14px;
   }
@@ -286,7 +287,62 @@ h1, .h1, .s70 {
   }
 
   h1, .h1, .s70 {
-    font-size: 427px;
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 450px) {
+  /* x 0.8 */
+  p, .s24_42, .s24_30, .s24_64 {
+    font-size: 19px;
+  }
+
+  .s26_42 {
+    font-size: 21px;
+  }
+
+  .s28_42, .s28_42 * {
+    font-size: 22px;
+  }
+
+  .s30 {
+    font-size: 24px;
+  }
+
+  h4, .h4 {
+    font-size: 25px;
+  }
+
+  .s34_42, .s34_42 * {
+    font-size: 27px;
+  }
+
+  .s40, .s40_64, .s40_100 {
+    font-size: 32px;
+  }
+
+  .s42_64 {
+    font-size: 34px;
+  }
+
+  .s46_120 {
+    font-size: 37px;
+  }
+
+  .s48_120 {
+    font-size: 38px;
+  }
+
+  h3, .h3, .s50, .s50_140 {
+    font-size: 40px;
+  }
+
+  h2, .h2, .s60 {
+    font-size: 48px;
+  }
+
+  h1, .h1, .s70 {
+    font-size: 56px;
   }
 }
 
