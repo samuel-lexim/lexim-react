@@ -696,7 +696,6 @@ body.about #fp-nav {
 /* Black Slick */
 body.scrollHidden {
   overflow-y: hidden;
-  padding-right: 15px;
 }
 
 body.scrollHidden header {
