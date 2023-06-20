@@ -51,6 +51,15 @@
   }
 }
 
+.flexEnd {
+  display: flex;
+  align-items: end;
+
+  footer {
+    width: 100%;
+  }
+}
+
 .headingUnderLine {
   padding-right: 0;
 

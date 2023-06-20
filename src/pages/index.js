@@ -200,8 +200,12 @@ export default function Home() {
                   </div>
                 </section>
 
-                <Footer/>
+              </div>
 
+              <div className={`${styles.fullPageSection} section`} data-index={6}>
+                <section className={`${styles.homeSection} ${styles.flexEnd} `} id={sections[6]} data-index={6}>
+                    <Footer/>
+                </section>
               </div>
 
 
