@@ -454,8 +454,8 @@ h1, .h1, .s70 {
 
 /* Effect */
 #fullPage .section {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  /*overflow-y: hidden;*/
+  /*overflow-x: hidden;*/
 }
 
 .fp-section.active:not(.initNotRunEffect) ._lineTopEffect,
