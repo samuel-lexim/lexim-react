@@ -3,12 +3,13 @@
 .aboutSection {
   width: 100%;
   height: 100vh;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 
   .innerSection {
     padding-top: 120px;
     position: relative;
     width: 100%;
+    height: 100%;
     padding-right: 20px;
   }
 
