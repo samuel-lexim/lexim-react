@@ -10,9 +10,9 @@ export default function Footer() {
     <footer className={`${styles.footer} FontSui`}>
       <div className={styles.ctaWrap}>
         <div>
-          <CtaButton text='SEND A MESSAGE' />
+          <CtaButton text='SEND A MESSAGE' contactForm={true} />
           <CtaButton text='EMAIL: hello@lexim.tech' link='mailto: hello@lexim.tech' target='_blank' />
-          <CtaButton text='SCHEDULE A CALL' />
+          <CtaButton text='SCHEDULE A CALL' contactForm={true} />
         </div>
       </div>
 
