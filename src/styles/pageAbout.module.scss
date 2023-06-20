@@ -19,6 +19,19 @@
   }
 }
 
+.flexEnd {
+  display: flex;
+  align-items: end;
+
+  &.aboutSection {
+    padding-top: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
 .fullPageSection {
   overflow: hidden;
 }

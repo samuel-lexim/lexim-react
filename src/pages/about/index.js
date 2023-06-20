@@ -254,8 +254,12 @@ export default function About() {
                   </div>
                 </section>
 
-                <Footer/>
+              </div>
 
+              <div className={`${styles.fullPageSection} section`} id={sections[4]} data-index={4}>
+                <section className={`${styles.aboutSection} ${styles.flexEnd} `}>
+                  <Footer/>
+                </section>
               </div>
 
             </div>
