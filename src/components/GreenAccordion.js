@@ -6,19 +6,26 @@ const GreenAccordion = ({
   data = [],
   prefixTitle = true,
   showContent = true,
-  useArrow = true
+  useArrow = true,
+  activeIndex,
+  onAccordionToggle,
 }) => {
 
-  const [activeIndex, setActiveIndex] = useState(false);
+  const [openIndex, setOpenIndex] = useState(false);
   const toggleAccordion = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
+    setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
+
+  // Update openIndex when activeIndex changes in parent component
+  useEffect(() => {
+    setOpenIndex(false);
+  }, [activeIndex]);
 
   return (
     <>
       {data.map((child, index) => (
         <div key={index} className={`${styles.accordionWrap} ${styles[child.layout]} 
-        ${index === activeIndex ? styles.expanded : styles.closed} 
+        ${index === openIndex ? styles.expanded : styles.closed} 
         ${prefixTitle ? styles.hasPrefix : styles.noPrefix} 
         ${showContent ? styles.showContent : styles.emptyContent}`}>
 
@@ -36,7 +43,7 @@ const GreenAccordion = ({
             </div>
           </div>
 
-          {index === activeIndex && (
+          {index === openIndex && (
             <div className={`${styles.accordionContent} s28_42`}
                  dangerouslySetInnerHTML={{__html: child.content}}
             ></div>

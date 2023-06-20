@@ -96,7 +96,9 @@ export default function Technology() {
             </div>
 
             <div className={`${accordionStyle.accordionContent}`}>
-              <GreenAccordion data={GreenTechnologyData}/>
+              <GreenAccordion data={GreenTechnologyData}
+                              activeIndex={activeIndex}
+                              onAccordionToggle={toggleAccordion} />
             </div>
           </div>
 
