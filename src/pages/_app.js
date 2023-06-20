@@ -20,9 +20,13 @@ export default function App({Component, pageProps}) {
   slug = slug.replace(/#/g, ''); // remove #
 
   useEffect(() => {
-    document.body.classList.add(slug); // Add the slug as a class to the body tag
+    if (slug) {
+      document.body.classList.add(slug); // Add the slug as a class to the body tag
+    }
     return () => {
-      document.body.classList.remove(slug); // Remove the class when the component unmounts
+      if (slug) {
+        document.body.classList.remove(slug); // Remove the class when the component unmounts
+      }
     };
   }, [slug]);
   // END - add className to body
