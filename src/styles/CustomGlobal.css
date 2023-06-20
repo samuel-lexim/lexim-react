@@ -236,7 +236,7 @@ h1, .h1, .s70 {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 389px) {
+@media only screen and (max-width: 430px) {
   p, .s24_42, .s24_30, .s24_64 {
     font-size: 14px;
   }
