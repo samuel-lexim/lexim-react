@@ -1,11 +1,11 @@
 @import "variables.module";
 
 .aboutSection {
-  padding-top: 120px;
   height: 100vh;
   overflow-x: hidden;
 
   .innerSection {
+    padding-top: 120px;
     position: relative;
     width: 100%;
     padding-right: 10px;
@@ -315,9 +315,8 @@
 @media only screen and (min-width: 768px) {
 
   .aboutSection {
-    padding-top: 26vw;
-
     .innerSection {
+      padding-top: 26vw;
       padding-right: 10vw;
     }
 
@@ -331,7 +330,9 @@
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: 26.5vw;
+        .innerSection {
+          padding-top: 26.5vw;
+        }
       }
     }
   }
@@ -339,13 +340,17 @@
 
 @media only screen and (min-width: 1200px) {
   .aboutSection {
-    padding-top: 17vw;
+    .innerSection {
+      padding-top: 17vw;
+    }
   }
 
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: 14vw;
+        .innerSection {
+          padding-top: 14vw;
+        }
       }
     }
   }
@@ -353,7 +358,9 @@
 
 @media only screen and (min-width: 1440px) {
   .aboutSection {
-    padding-top: 30vh;
+    .innerSection {
+      padding-top: 30vh;
+    }
 
     .logoImg {
       width: 640px;
@@ -364,7 +371,9 @@
   .fullPageSection {
     &[data-index='0'] {
       .aboutSection {
-        padding-top: calc(30vh - 38px);
+        .innerSection {
+          padding-top: calc(30vh - 38px);
+        }
       }
     }
   }
