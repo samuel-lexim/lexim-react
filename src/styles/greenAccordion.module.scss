@@ -75,12 +75,12 @@
   }
 }
 
-.closed {
+@media only screen and (max-width: 580px) {
+  .downArrow {
+    height: 18px;
+  }
 }
 
-.noPrefix {
-
-}
 
 @media only screen and (min-width: 768px) {
   .accordionWrap {
