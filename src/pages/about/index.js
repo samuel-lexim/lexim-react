@@ -95,7 +95,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft} ${page.pageWrapTop}`}>
                   <div className={styles.innerSection}>
-                    <Link href='/' className='_backInTop'>
+                    <Link href='/' className='_backInTop' scroll={false}>
                       <Image
                         src="/images/LEXIM.svg"
                         alt="Lexim Global"
@@ -178,7 +178,7 @@ export default function About() {
                     <div className={`${styles.ourCustomers}`}>
                       <Slider {...settings} className={styles.aboutSlider}>
                         <div className={styles.customerItem}>
-                          <Link href='https://www.silverts.com'>
+                          <Link href='https://www.silverts.com' scroll={false}>
                             <Image
                               src="/images/customers/silverts.png"
                               alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
@@ -188,7 +188,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.customerItem}>
-                          <Link href='https://www.intertrend.com'>
+                          <Link href='https://www.intertrend.com' scroll={false}>
                             <Image
                               src="/images/customers/intertrend.png"
                               alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
@@ -198,7 +198,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.customerItem}>
-                          <Link href='https://www.heartsoulscrubs.com'>
+                          <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                             <Image
                               src="/images/customers/heartsoul.png"
                               alt='Cute Scrubs for Women | Heartsoul Scrubs'
@@ -208,7 +208,7 @@ export default function About() {
                         </div>
 
                         <div className={styles.customerItem}>
-                          <Link href='https://www.infinityscrubs.com'>
+                          <Link href='https://www.infinityscrubs.com' scroll={false}>
                             <Image
                               src="/images/customers/infinity.png"
                               alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'

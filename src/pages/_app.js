@@ -13,19 +13,25 @@ const metaData = {
 export default function App({Component, pageProps}) {
   // START - add className to body
   const router = useRouter();
-  let slug = router.asPath.substring(1).replace('/', ''); // Extract the slug from the current page's URL
+
+  // Extract the slug from the current page's URL
+  let slug = router.asPath.substring(1).replace('/', '');
   if (slug === '') {
     slug = 'home';
   }
   slug = slug.replace(/#/g, ''); // remove #
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
+    // Add the slug as a class to the body tag
     if (slug) {
-      document.body.classList.add(slug); // Add the slug as a class to the body tag
+      document.body.classList.add(slug);
     }
     return () => {
+      // Remove the class when the component unmounts
       if (slug) {
-        document.body.classList.remove(slug); // Remove the class when the component unmounts
+        document.body.classList.remove(slug);
       }
     };
   }, [slug]);

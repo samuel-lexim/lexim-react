@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed}`}>
         <div className={styles.logoContainer}>
-          <Link href='/'>
+          <Link href='/' scroll={false}>
             <Image
               src="/images/logo.svg"
               alt="Lexim Global"
@@ -45,42 +45,42 @@ export default function Navbar() {
 
       <div className={`${styles.menuPanel} FontSui s48_120`}>
         <div className={styles.menuItem}>
-          <Link href='/about'>
+          <Link href='/about' scroll={false}>
             <span>ABOUT</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/technology'>
+          <Link href='/technology' scroll={false}>
             <span>TECHNOLOGY</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/partnerships'>
+          <Link href='/partnerships' scroll={false}>
             <span>PARTNERSHIPS</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/case-studies'>
+          <Link href='/case-studies' scroll={false}>
             <span>CASE STUDIES</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/testimonials'>
+          <Link href='/testimonials' scroll={false}>
             <span>TESTIMONIALS</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/contact'>
+          <Link href='/contact' scroll={false}>
             <span>CONTACT</span>
             <div className={styles.bottomLine}></div>
           </Link>

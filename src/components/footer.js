@@ -17,7 +17,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.brandWrap}>
-        <Link href='/'>
+        <Link href='/' scroll={false}>
           <Image
             src="/images/LEXIM.svg"
             alt="Lexim Global"

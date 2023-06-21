@@ -115,7 +115,7 @@ export default function Home() {
                     <div className={`${styles.ourCustomers} _rotateFromBottom`}>
 
                       <div className={styles.customerItem}>
-                        <Link href='https://www.silverts.com'>
+                        <Link href='https://www.silverts.com' scroll={false}>
                           <Image
                             src="/images/customers/silverts.jpg"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
@@ -125,7 +125,7 @@ export default function Home() {
                       </div>
 
                       <div className={styles.customerItem}>
-                        <Link href='https://www.intertrend.com'>
+                        <Link href='https://www.intertrend.com' scroll={false}>
                           <Image
                             src="/images/customers/intertrend.jpg"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
@@ -135,7 +135,7 @@ export default function Home() {
                       </div>
 
                       <div className={styles.customerItem}>
-                        <Link href='https://www.heartsoulscrubs.com'>
+                        <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/heartsoul.jpg"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
@@ -145,7 +145,7 @@ export default function Home() {
                       </div>
 
                       <div className={styles.customerItem}>
-                        <Link href='https://www.infinityscrubs.com'>
+                        <Link href='https://www.infinityscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/infinity.jpg"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
@@ -170,10 +170,10 @@ export default function Home() {
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
                       <div className={`${styles.rightColumn} _backInBottom`}>
-                        <p className='s28_42'><Link href='/#'><span>Systems Integration</span></Link></p>
-                        <p className='s28_42'><Link href='/#'><span>Order Management Systems</span></Link></p>
-                        <p className='s28_42'><Link href='/#'><span>ERP Customization</span></Link></p>
-                        <p className='s28_42'><Link href='/#'><span>Enterprise E-Commerce</span></Link></p>
+                        <p className='s28_42'><Link href={''} scroll={false}><span>Systems Integration</span></Link></p>
+                        <p className='s28_42'><Link href={''} scroll={false}><span>Order Management Systems</span></Link></p>
+                        <p className='s28_42'><Link href={''} scroll={false}><span>ERP Customization</span></Link></p>
+                        <p className='s28_42'><Link href={''} scroll={false}><span>Enterprise E-Commerce</span></Link></p>
                       </div>
                     </div>
 
