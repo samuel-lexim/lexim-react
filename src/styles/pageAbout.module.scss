@@ -40,7 +40,7 @@
   overflow: hidden;
 }
 
-// Our Customer Slider
+// Our Customer
 .ourCustomers {
   display: flex;
   flex-direction: column;
@@ -60,6 +60,10 @@
 @media only screen and (max-width: 450px) {
   .ourCustomers {
     .customerItem {
+      width: 100%;
+      a {
+        width: 100%;
+      }
       img {
         width: 50%;
         height: auto;
@@ -107,7 +111,7 @@
   }
 }
 
-// # Our customer slider
+// # Our customer
 
 // Line
 .aboutLine {
