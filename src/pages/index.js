@@ -112,9 +112,9 @@ export default function Home() {
                       <h2 className={`s50_140 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
 
-                    <div className={`${styles.ourCustomers} _rotateFromBottom`}>
+                    <div className={`${styles.ourCustomers}`}>
 
-                      <div className={styles.customerItem}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={0} style={{'transition-delay':'0s'}}>
                         <Link href='https://www.silverts.com' scroll={false}>
                           <Image
                             src="/images/customers/silverts.png"
@@ -124,7 +124,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={styles.customerItem}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={1} style={{'transition-delay':'0.5s'}}>
                         <Link href='https://www.intertrend.com' scroll={false}>
                           <Image
                             src="/images/customers/intertrend.png"
@@ -134,7 +134,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={styles.customerItem}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={2} style={{'transition-delay':'1s'}}>
                         <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/heartsoul.png"
@@ -144,7 +144,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={styles.customerItem}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={3} style={{'transition-delay':'1.5s'}}>
                         <Link href='https://www.infinityscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/infinity.png"
