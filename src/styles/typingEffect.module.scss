@@ -1,0 +1,48 @@
+.typingEffect:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 20px;
+  border-left: 2px solid #000;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: typing 7s steps(40, end), blink-caret 0.75s step-end infinite;
+  -moz-animation: typing 7s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 7s steps(40, end), blink-caret 0.75s infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 100%
+  }
+  to {
+    width: 0
+  }
+}
+
+@-moz-keyframes typing {
+  from {
+    width: 100%
+  }
+  to {
+    width: 0
+  }
+}
+@-webkit-keyframes typing {
+  from {
+    width: 100%
+  }
+  to {
+    width: 0
+  }
+}

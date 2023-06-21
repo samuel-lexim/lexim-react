@@ -1,8 +1,9 @@
 import Layout from "@/components/layout";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
 import CtaBlueButton from "@/components/ctaBlueButton";
+import TypingEffect from '@/components/TypingEffect';
 
 // Docs: https://alvarotrigo.com/fullPage/docs/
 import ReactFullPage from "@fullpage/react-fullpage";
@@ -27,12 +28,29 @@ export default function Home() {
   }, []);
   // END - Run effect in the first time page load
 
+  // Typing Effect
+  const [typingStarted, setTypingStarted] = useState(false);
+
   return (
     <Layout className='pageHome'>
 
       <ReactFullPage
-        render={({state}) => {
+        afterLoad={(origin, destination, direction, trigger) => {
+          console.log('direction ' + direction);
+          console.log('trigger ' + trigger);
 
+          if (origin.index === 1) {
+            setTypingStarted(false);
+            console.log("origin.index === 1");
+          }
+
+          if (destination.index === 1) {
+            setTypingStarted(true);
+            console.log("destination.index === 1");
+          }
+        }}
+
+        render={({state}) => {
           return (
             <div id='fullPage' className='fw-500'>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
@@ -67,11 +85,19 @@ export default function Home() {
 
                 <section className={` ${styles.homeSection}`}
                          id={sections[1]} data-index={1}>
-                  <div className={`${styles.innerSection} _backInLeft`}>
+                  <div className={`${styles.innerSection} _backInLeft22`}>
                     <div className={`${styles.content} `}>
-                      <p>Our team <span className={page.blueText}>integrates systems, connects front-end to back-end, and streamlines your business with automation
-                        </span> to move at the pace of your customers.
-                      </p>
+
+                      {typingStarted &&
+                      <>
+                        <p>
+                          <TypingEffect start={typingStarted} text='Our team ' />
+                          <TypingEffect start={typingStarted} classText={page.blueText} after={900} text='integrates systems, connects front-end to back-end, and streamlines your business with automation ' />
+                          <TypingEffect start={typingStarted} after={10800} text='to move at the pace of your customers.' />
+                        </p>
+                      </>
+                      }
+
                     </div>
                   </div>
                 </section>
