@@ -12,8 +12,6 @@ import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
 import {useEffect, useRef} from "react";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 
 export default function About() {
   const sections = ['About0', 'About1', 'About2', 'About3', 'About4', 'About5', 'About6', 'About7'];
@@ -110,7 +108,7 @@ export default function About() {
                         <li className={styles.activatedDot}><a onClick={() => clickToScrollPage(0)}><span></span></a></li>
                         <li><a onClick={() => clickToScrollPage(1)}><span></span></a></li>
                         <li><a onClick={() => clickToScrollPage(2)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(3)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
@@ -133,16 +131,16 @@ export default function About() {
 
                     <div className={`${styles.contentWrap} _backInRight`}>
                       <ul className={styles.virtualNav}>
-                        <li><a  onClick={() => clickToScrollPage(0)}><span></span></a></li>
-                        <li className={styles.activatedDot}><a  onClick={() => clickToScrollPage(1)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(2)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(3)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
-                      <p className='fw-500'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
-                      <p className='fw-300'>We provide custom development that connects <span className={page.yellowHighlight}>ERP, OMS, and enterprise e-commerce</span>. You’ll be surprised at how
-                        quickly we work, often delivering projects ahead of schedule, and how affordable we are for any size budget.</p>
+                        <p className='fw-500'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
+                        <p className='fw-300'>We provide custom development that connects <span className={page.yellowHighlight}>ERP, OMS, and enterprise e-commerce</span>. You’ll be surprised at how
+                          quickly we work, often delivering projects ahead of schedule, and how affordable we are for any size budget.</p>
                       </div>
                     </div>
                   </div>
@@ -161,10 +159,10 @@ export default function About() {
 
                     <div className={`${styles.contentWrap} _backInLeft`}>
                       <ul className={styles.virtualNav}>
-                        <li><a  onClick={() => clickToScrollPage(0)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(1)}><span></span></a></li>
-                        <li className={styles.activatedDot}><a  onClick={() => clickToScrollPage(2)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(3)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
@@ -176,47 +174,45 @@ export default function About() {
                     <div className='pad20'></div>
 
                     <div className={`${styles.ourCustomers}`}>
-                      <Slider {...settings} className={styles.aboutSlider}>
-                        <div className={styles.customerItem}>
-                          <Link href='https://www.silverts.com' scroll={false}>
-                            <Image
-                              src="/images/customers/silverts.png"
-                              alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                              width={194} height={70}
-                            />
-                          </Link>
-                        </div>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0s'}}>
+                        <Link href='https://www.silverts.com' scroll={false}>
+                          <Image
+                            src="/images/customers/silverts.png"
+                            alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                            width={194} height={70}
+                          />
+                        </Link>
+                      </div>
 
-                        <div className={styles.customerItem}>
-                          <Link href='https://www.intertrend.com' scroll={false}>
-                            <Image
-                              src="/images/customers/intertrend.png"
-                              alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                              width={230} height={70}
-                            />
-                          </Link>
-                        </div>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0.5s'}}>
+                        <Link href='https://www.intertrend.com' scroll={false}>
+                          <Image
+                            src="/images/customers/intertrend.png"
+                            alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                            width={230} height={70}
+                          />
+                        </Link>
+                      </div>
 
-                        <div className={styles.customerItem}>
-                          <Link href='https://www.heartsoulscrubs.com' scroll={false}>
-                            <Image
-                              src="/images/customers/heartsoul.png"
-                              alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                              width={160} height={70}
-                            />
-                          </Link>
-                        </div>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1s'}}>
+                        <Link href='https://www.heartsoulscrubs.com' scroll={false}>
+                          <Image
+                            src="/images/customers/heartsoul.png"
+                            alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                            width={160} height={70}
+                          />
+                        </Link>
+                      </div>
 
-                        <div className={styles.customerItem}>
-                          <Link href='https://www.infinityscrubs.com' scroll={false}>
-                            <Image
-                              src="/images/customers/infinity.png"
-                              alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                              width={139} height={70}
-                            />
-                          </Link>
-                        </div>
-                      </Slider>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1.5s'}}>
+                        <Link href='https://www.infinityscrubs.com' scroll={false}>
+                          <Image
+                            src="/images/customers/infinity.png"
+                            alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                            width={139} height={70}
+                          />
+                        </Link>
+                      </div>
                     </div>
 
                   </div>
@@ -235,10 +231,10 @@ export default function About() {
 
                     <div className={`${styles.contentWrap}`}>
                       <ul className={styles.virtualNav}>
-                        <li><a  onClick={() => clickToScrollPage(0)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(1)}><span></span></a></li>
-                        <li><a  onClick={() => clickToScrollPage(2)}><span></span></a></li>
-                        <li className={styles.activatedDot}><a  onClick={() => clickToScrollPage(3)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(0)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(1)}><span></span></a></li>
+                        <li><a onClick={() => clickToScrollPage(2)}><span></span></a></li>
+                        <li className={styles.activatedDot}><a onClick={() => clickToScrollPage(3)}><span></span></a></li>
                       </ul>
 
                       <div className={styles._rightContent}>
