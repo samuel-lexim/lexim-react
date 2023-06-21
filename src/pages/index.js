@@ -117,7 +117,7 @@ export default function Home() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.silverts.com' scroll={false}>
                           <Image
-                            src="/images/customers/silverts.jpg"
+                            src="/images/customers/silverts.png"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
                             width={227} height={53}
                           />
@@ -127,7 +127,7 @@ export default function Home() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.intertrend.com' scroll={false}>
                           <Image
-                            src="/images/customers/intertrend.jpg"
+                            src="/images/customers/intertrend.png"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
                             width={227} height={57}
                           />
@@ -137,7 +137,7 @@ export default function Home() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                           <Image
-                            src="/images/customers/heartsoul.jpg"
+                            src="/images/customers/heartsoul.png"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
                             width={155} height={65}
                           />
@@ -147,7 +147,7 @@ export default function Home() {
                       <div className={styles.customerItem}>
                         <Link href='https://www.infinityscrubs.com' scroll={false}>
                           <Image
-                            src="/images/customers/infinity.jpg"
+                            src="/images/customers/infinity.png"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
                             width={135} height={65}
                           />
