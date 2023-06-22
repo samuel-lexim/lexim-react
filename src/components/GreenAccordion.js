@@ -32,7 +32,7 @@ const GreenAccordion = ({
           <div className={styles.accordionHeader} onClick={() => toggleAccordion(index)}>
             <div className={`${styles.headingContainer} `}>
               <span className={styles.prefixTitle}>{child.prefixTitle}</span>
-              <h2 className={`${styles._heading} s40_64`}>{child.title}</h2>
+              <h2 className={`${styles._heading} s40_64`} dangerouslySetInnerHTML={{__html: child.title}}></h2>
               {useArrow &&
                 <svg className={styles.downArrow} width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path

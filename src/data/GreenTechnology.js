@@ -32,7 +32,7 @@ const GreenTechnologyData = [
   },
   {
     prefixTitle: '05.',
-    title: 'MICROSERVICES AND SERVERLESS COMPUTING',
+    title: 'MICROSERVICES AND<br/> SERVERLESS COMPUTING',
     layout: 'normal',
     content: '<p>Developing Microservices Architecture</p>' +
       '<p>Code Refactoring</p>' +
