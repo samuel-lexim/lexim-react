@@ -410,7 +410,7 @@ h1, .h1, .s70 {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   .s24_30 {
     font-size: 30px;
   }
@@ -577,7 +577,7 @@ h1, .h1, .s70 {
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   .fp-section.active:not(.initNotRunEffect) ._underLineEffect:after {
     width: calc(100% - 150px) !important;
   }
@@ -725,7 +725,7 @@ body.about #fp-nav {
 }
 
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   body.about #fp-nav.fp-left {
     top: calc(30vh + 163px);
     left: 168px;
@@ -810,7 +810,7 @@ body.scrollHidden header {
   border-color: #0827F5;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   .blackSlickSlider .slick-dots {
     left: -63px;
   }

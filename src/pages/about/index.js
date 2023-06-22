@@ -28,7 +28,7 @@ export default function About() {
     centerPadding: '40px',
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1400,
         settings: {
           slidesToShow: 3,
           centerPadding: '30px',
