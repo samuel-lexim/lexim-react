@@ -12,6 +12,9 @@
     position: relative;
     width: 100%;
     height: 100%;
+  }
+
+  ._rightContent {
     padding-right: 20px;
   }
 
@@ -41,55 +44,42 @@
 }
 
 // Our Customer
-.ourCustomers {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: center;
-
-  .customerItem {
-    width: 0;
-    flex: 50% 0 0;
+@media only screen and (min-width: 580px) {
+  .ourCustomers {
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 1119px) {
-  .ourCustomers {
-    .customerItem {
-      img {
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        max-width: 200px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1120px) {
-  .ourCustomers {
-    margin-top: 20px;
-    display: inline-block;
-    width: 100%;
+    padding-left: calc(15vw - 10px - 70px);
+    padding-right: calc(15vw - 10px - 70px);
 
     .customerItem {
       display: inline-block;
-      padding-left: 0;
-      padding-right: 0;
-      margin-right: 40px;
-      width: auto;
+      margin-bottom: 20px;
+      margin-left: calc(15vw - 10px - 70px); // (100vw - 60px -420px ) / 6
+      margin-right:calc(15vw - 10px - 70px);
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ourCustomers {
+    padding-left: calc(9.4vw - 7px - 73px);
+    padding-right: calc(9.4vw - 7px - 73px);
+
+    .customerItem {
+      margin-left: calc(9.4vw - 7px - 73px); // (100vw - 6vw - 64px - 723px) / 10
+      margin-right: calc(9.4vw - 7px - 73px);
     }
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .ourCustomers {
+    padding-left: calc(10vw - 17px - 73px);
+    padding-right: calc(10vw - 17px - 73px);
+
     .customerItem {
-      margin-right: 60px;
+      margin-left: calc(10vw - 17px - 73px); // (100vw - 170px - 723px) / 10
+      margin-right: calc(10vw - 17px - 73px);
     }
   }
 }
@@ -362,11 +352,14 @@
 
 
 @media only screen and (min-width: 768px) {
-
   .aboutSection {
     .innerSection {
       padding-top: 160px;
-      padding-right: 10vw;
+      padding-right: 0;
+    }
+
+    ._rightContent {
+      padding-right: 30px;
     }
 
     .logoImg {
@@ -411,6 +404,11 @@
       padding-top: 100px;
     }
 
+    ._rightContent {
+      padding-right: 0;
+      max-width: 1175px;
+    }
+
     .logoImg {
       width: 640px;
       margin-bottom: 50px;
@@ -423,6 +421,12 @@
         .innerSection {
           padding-top: 150px;
         }
+      }
+    }
+
+    &[data-index='2'] {
+      ._rightContent {
+        max-width: 1090px;
       }
     }
   }
