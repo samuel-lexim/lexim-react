@@ -95,6 +95,10 @@
 
   .customerItem {
     margin-bottom: 20px;
+
+    img {
+      width: auto;
+    }
   }
 }
 
@@ -131,7 +135,7 @@
 @media only screen and (min-width: 1400px) {
   .ourCustomers {
     .customerItem {
-      margin-right: 60px;
+      margin-right: calc(22.5vw - 181px);
     }
   }
 }

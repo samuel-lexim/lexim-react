@@ -119,7 +119,7 @@ export default function Home() {
                           <Image
                             src="/images/customers/silverts.png"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                            width={227} height={53}
+                            width={194} height={70}
                           />
                         </Link>
                       </div>
@@ -129,7 +129,7 @@ export default function Home() {
                           <Image
                             src="/images/customers/intertrend.png"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                            width={227} height={57}
+                            width={230} height={70}
                           />
                         </Link>
                       </div>
@@ -139,7 +139,7 @@ export default function Home() {
                           <Image
                             src="/images/customers/heartsoul.png"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                            width={155} height={65}
+                            width={160} height={70}
                           />
                         </Link>
                       </div>
@@ -149,7 +149,7 @@ export default function Home() {
                           <Image
                             src="/images/customers/infinity.png"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                            width={135} height={65}
+                            width={139} height={70}
                           />
                         </Link>
                       </div>
