@@ -52,7 +52,7 @@ export default function Home() {
 
         render={({state}) => {
           return (
-            <div id='fullPage' className='fw-500'>
+            <div id='HomeFullPage' className='fw-500'>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
                 <div className={styles.lineHome}>
                   <span className={`${styles._lineTop} _lineTopEffect`}></span>
@@ -115,7 +115,7 @@ export default function Home() {
                     <div className={`${styles.ourCustomers}`}>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} data-index={0} style={{'transition-delay':'0.5s'}}>
-                        <Link href='https://www.silverts.com' scroll={false}>
+                        <Link href='https://www.silverts.com'>
                           <Image
                             src="/images/customers/silverts.png"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
@@ -125,7 +125,7 @@ export default function Home() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} data-index={1} style={{'transition-delay':'1s'}}>
-                        <Link href='https://www.intertrend.com' scroll={false}>
+                        <Link href='https://www.intertrend.com'>
                           <Image
                             src="/images/customers/intertrend.png"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
@@ -135,7 +135,7 @@ export default function Home() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} data-index={2} style={{'transition-delay':'1.5s'}}>
-                        <Link href='https://www.heartsoulscrubs.com' scroll={false}>
+                        <Link href='https://www.heartsoulscrubs.com'>
                           <Image
                             src="/images/customers/heartsoul.png"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
@@ -145,7 +145,7 @@ export default function Home() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} data-index={3} style={{'transition-delay':'2s'}}>
-                        <Link href='https://www.infinityscrubs.com' scroll={false}>
+                        <Link href='https://www.infinityscrubs.com'>
                           <Image
                             src="/images/customers/infinity.png"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
@@ -171,13 +171,13 @@ export default function Home() {
                       <div className={styles.leftColumn}></div>
                       <div className={`${styles.rightColumn}`}>
                         <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
-                          <Link href={''} scroll={false}><span>Systems Integration</span></Link></p>
+                          <Link href={'/system-integration'} scroll={true}><span>Systems Integration</span></Link></p>
                         <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
-                          <Link href={''} scroll={false}><span>Order Management Systems</span></Link></p>
+                          <Link href={''} scroll={true}><span>Order Management Systems</span></Link></p>
                         <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
-                          <Link href={''} scroll={false}><span>ERP Customization</span></Link></p>
+                          <Link href={''} scroll={true}><span>ERP Customization</span></Link></p>
                         <p className='_slideBottomToTop s28_42' style={{'transition-delay':'2s'}}>
-                          <Link href={''} scroll={false}><span>Enterprise E-Commerce</span></Link></p>
+                          <Link href={''} scroll={true}><span>Enterprise E-Commerce</span></Link></p>
                       </div>
                     </div>
 

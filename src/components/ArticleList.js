@@ -11,7 +11,7 @@ const ArticleList = (
 ) => {
 
   return (
-    <Link href={link} className={styles.link} scroll={false}>
+    <Link href={link} className={styles.link} scroll={true}>
       <div className={`${styles.articleListWrap} ${className}
       ${isFirst ? styles.isFirst : ''}
       ${isLast ? styles.isLast : ''}

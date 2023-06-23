@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed}`}>
         <div className={styles.logoContainer}>
-          <Link href='/' scroll={false}>
+          <Link href='/' scroll={true}>
             <Image
               src="/images/logo.svg"
               alt="Lexim Global"
@@ -45,42 +45,42 @@ export default function Navbar() {
 
       <div className={`${styles.menuPanel} FontSui s48_120`}>
         <div className={styles.menuItem}>
-          <Link href='/about' scroll={false}>
+          <Link href='/about' scroll={true}>
             <span>ABOUT</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/technology' scroll={false}>
+          <Link href='/technology' scroll={true}>
             <span>TECHNOLOGY</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/partnerships' scroll={false}>
+          <Link href='/partnerships' scroll={true}>
             <span>PARTNERSHIPS</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/case-studies' scroll={false}>
+          <Link href='/case-studies' scroll={true}>
             <span>CASE STUDIES</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/testimonials' scroll={false}>
+          <Link href='/testimonials' scroll={true}>
             <span>TESTIMONIALS</span>
             <div className={styles.bottomLine}></div>
           </Link>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/contact' scroll={false}>
+          <Link href='/contact' scroll={true}>
             <span>CONTACT</span>
             <div className={styles.bottomLine}></div>
           </Link>

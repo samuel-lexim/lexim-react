@@ -65,7 +65,6 @@ export default function About() {
   // END - Run effect in the first time page load
 
   // Create virtual buttons to click to scroll page
-  const fullPageRef = useRef(null);
   const clickToScrollPage = (index) => {
     const fpNavLinks = document.querySelectorAll("#fp-nav a");
     if (fpNavLinks[index]) {
@@ -84,7 +83,7 @@ export default function About() {
         render={({state, fullPageApi}) => {
 
           return (
-            <div id='fullPage'>
+            <div id='AboutFullPage'>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
                   <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
@@ -93,7 +92,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <Link href='/' className='_backInTop' scroll={false}>
+                    <Link href='/' className='_backInTop' scroll={true}>
                       <Image
                         src="/images/LEXIM.svg"
                         alt="Lexim Global"
@@ -175,7 +174,7 @@ export default function About() {
 
                     <div className={`${styles.ourCustomers}`}>
                       <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0.5s'}}>
-                        <Link href='https://www.silverts.com' scroll={false}>
+                        <Link href='https://www.silverts.com'>
                           <Image
                             src="/images/customers/silverts.png"
                             alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
@@ -185,7 +184,7 @@ export default function About() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1s'}}>
-                        <Link href='https://www.intertrend.com' scroll={false}>
+                        <Link href='https://www.intertrend.com'>
                           <Image
                             src="/images/customers/intertrend.png"
                             alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
@@ -195,7 +194,7 @@ export default function About() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1.5s'}}>
-                        <Link href='https://www.heartsoulscrubs.com' scroll={false}>
+                        <Link href='https://www.heartsoulscrubs.com'>
                           <Image
                             src="/images/customers/heartsoul.png"
                             alt='Cute Scrubs for Women | Heartsoul Scrubs'
@@ -205,7 +204,7 @@ export default function About() {
                       </div>
 
                       <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '2s'}}>
-                        <Link href='https://www.infinityscrubs.com' scroll={false}>
+                        <Link href='https://www.infinityscrubs.com'>
                           <Image
                             src="/images/customers/infinity.png"
                             alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'

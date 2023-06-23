@@ -22,8 +22,6 @@ export default function App({Component, pageProps}) {
   slug = slug.replace(/#/g, ''); // remove #
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     // Add the slug as a class to the body tag
     if (slug) {
       document.body.classList.add(slug);

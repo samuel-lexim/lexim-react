@@ -54,7 +54,7 @@ export default function ArticlePage() {
           )}
 
           <div className={styles.backLink}>
-            <Link href='/case-studies' scroll={false}>
+            <Link href='/case-studies' scroll={true}>
               <div className={styles.backLinkInner}>
                 <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
