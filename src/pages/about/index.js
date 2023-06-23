@@ -239,7 +239,7 @@ export default function About() {
 
                       <div className={styles._rightContent}>
                         <div className={`_backInRight`}>
-                          <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam and soon in Seoul, Korea.</p>
+                          <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam.</p>
                           <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
                             economy.</p>
                         </div>

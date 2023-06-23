@@ -27,17 +27,17 @@ const CaseStudiesData = [
     title: 'Infinity Scrubs / Heartsoul Scrubs',
     subHeading: 'A Website That Integrates to Magento',
     overview:
-      '<h4>CDI was struggling with the website for Infinity Scrubs and Heartsoul Scrubs.</h4>' +
-      '<p>It had taken a year and a half to create, but it wasn’t fully functional and the design resembled a catalog more than an e-commerce store. Integrations were only partially working, causing issues with data feeds for inventory and order-to-shipment. To make matters worse, the website wasn\'t following Magento\'s standard practices, and the mobile version was outdated. CDI was essentially paying for a website that wasn\'t delivering results.</p>'
+      '<h4>CBI was struggling with the website for Infinity Scrubs and Heartsoul Scrubs.</h4>' +
+      '<p>It had taken a year and a half to create, but it wasn’t fully functional and the design resembled a catalog more than an e-commerce store. Integrations were only partially working, causing issues with data feeds for inventory and order-to-shipment. To make matters worse, the website wasn\'t following Magento\'s standard practices, and the mobile version was outdated. CBI was essentially paying for a website that wasn\'t delivering results.</p>'
     ,
 
     challenge:
-      '<h4>That\'s when Lexim stepped in to save the day. They worked closely with CDI\'s marketing team to design a new website that was efficient and easy to navigate.</h4>' +
+      '<h4>That\'s when Lexim stepped in to save the day. They worked closely with CBI\'s marketing team to design a new website that was efficient and easy to navigate.</h4>' +
       '<p>Lexim provided architectural guidance and completely revamped the website in just three months. They fixed broken code, faulty integrations, as well as compliance violations to make sure that the website was up to Magento\'s standards.</p>'
     ,
 
     process:
-      '<p>Thanks to Lexim\'s efforts, e-commerce sales started to take off. After the website launched, the marketing team worked hard to kickstart advertising campaigns, resulting in an impressive 800% increase in sales compared to the old website. With a combined effort between marketing and Lexim, CDI was able to turn things around and finally see the results they had been hoping for.</p>'
+      '<p>Thanks to Lexim\'s efforts, e-commerce sales started to take off. After the website launched, the marketing team worked hard to kickstart advertising campaigns, resulting in an impressive 800% increase in sales compared to the old website. With a combined effort between marketing and Lexim, CBI was able to turn things around and finally see the results they had been hoping for.</p>'
 
   },
   {
@@ -60,7 +60,7 @@ const CaseStudiesData = [
     title: 'Cherokee Uniforms',
     subHeading: 'Streamlining Systems',
     overview:
-      '<h4>CDI-owned Cherokee Uniforms is a top player in the medical scrubs industry. They approached Lexim with a complex back-end system called Jesta handling order fulfillment and accounting.</h4>' +
+      '<h4>CBI-owned Cherokee Uniforms is a top player in the medical scrubs industry. They approached Lexim with a complex back-end system called Jesta handling order fulfillment and accounting.</h4>' +
       '<p>The front-end system was Salesforce Commerce Cloud, while the Order Management System was Netsuite, leading to a high level of complexity.</p>'
     ,
 
