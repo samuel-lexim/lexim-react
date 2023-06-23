@@ -174,7 +174,7 @@ export default function About() {
                     <div className='pad20'></div>
 
                     <div className={`${styles.ourCustomers}`}>
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0.5s'}}>
                         <Link href='https://www.silverts.com' scroll={false}>
                           <Image
                             src="/images/customers/silverts.png"
@@ -184,7 +184,7 @@ export default function About() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0.5s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1s'}}>
                         <Link href='https://www.intertrend.com' scroll={false}>
                           <Image
                             src="/images/customers/intertrend.png"
@@ -194,7 +194,7 @@ export default function About() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1.5s'}}>
                         <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/heartsoul.png"
@@ -204,7 +204,7 @@ export default function About() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1.5s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '2s'}}>
                         <Link href='https://www.infinityscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/infinity.png"
