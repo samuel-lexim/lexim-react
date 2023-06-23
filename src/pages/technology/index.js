@@ -33,6 +33,7 @@ export default function Technology() {
     slidesToShow: 1,
     slidesToScroll: 1,
     verticalSwiping: true,
+    speed: 1200,
     // vertical: true,
   };
 
