@@ -31,23 +31,38 @@ export default function Home() {
   // Typing Effect
   const [typingStarted, setTypingStarted] = useState(false);
 
+  // Logo Effect
+  const [logoStarted, setLogoStarted] = useState(false);
+
+
   return (
     <Layout className='pageHome'>
 
       <ReactFullPage
         afterLoad={(origin, destination, direction, trigger) => {
-          console.log('direction ' + direction);
-          console.log('trigger ' + trigger);
-
+          // Typing Effect
           if (origin.index === 1) {
             setTypingStarted(false);
-            console.log("origin.index === 1");
           }
-
           if (destination.index === 1) {
             setTypingStarted(true);
-            console.log("destination.index === 1");
           }
+          // End - Typing Effect
+
+          // Logo Effect
+          if (origin.index === 2) {
+            setLogoStarted(false);
+          }
+          if (destination.index === 2) {
+            setLogoStarted(true);
+            setTimeout(() => {
+              let elements = document.querySelectorAll('.' + styles.customerItem);
+              elements.forEach((element) => {
+                element.classList.add(styles._slideRightToLeft);
+              });
+            }, 200)
+          }
+          // End - Logo Effect
         }}
 
         render={({state}) => {
@@ -112,49 +127,53 @@ export default function Home() {
                       <h2 className={`s50_140 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
 
-                    <div className={`${styles.ourCustomers}`}>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={0} style={{'transition-delay':'0.5s'}}>
-                        <Link href='https://www.silverts.com'>
-                          <Image
-                            src="/images/customers/silverts.png"
-                            alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                            width={194} height={70}
-                          />
-                        </Link>
+                      <div className={`${styles.ourCustomers}`}>
+                        {logoStarted &&
+                          <>
+                            <div className={`${styles.customerItem} `} style={{'transition-delay': '0s'}}>
+                              <Link href='https://www.silverts.com'>
+                                <Image
+                                  src="/images/customers/silverts.png"
+                                  alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                                  width={194} height={70}
+                                />
+                              </Link>
+                            </div>
+
+                            <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
+                              <Link href='https://www.intertrend.com'>
+                                <Image
+                                  src="/images/customers/intertrend.png"
+                                  alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                                  width={230} height={70}
+                                />
+                              </Link>
+                            </div>
+
+                            <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
+                              <Link href='https://www.heartsoulscrubs.com'>
+                                <Image
+                                  src="/images/customers/heartsoul.png"
+                                  alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                                  width={160} height={70}
+                                />
+                              </Link>
+                            </div>
+
+                            <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
+                          <Link href='https://www.infinityscrubs.com'>
+                            <Image
+                              src="/images/customers/infinity.png"
+                              alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                              width={139} height={70}
+                            />
+                          </Link>
+                        </div>
+                          </>
+                        }
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={1} style={{'transition-delay':'1s'}}>
-                        <Link href='https://www.intertrend.com'>
-                          <Image
-                            src="/images/customers/intertrend.png"
-                            alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                            width={230} height={70}
-                          />
-                        </Link>
-                      </div>
-
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={2} style={{'transition-delay':'1.5s'}}>
-                        <Link href='https://www.heartsoulscrubs.com'>
-                          <Image
-                            src="/images/customers/heartsoul.png"
-                            alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                            width={160} height={70}
-                          />
-                        </Link>
-                      </div>
-
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={3} style={{'transition-delay':'2s'}}>
-                        <Link href='https://www.infinityscrubs.com'>
-                          <Image
-                            src="/images/customers/infinity.png"
-                            alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                            width={139} height={70}
-                          />
-                        </Link>
-                      </div>
-
-                    </div>
                   </div>
                 </section>
               </div>

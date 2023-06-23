@@ -558,19 +558,6 @@ h1, .h1, .s70 {
   transform: rotate(0deg);
 }
 
-.fp-section ._slideRightToLeft {
-  transform: translateX(100vw);
-  opacity: 0;
-  transition-duration: 1s, 1s;
-  transition-timing-function: ease, ease;
-  transition-property: transform, opacity;
-}
-
-.fp-section.active:not(.initNotRunEffect) ._slideRightToLeft {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .fp-section ._slideBottomToTop {
   transform: translateY(100vh);
   opacity: 0;
