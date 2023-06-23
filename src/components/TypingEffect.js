@@ -5,7 +5,7 @@ const TypingEffect = (
   {
     classText, text,
     after = 0,
-    speed = 30,
+    speed = 40,
     start = false
   }
 ) => {
