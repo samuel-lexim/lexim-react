@@ -153,6 +153,12 @@
   }
 
   .rightColumn {
+    a {
+      &:hover {
+        text-decoration: none;
+        color: $color-Blue;
+      }
+    }
   }
 }
 
@@ -278,27 +284,23 @@
 
   .lineHome {
     ._lineTop {
-      height: 2px;
       top: 56vh;
       margin-top: 150px;
       right: 0;
     }
 
     ._lineBottom {
-      height: 2px;
       top: 56vh;
       right: 40px;
     }
 
     ._lineLeft {
-      height: 2px;
       top: 50px;
       right: 24vw;
       transform: rotate(-19deg);
     }
 
     ._lineRight {
-      height: 2px;
       top: 100px;
       left: 30vw;
       transform: rotate(13deg);
