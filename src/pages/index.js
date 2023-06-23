@@ -114,7 +114,7 @@ export default function Home() {
 
                     <div className={`${styles.ourCustomers}`}>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={0} style={{'transition-delay':'0s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={0} style={{'transition-delay':'0.5s'}}>
                         <Link href='https://www.silverts.com' scroll={false}>
                           <Image
                             src="/images/customers/silverts.png"
@@ -124,7 +124,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={1} style={{'transition-delay':'0.5s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={1} style={{'transition-delay':'1s'}}>
                         <Link href='https://www.intertrend.com' scroll={false}>
                           <Image
                             src="/images/customers/intertrend.png"
@@ -134,7 +134,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={2} style={{'transition-delay':'1s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={2} style={{'transition-delay':'1.5s'}}>
                         <Link href='https://www.heartsoulscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/heartsoul.png"
@@ -144,7 +144,7 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={3} style={{'transition-delay':'1.5s'}}>
+                      <div className={`${styles.customerItem} _slideRightToLeft`} data-index={3} style={{'transition-delay':'2s'}}>
                         <Link href='https://www.infinityscrubs.com' scroll={false}>
                           <Image
                             src="/images/customers/infinity.png"
@@ -169,11 +169,15 @@ export default function Home() {
 
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
-                      <div className={`${styles.rightColumn} _backInBottom`}>
-                        <p className='s28_42'><Link href={''} scroll={false}><span>Systems Integration</span></Link></p>
-                        <p className='s28_42'><Link href={''} scroll={false}><span>Order Management Systems</span></Link></p>
-                        <p className='s28_42'><Link href={''} scroll={false}><span>ERP Customization</span></Link></p>
-                        <p className='s28_42'><Link href={''} scroll={false}><span>Enterprise E-Commerce</span></Link></p>
+                      <div className={`${styles.rightColumn}`}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                          <Link href={''} scroll={false}><span>Systems Integration</span></Link></p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                          <Link href={''} scroll={false}><span>Order Management Systems</span></Link></p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                          <Link href={''} scroll={false}><span>ERP Customization</span></Link></p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'2s'}}>
+                          <Link href={''} scroll={false}><span>Enterprise E-Commerce</span></Link></p>
                       </div>
                     </div>
 
@@ -192,10 +196,13 @@ export default function Home() {
 
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
-                      <div className={`${styles.rightColumn} _backInBottom`}>
-                        <p className='s28_42'>1. We’ll understand your challenges</p>
-                        <p className='s28_42'>2. Scope the project</p>
-                        <p className='s28_42'>3. And build a team that’s customized for your specific needs</p>
+                      <div className={`${styles.rightColumn}`}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                          1. We’ll understand your challenges</p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                          2. Scope the project</p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                          3. And build a team that’s customized for your specific needs</p>
                       </div>
                     </div>
 
@@ -215,10 +222,13 @@ export default function Home() {
                       <div className={`${styles.leftColumn} _backInLeft`}>
                         <p className='s28_42'>What to expect:</p>
                       </div>
-                      <div className={`${styles.rightColumn} _backInRight`}>
-                        <p className='s28_42'>1. Thoughtful questions</p>
-                        <p className='s28_42'>2. A thorough outline of the constraints and considerations</p>
-                        <p className='s28_42'>3. An experienced point of view</p>
+                      <div className={`${styles.rightColumn}`}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                          1. Thoughtful questions</p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                          2. A thorough outline of the constraints and considerations</p>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                          3. An experienced point of view</p>
                       </div>
                     </div>
 

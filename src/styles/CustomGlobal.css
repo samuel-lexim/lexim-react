@@ -567,6 +567,19 @@ h1, .h1, .s70 {
   transform: translateX(0);
 }
 
+.fp-section ._slideBottomToTop {
+  transform: translateY(100vh);
+  opacity: 0;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease, ease;
+  transition-property: transform, opacity;
+}
+
+.fp-section.active:not(.initNotRunEffect) ._slideBottomToTop {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media only screen and (min-width: 768px) {
   .fp-section.active:not(.initNotRunEffect) ._lineTopEffect {
     width: 100vh;
