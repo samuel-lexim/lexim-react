@@ -113,7 +113,8 @@
   right: 0;
   z-index: 400;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   .menuItem {
     position: relative;
