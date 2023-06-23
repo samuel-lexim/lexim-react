@@ -52,6 +52,32 @@
 }
 
 // Our Customer
+.ourCustomers {
+  .customerItem {
+    transform: translateX(100vw);
+    opacity: 0;
+    transition-duration: 2s, 2s;
+    transition-timing-function: ease, ease;
+    transition-property: transform, opacity;
+
+    &._slideRightToLeft {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media only screen and (max-width: 579px) {
+  .ourCustomers {
+    .customerItem {
+      img {
+        width: auto;
+        max-height: 50px;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 580px) {
   .ourCustomers {
     text-align: center;
@@ -62,7 +88,7 @@
       display: inline-block;
       margin-bottom: 20px;
       margin-left: calc(15vw - 10px - 70px); // (100vw - 60px -420px ) / 6
-      margin-right:calc(15vw - 10px - 70px);
+      margin-right: calc(15vw - 10px - 70px);
     }
 
   }

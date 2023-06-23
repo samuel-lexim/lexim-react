@@ -11,6 +11,7 @@
   padding-right: 30px;
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 
   .innerSection {
     position: relative;
@@ -94,7 +95,7 @@
   overflow: hidden;
 
   .customerItem {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     transform: translateX(100vw);
     opacity: 0;
     transition-duration: 2s, 2s;
@@ -108,6 +109,17 @@
 
     img {
       width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ourCustomers {
+    .customerItem {
+      img {
+        width: auto;
+        max-height: 50px;
+      }
     }
   }
 }

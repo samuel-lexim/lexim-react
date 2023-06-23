@@ -10,7 +10,7 @@ import PageTitle from "@/components/PageTitle";
 
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageAbout.module.scss'
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 
 export default function About() {
@@ -72,6 +72,9 @@ export default function About() {
     }
   };
 
+  // Logo Effect
+  const [logoStarted, setLogoStarted] = useState(false);
+
   return (
     <Layout className='pageAbout'>
 
@@ -80,6 +83,22 @@ export default function About() {
       <ReactFullPage
         navigation={true}
         navigationPosition="right"
+        afterLoad={(origin, destination, direction, trigger) => {
+          // Logo Effect
+          if (destination.index === 2) {
+            setLogoStarted(true);
+            setTimeout(() => {
+              let elements = document.querySelectorAll('.' + styles.customerItem);
+              elements.forEach((element) => {
+                element.classList.add(styles._slideRightToLeft);
+              });
+            }, 200)
+          }
+          if (origin.index === 2) {
+            setLogoStarted(false);
+          }
+          // End - Logo Effect
+        }}
         render={({state, fullPageApi}) => {
 
           return (
@@ -173,45 +192,49 @@ export default function About() {
                     <div className='pad20'></div>
 
                     <div className={`${styles.ourCustomers}`}>
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '0.5s'}}>
-                        <Link href='https://www.silverts.com'>
-                          <Image
-                            src="/images/customers/silverts.png"
-                            alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                            width={194} height={70}
-                          />
-                        </Link>
-                      </div>
+                      {logoStarted &&
+                        <>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0s'}}>
+                            <Link href='https://www.silverts.com'>
+                              <Image
+                                src="/images/customers/silverts.png"
+                                alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                                width={194} height={70}
+                              />
+                            </Link>
+                          </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1s'}}>
-                        <Link href='https://www.intertrend.com'>
-                          <Image
-                            src="/images/customers/intertrend.png"
-                            alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                            width={230} height={70}
-                          />
-                        </Link>
-                      </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
+                            <Link href='https://www.intertrend.com'>
+                              <Image
+                                src="/images/customers/intertrend.png"
+                                alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                                width={230} height={70}
+                              />
+                            </Link>
+                          </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '1.5s'}}>
-                        <Link href='https://www.heartsoulscrubs.com'>
-                          <Image
-                            src="/images/customers/heartsoul.png"
-                            alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                            width={160} height={70}
-                          />
-                        </Link>
-                      </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
+                            <Link href='https://www.heartsoulscrubs.com'>
+                              <Image
+                                src="/images/customers/heartsoul.png"
+                                alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                                width={160} height={70}
+                              />
+                            </Link>
+                          </div>
 
-                      <div className={`${styles.customerItem} _slideRightToLeft`} style={{'transition-delay': '2s'}}>
-                        <Link href='https://www.infinityscrubs.com'>
-                          <Image
-                            src="/images/customers/infinity.png"
-                            alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                            width={139} height={70}
-                          />
-                        </Link>
-                      </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
+                            <Link href='https://www.infinityscrubs.com'>
+                              <Image
+                                src="/images/customers/infinity.png"
+                                alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                                width={139} height={70}
+                              />
+                            </Link>
+                          </div>
+                        </>
+                      }
                     </div>
 
                   </div>
