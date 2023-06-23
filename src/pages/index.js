@@ -92,8 +92,8 @@ export default function Home() {
                       <>
                         <p>
                           <TypingEffect start={typingStarted} text='Our team ' />
-                          <TypingEffect start={typingStarted} classText={page.blueText} after={180} text='integrates systems, connects front-end to back-end, and streamlines your business with automation ' />
-                          <TypingEffect start={typingStarted} after={2090} text='to move at the pace of your customers.' />
+                          <TypingEffect start={typingStarted} classText={page.blueText} after={270} text='integrates systems, connects front-end to back-end, and streamlines your business with automation ' />
+                          <TypingEffect start={typingStarted} after={3135} text='to move at the pace of your customers.' />
                         </p>
                       </>
                       }
