@@ -157,6 +157,30 @@
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .header {
+    .logoContainer {
+      padding-left: 30px;
+    }
+
+    .menuBtn {
+      padding-right: 30px;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    .logoContainer {
+      padding-left: 40px;
+    }
+
+    .menuBtn {
+      padding-right: 40px;
+    }
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .header {
     .logoContainer {
