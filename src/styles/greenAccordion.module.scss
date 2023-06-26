@@ -75,12 +75,11 @@
   }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 500px) {
   .downArrow {
-    height: 18px;
+    height: 7vw;
   }
 }
-
 
 @media only screen and (min-width: 768px) {
   .accordionWrap {
@@ -119,7 +118,7 @@
   }
 
   .downArrow {
-    height: 30px;
+    height: 32px;
   }
 
   .columnContent {

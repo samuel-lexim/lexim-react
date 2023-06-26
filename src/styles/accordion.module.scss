@@ -20,7 +20,7 @@
 }
 
 .downArrow {
-  height: 22px;
+  height: 28px;
   width: auto;
   transition: transform 1s;
 }
@@ -81,6 +81,12 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .downArrow {
+    height: 7vw;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .accordionHeader {
     padding: 15px 20px 5px;
@@ -95,7 +101,7 @@
   }
 
   .downArrow {
-    height: 2.7vw;
+    height: 32px;
   }
 
   .black {
