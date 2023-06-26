@@ -39,7 +39,7 @@ export default function Contact() {
 
             <div className={`${styles._content} lh-1`}>
               <div className={`_backInBottom`}>
-                <p className='fw-500 s24_64 lh-1_2'>Book your free consult today.</p>
+                <p className='fw-500 s24_64 lh-1_2'>Book your free<br/> consult today.</p>
               </div>
               <div className='pad20'></div>
               <CtaBlueButton className='_fadeOutIn' contactForm={true} />
