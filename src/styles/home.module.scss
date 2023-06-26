@@ -270,7 +270,7 @@
     &[data-index="1"] {
       .content {
         line-height: 1.25;
-        max-width: 40vw;
+        max-width: 485px;
         margin: auto;
         padding: 0;
       }
@@ -346,6 +346,12 @@
     &[data-index="0"] {
       p {
         margin-bottom: 30px;
+      }
+    }
+
+    &[data-index="1"] {
+      .content {
+        max-width: 660px;
       }
     }
 
