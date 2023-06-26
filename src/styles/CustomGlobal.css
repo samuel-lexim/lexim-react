@@ -242,77 +242,80 @@ h1, .h1, .s70 {
 }
 
 @media only screen and (max-width: 500px) {
-  /* x 0.6 */
   p, .s24_42, .s24_30, .s24_64 {
-    font-size: 14px;
     font-size: 5.76vw;
   }
 
   .s26_42 {
-    font-size: 16px;
     font-size: 6.24vw;
   }
 
   .s28_42, .s28_42 * {
-    font-size: 17px;
     font-size: 6.72vw;
-
   }
 
   .s30 {
-    font-size: 18px;
     font-size: 7.2vw;
   }
 
   h4, .h4 {
-    font-size: 19px;
     font-size: 7.68vw;
   }
 
   .s34_42, .s34_42 * {
-    font-size: 20px;
     font-size: 8.16vw;
 
   }
 
   .s40, .s40_64, .s40_100 {
-    font-size: 24px;
     font-size: 9.6vw;
   }
 
   .s42_64 {
-    font-size: 25px;
     font-size: 10.08vw;
   }
 
   .s46_120 {
-    font-size: 27px;
     font-size: 11.04vw;
   }
 
   .s48_120 {
-    font-size: 29px;
     font-size: 11.52vw;
   }
 
   h3, .h3, .s50, .s50_140 {
-    font-size: 30px;
     font-size: 12vw;
   }
 
   h2, .h2, .s60 {
-    font-size: 36px;
     font-size: 14.4vw;
   }
 
   h1, .h1, .s70 {
-    font-size: 42px;
     font-size: 16.8vw;
+  }
+
+  /* fix for Technology */
+  .pageTechnology p,
+  .pageTechnology .s24_42,
+  .pageTechnology .s24_30,
+  .pageTechnology .s24_64,
+  .pageTechnology .s28_42, .pageTechnology .s28_42 * {
+    font-size: 5.15vw;
+  }
+
+  .pageTechnology .s40,
+  .pageTechnology .s40_64,
+  .pageTechnology .s40_100 {
+    font-size: 8.6vw;
+  }
+
+  .pageTechnology .s28_42, .pageTechnology .s28_42 * {
+    font-size: 6.02vw;
   }
 }
 
 /* x 0.8
-
 @media only screen and (min-width: 390px) and (max-width: 450px) {
   p, .s24_42, .s24_30, .s24_64 {
     font-size: 19px;
@@ -366,7 +369,6 @@ h1, .h1, .s70 {
     font-size: 56px;
   }
 }
-*/
 
 @media only screen and (min-width: 390px) and (max-width: 580px) {
   .pageTechnology p,
@@ -387,6 +389,8 @@ h1, .h1, .s70 {
     font-size: 17px;
   }
 }
+*/
+
 
 @media only screen and (min-width: 768px) {
   .s24_30 {
