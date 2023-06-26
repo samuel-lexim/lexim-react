@@ -16,7 +16,7 @@
   .innerSection {
     position: relative;
     width: 100%;
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   &[data-index="0"] {
@@ -38,6 +38,7 @@
   &[data-index="1"] {
     .innerSection {
       padding-left: 30px;
+      max-width: 75vw;
     }
 
     .content {
@@ -228,11 +229,13 @@
   .headingUnderLine .homeHeading h3 br {
     display: none;
   }
+}
 
+@media only screen and (min-width: 500px) {
   .homeSection {
     &[data-index="1"] {
       .innerSection {
-        max-width: 400px;
+        max-width: 315px;
       }
     }
   }
@@ -268,6 +271,10 @@
     }
 
     &[data-index="1"] {
+      .innerSection {
+        max-width: 100%;
+      }
+
       .content {
         line-height: 1.25;
         max-width: 485px;
