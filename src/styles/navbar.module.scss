@@ -157,10 +157,34 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   .header {
     .logoContainer {
       padding-left: 50px;
+    }
+
+    .menuBtn {
+      padding-right: 50px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    .logoContainer {
+      padding-left: 70px;
+    }
+
+    .menuBtn {
+      padding-right: 70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .header {
+    .logoContainer {
+      padding-left: 70px;
 
       img {
         width: 29px;
@@ -169,7 +193,8 @@
     }
 
     .menuBtn {
-      padding: 0 50px;
+      padding-left: 70px;
+      padding-right: 70px;
     }
   }
 
