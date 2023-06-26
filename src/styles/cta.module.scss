@@ -66,6 +66,10 @@
 }
 
 .blueButton {
+  .s26_42 {
+    font-size: 26px;
+  }
+
   .ctaLink {
     background: $color-Blue;
     color: #fff;
@@ -121,6 +125,10 @@
   }
 
   .blueButton {
+    .s26_42 {
+      font-size: 16px;
+    }
+
     .ctaLink {
       padding: 8px 14px 4px 14px;
 
@@ -145,6 +153,10 @@
   }
 
   .blueButton {
+    .s26_42 {
+      font-size: 21px;
+    }
+
     .ctaLink {
       padding: 8px 14px 4px 14px;
 
@@ -163,6 +175,10 @@
 
 @media only screen and (min-width: 768px) {
   .blueButton {
+    .s26_42 {
+      font-size: 30px;
+    }
+
     .ctaLink {
       padding: 10px 20px 6px 20px;
 
@@ -180,6 +196,10 @@
 
 @media only screen and (min-width: 1400px) {
   .blueButton {
+    .s26_42 {
+      font-size: 42px;
+    }
+
     .ctaLink {
       padding: 13px 32px 9px 32px;
       border-radius: 20px;

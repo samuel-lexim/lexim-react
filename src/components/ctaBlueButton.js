@@ -36,7 +36,7 @@ const CtaBlueButton = ({
 
         <a className={styles.ctaLink} target={target} href={link}>
           <div className={styles.ctaLinkInner}>
-            <span className='s26_42 fw-500'>{text}</span>
+            <span className={`${styles.s26_42} fw-500`}>{text}</span>
             <div className={styles.bottomLine}></div>
             <div className={styles.arrow}>
               <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@ const CtaBlueButton = ({
           <a className={styles.ctaLink} target={target}
              onClick={() => Calendly.initPopupWidget({url: 'https://calendly.com/lexim-support'})} >
             <div className={styles.ctaLinkInner}>
-              <span className='s26_42 fw-500'>{text}</span>
+              <span className={`${styles.s26_42} fw-500`}>{text}</span>
               <div className={styles.bottomLine}></div>
               <div className={styles.arrow}>
                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
