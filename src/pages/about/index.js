@@ -75,8 +75,6 @@ export default function About() {
   // Logo Effect
   const [logoStarted, setLogoStarted] = useState(false);
 
-  const texts = ['Los Angeles', 'Da Nang'];
-
   return (
     <Layout className='pageAbout'>
 
