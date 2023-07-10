@@ -75,6 +75,8 @@ export default function About() {
   // Logo Effect
   const [logoStarted, setLogoStarted] = useState(false);
 
+  const texts = ['Los Angeles', 'Da Nang'];
+
   return (
     <Layout className='pageAbout'>
 
@@ -249,7 +251,10 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>LOS ANGELES</h2>
+                    <h2 className={`${styles._heading} ${styles._headingLoop} s46_120 _backInLeft FontSui`}>
+                      <span className={page.fadeInOut}>LOS ANGELES</span>
+                      <span className={page.fadeInOut} style={{'animation-delay': '2s'}}>DA NANG</span>
+                    </h2>
 
                     <div className={`${styles.contentWrap}`}>
                       <ul className={styles.virtualNav}>

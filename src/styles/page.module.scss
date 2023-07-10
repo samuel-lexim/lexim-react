@@ -32,6 +32,21 @@
 
 // # Color
 
+// Effect
+
+@keyframes fadeLoop {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.fadeInOut {
+  animation: fadeLoop 4s infinite;
+}
+
 
 // Page Title
 .initNotRunEffect {

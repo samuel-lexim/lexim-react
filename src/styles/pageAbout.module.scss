@@ -20,7 +20,31 @@
     margin: 0 0 20px;
   }
 
-  ._heading {
+  ._heading {}
+
+  ._headingLoop {
+    position: relative;
+    padding-bottom: 65px;
+    span {
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutSection {
+    ._headingLoop {
+      padding-bottom: 117px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .aboutSection {
+    ._headingLoop {
+      padding-bottom: 168px;
+    }
   }
 }
 
