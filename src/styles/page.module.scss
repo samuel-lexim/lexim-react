@@ -34,17 +34,16 @@
 
 // Effect
 
-@keyframes fadeLoop {
-  0%, 50% {
-    opacity: 1;
-  }
-  50%, 100% {
-    opacity: 0;
-  }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 .fadeInOut {
-  animation: fadeLoop 4s infinite;
+  opacity: 0;
+  animation: fadeIn 6s infinite;
 }
 
 

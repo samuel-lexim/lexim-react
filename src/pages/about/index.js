@@ -251,7 +251,7 @@ export default function About() {
                   <div className={styles.innerSection}>
                     <h2 className={`${styles._heading} ${styles._headingLoop} s46_120 _backInLeft FontSui`}>
                       <span className={page.fadeInOut}>LOS ANGELES</span>
-                      <span className={page.fadeInOut} style={{'animation-delay': '2s'}}>DA NANG</span>
+                      <span className={page.fadeInOut} style={{'animation-delay': '3s'}}>DA NANG</span>
                     </h2>
 
                     <div className={`${styles.contentWrap}`}>
