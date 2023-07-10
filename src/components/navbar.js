@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <header className={`${styles[backgroundColor]} ${styles.header} ${isMenuOpen ? styles.open : styles.closed}`}>
         <div className={styles.logoContainer}>
-          <Link href='/' scroll={true}>
+          <a href='/' >
             <Image
               src="/images/logo.svg"
               alt="Lexim Global"
@@ -34,7 +34,7 @@ export default function Navbar() {
               width={23}
               height={23}
             />
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuBtn} onClick={toggleMenu}>
@@ -45,45 +45,45 @@ export default function Navbar() {
 
       <div className={`${styles.menuPanel} FontSui s48_120`}>
         <div className={styles.menuItem}>
-          <Link href='/about' scroll={true}>
+          <a href='/about' >
             <span>ABOUT</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/technology' scroll={true}>
+          <a href='/technology' >
             <span>TECHNOLOGY</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/partnerships' scroll={true}>
+          <a href='/partnerships' >
             <span>PARTNERSHIPS</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/case-studies' scroll={true}>
+          <a href='/case-studies' >
             <span>CASE STUDIES</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/testimonials' scroll={true}>
+          <a href='/testimonials' >
             <span>TESTIMONIALS</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
 
         <div className={styles.menuItem}>
-          <Link href='/contact' scroll={true}>
+          <a href='/contact' >
             <span>CONTACT</span>
             <div className={styles.bottomLine}></div>
-          </Link>
+          </a>
         </div>
       </div>
       {/* menuPanel */}
