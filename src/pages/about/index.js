@@ -145,7 +145,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
+                    <h2 className={`${styles._heading} fw-300 s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
 
                     <div className={`${styles.contentWrap} _backInRight`}>
                       <ul className={styles.virtualNav}>
@@ -173,7 +173,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
+                    <h2 className={`${styles._heading} fw-300 s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
 
                     <div className={`${styles.contentWrap} _backInLeft`}>
                       <ul className={styles.virtualNav}>
@@ -249,7 +249,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <h2 className={`${styles._heading} ${styles._headingLoop} s46_120 _backInLeft FontSui`}>
+                    <h2 className={`${styles._heading} ${styles._headingLoop} fw-300 s46_120 _backInLeft FontSui`}>
                       <span className={page.fadeInOut}>LOS ANGELES</span>
                       <span className={page.fadeInOut} style={{'animation-delay': '3s'}}>DA NANG</span>
                     </h2>

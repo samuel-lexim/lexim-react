@@ -10,6 +10,13 @@
 
 @font-face {
   font-family: "FontSui";
+  src: url('../fonts/SuisseIntl-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontSui";
   src: url('../fonts/SuisseIntl-Light.otf'),
   url('../fonts/SuisseIntl-Light.ttf') format('truetype');
   font-weight: 300;
@@ -36,6 +43,13 @@
   font-family: "FontRoc";
   src: url('../fonts/RocGrotesk-Medium.otf');
   font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontRoc";
+  src: url('../fonts/RocGrotesk-Regular.otf');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -203,7 +217,6 @@ p, .s24_42, .s24_30, .s24_64 {
 
 h4, .h4 {
   font-size: 32px;
-  font-weight: 400;
 }
 
 .s34_42, .s34_42 * {
@@ -228,17 +241,14 @@ h4, .h4 {
 
 h3, .h3, .s50, .s50_140 {
   font-size: 50px;
-  font-weight: 400;
 }
 
 h2, .h2, .s60 {
   font-size: 60px;
-  font-weight: 300;
 }
 
 h1, .h1, .s70 {
   font-size: 70px;
-  font-weight: 400;
 }
 
 @media only screen and (max-width: 499px) {
