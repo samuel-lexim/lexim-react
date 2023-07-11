@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-// import styles from '@/styles/typingEffect.module.scss';
 
 const TypingEffect = (
   {
-    classText, text,
+    classText,
+    text,
     after = 0,
-    speed = 60,
+    speed = 50,
     start = false
   }
 ) => {
@@ -14,9 +14,10 @@ const TypingEffect = (
   useEffect(() => {
     let currentIndex = 0;
     let runAfter;
+    let typingInterval;
 
     const startTyping = () => {
-      let typingInterval = setInterval(() => {
+      typingInterval = setInterval(() => {
         if (currentIndex >= text.length) {
           clearInterval(typingInterval);
         }
@@ -36,8 +37,9 @@ const TypingEffect = (
 
     return () => {
       clearTimeout(runAfter);
+      clearInterval(typingInterval);
     };
-  }, [text, start]);
+  }, [text, start, after, speed]);
 
   return <span className={`${classText}`}>{displayText}</span>;
 };
