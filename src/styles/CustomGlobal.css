@@ -203,7 +203,7 @@ p, .s24_42, .s24_30, .s24_64 {
 
 h4, .h4 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .s34_42, .s34_42 * {
@@ -228,7 +228,7 @@ h4, .h4 {
 
 h3, .h3, .s50, .s50_140 {
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2, .h2, .s60 {
@@ -238,7 +238,7 @@ h2, .h2, .s60 {
 
 h1, .h1, .s70 {
   font-size: 70px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 499px) {
