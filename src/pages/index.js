@@ -9,7 +9,7 @@ import TypingEffect from '@/components/TypingEffect';
 import ReactFullPage from "@fullpage/react-fullpage";
 
 import Footer from "@/components/footer";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -107,9 +107,9 @@ export default function Home() {
                         <>
                           <p>
                             <TypingEffect start={typingStarted} text='Our team '/>
-                            <TypingEffect start={typingStarted} classText={page.blueText} after={360}
+                            <TypingEffect start={typingStarted} classText={page.blueText} after={540}
                                           text='integrates systems, connects front-end to back-end, and streamlines your business with automation '/>
-                            <TypingEffect start={typingStarted} after={4180} text='to move at the pace of your customers.'/>
+                            <TypingEffect start={typingStarted} after={6270} text='to move at the pace of your customers.'/>
                           </p>
                         </>
                       }
