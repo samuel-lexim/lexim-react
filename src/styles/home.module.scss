@@ -43,6 +43,7 @@
 
     .content {
       line-height: 1.25;
+      min-height: 240px;
     }
   }
 
@@ -337,7 +338,6 @@
   }
 }
 
-
 @media only screen and (min-width: 990px) {
   .innerSection {
     ._absolute {
@@ -345,7 +345,6 @@
     }
   }
 }
-
 
 @media only screen and (min-width: 1400px) {
   .homeSection {
@@ -359,6 +358,7 @@
     &[data-index="1"] {
       .content {
         max-width: 660px;
+        min-height: 270px;
       }
     }
 
