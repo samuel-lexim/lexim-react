@@ -67,21 +67,21 @@ export default function Home() {
 
         render={({state}) => {
           return (
-            <div id='HomeFullPage' className='fw-500'>
+            <div id='HomeFullPage' className=''>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
                 <div className={styles.lineHome}>
-                  <span className={`${styles._lineTop} _lineTopEffect`}></span>
-                  <span className={`${styles._lineBottom} _lineBottomEffect`}></span>
+                  {/*<span className={`${styles._lineTop} _lineTopEffect`}></span>*/}
+                  {/*<span className={`${styles._lineBottom} _lineBottomEffect`}></span>*/}
                 </div>
                 <section className={` ${styles.homeSection}`}
                          id={sections[0]} data-index={0}>
                   <div className={styles.innerSection}>
-                    <h3 className={`s40_64 _backInTop lh-1_05 `}>Let’s reduce your operation costs by integrating your software.</h3>
-                    <h2 className={`s50 _backInLeft FontSui`}>We Can Help</h2>
+                    <h3 className={`s40_64 _backInTop lh-1_05 fw-300`}>Let’s reduce your operation costs by integrating your software.</h3>
+                    <h2 className={`s50 _backInLeft FontSui fw-400`}>We Can Help</h2>
 
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
-                      <div className={`${styles.rightColumn} _backInBottom`}>
+                      <div className={`${styles.rightColumn} _backInBottom fw-300`}>
                         <p>We’d love to talk about your product, your situation, and ways we can help you.</p>
                         <p>All without a fee.</p>
                         <CtaBlueButton className='_fadeOutIn' text='Schedule a Call' contactForm={true}/>
@@ -104,13 +104,14 @@ export default function Home() {
                     <div className={`${styles.content} `}>
 
                       {typingStarted &&
-                      <>
-                        <p>
-                          <TypingEffect start={typingStarted} text='Our team ' />
-                          <TypingEffect start={typingStarted} classText={page.blueText} after={360} text='integrates systems, connects front-end to back-end, and streamlines your business with automation ' />
-                          <TypingEffect start={typingStarted} after={4180} text='to move at the pace of your customers.' />
-                        </p>
-                      </>
+                        <>
+                          <p>
+                            <TypingEffect start={typingStarted} text='Our team '/>
+                            <TypingEffect start={typingStarted} classText={page.blueText} after={360}
+                                          text='integrates systems, connects front-end to back-end, and streamlines your business with automation '/>
+                            <TypingEffect start={typingStarted} after={4180} text='to move at the pace of your customers.'/>
+                          </p>
+                        </>
                       }
 
                     </div>
@@ -127,53 +128,50 @@ export default function Home() {
                       <h2 className={`s50_140 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                     </div>
 
-
-                      <div className={`${styles.ourCustomers}`}>
-                        {logoStarted &&
-                          <>
-                            <div className={`${styles.customerItem} `} style={{'transition-delay': '0s'}}>
-                              <Link href='https://www.silverts.com'>
-                                <Image
-                                  src="/images/customers/silverts.png"
-                                  alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
-                                  width={194} height={70}
-                                />
-                              </Link>
-                            </div>
-
-                            <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
-                              <Link href='https://www.intertrend.com'>
-                                <Image
-                                  src="/images/customers/intertrend.png"
-                                  alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
-                                  width={230} height={70}
-                                />
-                              </Link>
-                            </div>
-
-                            <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
-                              <Link href='https://www.heartsoulscrubs.com'>
-                                <Image
-                                  src="/images/customers/heartsoul.png"
-                                  alt='Cute Scrubs for Women | Heartsoul Scrubs'
-                                  width={160} height={70}
-                                />
-                              </Link>
-                            </div>
-
-                            <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
-                          <Link href='https://www.infinityscrubs.com'>
-                            <Image
-                              src="/images/customers/infinity.png"
-                              alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
-                              width={139} height={70}
-                            />
-                          </Link>
-                        </div>
-                          </>
-                        }
-                      </div>
-
+                    {/*
+                    <div className={`${styles.ourCustomers}`}>
+                      {logoStarted &&
+                        <>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0s'}}>
+                            <Link href='https://www.silverts.com'>
+                              <Image
+                                src="/images/customers/silverts.png"
+                                alt='Adaptive Clothing for Seniors, Elderly & Disabled  - Silverts'
+                                width={194} height={70}
+                              />
+                            </Link>
+                          </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
+                            <Link href='https://www.intertrend.com'>
+                              <Image
+                                src="/images/customers/intertrend.png"
+                                alt='A multicultural agency that understands the intersection of culture, emerging trends, and the interaction between brands and consumers'
+                                width={230} height={70}
+                              />
+                            </Link>
+                          </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
+                            <Link href='https://www.heartsoulscrubs.com'>
+                              <Image
+                                src="/images/customers/heartsoul.png"
+                                alt='Cute Scrubs for Women | Heartsoul Scrubs'
+                                width={160} height={70}
+                              />
+                            </Link>
+                          </div>
+                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
+                            <Link href='https://www.infinityscrubs.com'>
+                              <Image
+                                src="/images/customers/infinity.png"
+                                alt='Infinity Scrubs - Modern Medical Uniforms for Women & Men by Cherokee'
+                                width={139} height={70}
+                              />
+                            </Link>
+                          </div>
+                        </>
+                      }
+                    </div>
+                    */}
                   </div>
                 </section>
               </div>
@@ -189,13 +187,13 @@ export default function Home() {
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
                       <div className={`${styles.rightColumn}`}>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '0.5s'}}>
                           <Link href={'/system-integration'} scroll={true}><span>Systems Integration</span></Link></p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1s'}}>
                           <Link href={''} scroll={true}><span>Order Management Systems</span></Link></p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1.5s'}}>
                           <Link href={''} scroll={true}><span>ERP Customization</span></Link></p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'2s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '2s'}}>
                           <Link href={''} scroll={true}><span>Enterprise E-Commerce</span></Link></p>
                       </div>
                     </div>
@@ -216,11 +214,11 @@ export default function Home() {
                     <div className={styles.content2Cols}>
                       <div className={styles.leftColumn}></div>
                       <div className={`${styles.rightColumn}`}>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '0.5s'}}>
                           1. We’ll understand your challenges</p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1s'}}>
                           2. Scope the project</p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1.5s'}}>
                           3. And build a team that’s customized for your specific needs</p>
                       </div>
                     </div>
@@ -242,11 +240,11 @@ export default function Home() {
                         <p className='s28_42'>What to expect:</p>
                       </div>
                       <div className={`${styles.rightColumn}`}>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'0.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '0.5s'}}>
                           1. Thoughtful questions</p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1s'}}>
                           2. A thorough outline of the constraints and considerations</p>
-                        <p className='_slideBottomToTop s28_42' style={{'transition-delay':'1.5s'}}>
+                        <p className='_slideBottomToTop s28_42' style={{'transition-delay': '1.5s'}}>
                           3. An experienced point of view</p>
                       </div>
                     </div>
@@ -259,7 +257,7 @@ export default function Home() {
 
               <div className={`${styles.fullPageSection} section`} data-index={6}>
                 <section className={`${styles.homeSection} ${styles.flexEnd} `} id={sections[6]} data-index={6}>
-                    <Footer/>
+                  <Footer/>
                 </section>
               </div>
 
