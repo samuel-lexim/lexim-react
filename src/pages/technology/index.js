@@ -124,7 +124,7 @@ export default function Technology() {
                 </div>
 
                 <div>
-                  <p>Systems Integration involves <span className={page.yellowText}>connecting business software, applications, and databases together</span> so that data can be pushed and pulled
+                  <p>Systems Integration involves <span className={`${page.yellowText} fw-400`}>connecting business software, applications, and databases together</span> so that data can be pushed and pulled
                     between
                     them. Businesses use many different
                     systems for sales, accounting, inventory or fulfillment, but these systems don't always work together. System integration solves this problem by connecting different systems
