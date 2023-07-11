@@ -191,6 +191,7 @@ export default function About() {
 
                     <div className='pad20'></div>
 
+                    {/*
                     <div className={`${styles.ourCustomers}`}>
                       {logoStarted &&
                         <>
@@ -203,7 +204,6 @@ export default function About() {
                               />
                             </Link>
                           </div>
-
                           <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
                             <Link href='https://www.intertrend.com'>
                               <Image
@@ -213,7 +213,6 @@ export default function About() {
                               />
                             </Link>
                           </div>
-
                           <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
                             <Link href='https://www.heartsoulscrubs.com'>
                               <Image
@@ -223,7 +222,6 @@ export default function About() {
                               />
                             </Link>
                           </div>
-
                           <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
                             <Link href='https://www.infinityscrubs.com'>
                               <Image
@@ -236,6 +234,7 @@ export default function About() {
                         </>
                       }
                     </div>
+                    */}
 
                   </div>
                 </section>
