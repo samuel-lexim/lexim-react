@@ -105,8 +105,8 @@ export default function About() {
             <div id='AboutFullPage'>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} id={sections[0]} data-index={0}>
                 <div className={styles.aboutLine}>
-                  <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
-                  <span className={`${styles._lineRight} _lineRightEffect`}></span>
+                  {/*<span className={`${styles._lineLeft} _lineLeftEffect`}></span>*/}
+                  {/*<span className={`${styles._lineRight} _lineRightEffect`}></span>*/}
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
@@ -139,8 +139,8 @@ export default function About() {
 
               <div className={`${styles.fullPageSection} section`} id={sections[1]} data-index={1}>
                 <div className={styles.aboutLine}>
-                  <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
-                  <span className={`${styles._lineRight} _lineRightEffect`}></span>
+                  {/*<span className={`${styles._lineLeft} _lineLeftEffect`}></span>*/}
+                  {/*<span className={`${styles._lineRight} _lineRightEffect`}></span>*/}
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
@@ -156,7 +156,7 @@ export default function About() {
                       </ul>
 
                       <div className={styles._rightContent}>
-                        <p className='fw-500'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
+                        <p className='fw-400'>Lexim offers innovative solutions for back-end software development with a focus on systems integration.</p>
                         <p className='fw-300'>We provide custom development that connects <span className={page.yellowHighlight}>ERP, OMS, and enterprise e-commerce</span>. You’ll be surprised at how
                           quickly we work, often delivering projects ahead of schedule, and how affordable we are for any size budget.</p>
                       </div>
@@ -167,8 +167,8 @@ export default function About() {
 
               <div className={`${styles.fullPageSection} section`} id={sections[2]} data-index={2}>
                 <div className={styles.aboutLine}>
-                  <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
-                  <span className={`${styles._lineRight} _lineRightEffect`}></span>
+                  {/*<span className={`${styles._lineLeft} _lineLeftEffect`}></span>*/}
+                  {/*<span className={`${styles._lineRight} _lineRightEffect`}></span>*/}
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
@@ -184,7 +184,7 @@ export default function About() {
                       </ul>
 
                       <div className={styles._rightContent}>
-                        <p className='fw-300'>Our clients range <span className='fw-500'>from startups to Fortune 500s</span> in <span className={`${page.blueText} fw-500 `}>media, fashion, consumer, lifestyle, finance,
+                        <p className='fw-300'>Our clients range <span className='fw-400'>from startups to Fortune 500s</span> in <span className={`${page.blueText} fw-400 `}>media, fashion, consumer, lifestyle, finance,
                         consumer electronics, government, international business, travel/hospitality</span>, and more.</p>
                       </div>
                     </div>
