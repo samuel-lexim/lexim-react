@@ -111,7 +111,7 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <div className='_backInTop'>
+                    <div className='_backInRight'>
                       <a href='/'>
                         <Image
                           src="/images/LEXIM.svg"
