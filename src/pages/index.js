@@ -94,8 +94,8 @@ export default function Home() {
 
               <div className={`${styles.fullPageSection} section`} data-index={1}>
                 <div className={styles.lineHome}>
-                  <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
-                  <span className={`${styles._lineRight} _lineRightEffect`}></span>
+                  {/*<span className={`${styles._lineLeft} _lineLeftEffect`}></span>*/}
+                  {/*<span className={`${styles._lineRight} _lineRightEffect`}></span>*/}
                 </div>
 
                 <section className={` ${styles.homeSection}`}

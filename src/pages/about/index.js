@@ -242,8 +242,8 @@ export default function About() {
 
               <div className={`${styles.fullPageSection} section`} id={sections[3]} data-index={3}>
                 <div className={styles.aboutLine}>
-                  <span className={`${styles._lineLeft} _lineLeftEffect`}></span>
-                  <span className={`${styles._lineRight} _lineRightEffect`}></span>
+                  {/*<span className={`${styles._lineLeft} _lineLeftEffect`}></span>*/}
+                  {/*<span className={`${styles._lineRight} _lineRightEffect`}></span>*/}
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
@@ -264,7 +264,7 @@ export default function About() {
                       <div className={styles._rightContent}>
                         <div className={`_backInRight`}>
                           <p className='fw-300'>Our Executive HQ is in Los Angeles, and we have development centers in Danang, Vietnam.</p>
-                          <p className='fw-300'>Our name, <span className='fw-700'>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
+                          <p className='fw-300'>Our name, <span className=''>Lexim, means "a vast storehouse of language"</span> and we aim to help businesses thrive in the tech-driven global
                             economy.</p>
                         </div>
                         <div className='pad20'></div>
