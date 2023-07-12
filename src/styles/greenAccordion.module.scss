@@ -68,7 +68,6 @@
     }
 
     .downArrow {
-      opacity: 0;
       transform: rotate(-180deg);
       transform-style: preserve-3d;
     }
@@ -91,7 +90,7 @@
   }
 
   .accordionHeader {
-    padding: 15px 20px 5px;
+    padding: 15px 0 5px 20px;
   }
 
   .prefixTitle {
@@ -126,12 +125,14 @@
     display: flex;
 
     .accordionHeader {
-      flex: auto;
+      flex: 0 1 auto;
+      min-width: 350px;
+      padding-right: 0;
     }
 
     .accordionContent {
-      flex: 60% 0;
-      padding-left: 0;
+      flex: auto;
+      padding-left: 20px;
       padding-top: 5px;
     }
   }
@@ -180,5 +181,11 @@
 
   .downArrow {
     height: 45px;
+  }
+
+  .columnContent {
+    .accordionHeader {
+      min-width: 500px;
+    }
   }
 }
