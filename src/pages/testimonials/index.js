@@ -24,7 +24,7 @@ export default function Testimonials() {
       {
         breakpoint: 768,
         settings: {
-          adaptiveHeight: true
+          adaptiveHeight: false
         }
       }
     ]
