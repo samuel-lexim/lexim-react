@@ -18,9 +18,7 @@
   }
 }
 
-.link:hover .articleListWrap {
-  background: $color-Yellow;
-}
+
 
 .itemTitle {
   font-weight: 400;
@@ -48,6 +46,12 @@
   .subHeading {
     margin-right: 15px;
     font-family: 'FontSui', 'FontRoc', sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .link:hover .articleListWrap {
+    background: $color-Yellow;
   }
 }
 
