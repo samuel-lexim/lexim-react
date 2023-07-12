@@ -1,6 +1,12 @@
 @import "variables.module";
 
 // MOBILE
+.topTitle {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
 .systemWrap {
   padding-top: 120px;
   padding-right: 30px;
@@ -9,6 +15,10 @@
     line-height: 1.1;
     margin-bottom: 10px;
     font-weight: 300;
+  }
+
+  .pBottom {
+    margin-bottom: 10px;
   }
 }
 
@@ -20,16 +30,20 @@
   }
 }
 
-.systemSection{}
+.systemSection {
+}
 
 .leftPadding {
-  padding-left: 30px;
+  padding-left: 0;
   padding-right: 0;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .h3Heading {
   line-height: 1.1;
-  margin-bottom: 10px;
   font-weight: 400;
 }
 
@@ -47,27 +61,110 @@
   margin-bottom: 10px;
 }
 
+// padding
+._pad6 {
+  padding-bottom: 60px; // 60_67_74 (Rate: 34_38_42)
+}
+
 ._pad4 {
-  padding-bottom: 40px;
+  padding-bottom: 40px; // 40_45_50
 }
 
 ._pad3 {
-  padding-bottom: 30px;
+  padding-bottom: 30px; // 30_34_37
 }
 
 ._pad2 {
-  padding-bottom: 20px;
+  padding-bottom: 20px; // 20_23_25
 }
 
 ._pad1 {
-  padding-bottom: 10px;
+  padding-bottom: 10px; // 10_11_12
 }
 
-.noPadInXs{}
+@media only screen and (min-width: 768px) {
+  ._pad1 {
+    padding-bottom: 11px; // 10_11_12
+  }
+
+  ._pad2 {
+    padding-bottom: 23px; // 20_23_25
+  }
+
+  ._pad3 {
+    padding-bottom: 34px; // 30_34_37
+  }
+
+  ._pad4 {
+    padding-bottom: 45px; // 40_45_50
+  }
+
+  ._pad6 {
+    padding-bottom: 67px; // 60_67_74
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  ._pad1 {
+    padding-bottom: 12px; // 10_11_12
+  }
+
+  ._pad2 {
+    padding-bottom: 25px; // 20_23_25
+  }
+
+  ._pad3 {
+    padding-bottom: 37px; // 30_34_37
+  }
+
+  ._pad4 {
+    padding-bottom: 50px; // 40_45_50
+  }
+
+  ._pad6 {
+    padding-bottom: 74px; // 60_67_74
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  ._pad1 {
+    padding-bottom: 15px; // 12 x1.2
+  }
+
+  ._pad2 {
+    padding-bottom: 30px; // 25 x1.2
+  }
+
+  ._pad3 {
+    padding-bottom: 45px; // 37 x1.2
+  }
+
+  ._pad4 {
+    padding-bottom: 60px; // 50 x1.2
+  }
+
+  ._pad6 {
+    padding-bottom: 90px; // 74 x1.2
+  }
+}
+
+// END - padding
+
+
+.marginBottom0 {
+  margin-bottom: 0 !important;
+}
+
+.noPadInXs {
+}
 
 @media only screen and (max-width: 767px) {
   .noPadInXs {
     padding-left: 0 !important;
+  }
+
+  .blueHeading {
+    margin-top: 20px;
   }
 }
 
@@ -82,26 +179,13 @@
   .systemWrap {
     padding-top: 10vw;
     padding-right: 0;
-  }
 
-  ._pad4 {
-    padding-bottom: 80px;
-  }
-
-  ._pad3 {
-    padding-bottom: 60px;
-  }
-
-  ._pad2 {
-    padding-bottom: 40px;
-  }
-
-  ._pad1 {
-    padding-bottom: 20px;
+    p, .pBottom {
+      margin-bottom: 15px;
+    }
   }
 
   .h3Heading {
-    margin-bottom: 20px;
     max-width: 80%;
   }
 
@@ -111,7 +195,7 @@
   }
 
   .grayBg {
-    margin-bottom: 15px;
+    //margin-bottom: 15px;
   }
 }
 
@@ -119,34 +203,22 @@
 @media only screen and (min-width: 1400px) {
   .systemWrap {
     padding-top: 180px;
-  }
 
-  ._pad4 {
-    padding-bottom: 120px;
-  }
-
-  ._pad3 {
-    padding-bottom: 90px;
-  }
-
-  ._pad2 {
-    padding-bottom: 60px;
-  }
-
-  ._pad1 {
-    padding-bottom: 30px;
+    p, .pBottom {
+      margin-bottom: 20px;
+    }
   }
 
   .h3Heading, .blueH3 {
   }
 
   .h3Heading {
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
     max-width: 65%;
   }
 
   .grayBg {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
   .leftPadding {

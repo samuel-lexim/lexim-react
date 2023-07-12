@@ -410,9 +410,15 @@ h1, .h1, .s70 {
 
 /* # Font and Spacing */
 
-
+/* Custom */
 .fp-watermark, .fp-watermark > a {
   display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .onlyMobile {
+    display: none;
+  }
 }
 
 /* Effect */
@@ -547,7 +553,6 @@ h1, .h1, .s70 {
   }
 }
 
-
 .typingEffect {
   position: relative;
   display: inline-block;
@@ -560,7 +565,6 @@ h1, .h1, .s70 {
   width: 0;
   height: 20px;
   border-left: 2px solid black;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-animation: typing 5s steps(40, end), blink-caret 0.5s step-end infinite;
   -moz-animation: typing 17s steps(30, end), blink-caret 1s step-end infinite;
@@ -731,10 +735,6 @@ body.scrollHidden {
 
 body.scrollHidden header {
   width: calc(100% - 15px);
-}
-
-.blackSlickSlider {
-
 }
 
 .blackSlickSlider .slick-slide {
