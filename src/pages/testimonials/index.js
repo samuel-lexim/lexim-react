@@ -19,15 +19,7 @@ export default function Testimonials() {
     slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
-    adaptiveHeight: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          adaptiveHeight: false
-        }
-      }
-    ]
+    adaptiveHeight: false
   };
 
   return (
