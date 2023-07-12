@@ -32,20 +32,20 @@ export default function Testimonials() {
         <section className={`${styles.testimonialsSection}`}>
 
           <div className={styles.statistical}>
-            <span className={`${styles.statNumber} s46_120`}>50+</span>
-            <span className={`${styles.statText} s40_64`}>Customers Served</span>
+            <span className={`${styles.statNumber} s46_100`}>50+</span>
+            <span className={`${styles.statText} s40_52`}>Customers Served</span>
           </div>
           <div className={styles.statistical}>
-            <span className={`${styles.statNumber} s46_120`}>150</span>
-            <span className={`${styles.statText} s40_64`}>Systems Integrations</span>
+            <span className={`${styles.statNumber} s46_100`}>150</span>
+            <span className={`${styles.statText} s40_52`}>Systems Integrations</span>
           </div>
           <div className={styles.statistical}>
-            <span className={`${styles.statNumber} s46_120`}>3 months</span>
-            <span className={`${styles.statText} s40_64`}>Average Project Completion</span>
+            <span className={`${styles.statNumber} s46_100`}>3 months</span>
+            <span className={`${styles.statText} s40_52`}>Average Project Completion</span>
           </div>
           <div className={styles.statistical}>
-            <span className={`${styles.statNumber} s46_120`}>30%</span>
-            <span className={`${styles.statText} s40_64`}>Average Increase In Sales</span>
+            <span className={`${styles.statNumber} s46_100`}>30%</span>
+            <span className={`${styles.statText} s40_52`}>Average Increase In Sales</span>
           </div>
 
           <Slider {...settings} className={styles.testimonialSlider}>
