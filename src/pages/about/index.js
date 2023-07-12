@@ -111,15 +111,18 @@ export default function About() {
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
                   <div className={styles.innerSection}>
-                    <Link href='/' className='_backInTop' scroll={true}>
-                      <Image
-                        src="/images/LEXIM.svg"
-                        alt="Lexim Global"
-                        className={styles.logoImg}
-                        width={207}
-                        height={48}
-                      />
-                    </Link>
+                    <div className='_backInTop'>
+                      <a href='/'>
+                        <Image
+                          src="/images/LEXIM.svg"
+                          alt="Lexim Global"
+                          className={styles.logoImg}
+                          width={207}
+                          height={48}
+                        />
+                      </a>
+                    </div>
+
                     <div className={`${styles.contentWrap} _backInBottom`}>
 
                       <ul className={styles.virtualNav}>
