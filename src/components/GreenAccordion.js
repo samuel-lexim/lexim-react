@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 import styles from '@/styles/greenAccordion.module.scss';
 
@@ -10,7 +10,7 @@ const GreenAccordion = ({
   activeIndex,
   onAccordionToggle,
 }) => {
-
+  const listRef = useRef([]);
   const [openIndex, setOpenIndex] = useState(false);
   const toggleAccordion = (index) => {
     setOpenIndex((prevIndex) => (prevIndex === index ? -1 : index));
@@ -21,15 +21,32 @@ const GreenAccordion = ({
     setOpenIndex(false);
   }, [activeIndex]);
 
+  // Scroll to the current GreenAccordion when the current tab is opened
+  useEffect(() => {
+    if (openIndex && listRef.current[openIndex]) {
+      const scrollOptions = {
+        top: listRef.current[openIndex].offsetTop,
+        behavior: 'smooth',
+      };
+      window.scrollTo(scrollOptions);
+    }
+  }, [openIndex]);
+
   return (
     <>
       {data.map((child, index) => (
-        <div key={index} className={`${styles.accordionWrap} ${styles[child.layout]} 
-        ${index === openIndex ? styles.expanded : styles.closed} 
-        ${prefixTitle ? styles.hasPrefix : styles.noPrefix} 
-        ${showContent ? styles.showContent : styles.emptyContent}`}>
+        <div
+          key={index}
+          className={`${styles.accordionWrap} ${styles[child.layout]} 
+            ${index === openIndex ? styles.expanded : styles.closed} 
+            ${prefixTitle ? styles.hasPrefix : styles.noPrefix} 
+            ${showContent ? styles.showContent : styles.emptyContent}`}
+          ref={(el) => (listRef.current[index] = el)}
+        >
 
-          <div className={styles.accordionHeader} onClick={() => toggleAccordion(index)}>
+          <div className={styles.accordionHeader}
+               onClick={() => toggleAccordion(index)}
+          >
             <div className={`${styles.headingContainer} `}>
               <span className={styles.prefixTitle}>{child.prefixTitle}</span>
               <h2 className={`${styles._heading} s40_64`} dangerouslySetInnerHTML={{__html: child.title}}></h2>
