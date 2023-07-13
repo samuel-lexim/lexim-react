@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import styles from '@/styles/accordion.module.scss';
 
 const Accordion = ({
@@ -7,20 +7,33 @@ const Accordion = ({
    useArrow = true
 }) => {
   const [activeIndex, setActiveIndex] = useState(false);
+  const headerRefs = useRef([]);
 
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
+  useEffect(() => {
+    if (activeIndex !== false && headerRefs.current[activeIndex]) {
+      const scrollOptions = {
+        top: headerRefs.current[activeIndex].offsetTop - 60, // menu height = 60px
+        behavior: 'smooth',
+      };
+      window.scrollTo(scrollOptions);
+    }
+  }, [activeIndex]);
+
   return (
     <>
       {data.map((child, index) => (
-        <div
-          key={index}
-          className={`${styles.accordionWrap} ${className} ${styles[layout]} 
-        ${index === activeIndex ? styles.expanded : styles.closed}`}
+        <div key={index}
+             className={`${styles.accordionWrap} ${className} ${styles[layout]} 
+            ${index === activeIndex ? styles.expanded : styles.closed}`}
         >
-          <div className={styles.accordionHeader} onClick={() => toggleAccordion(index)}>
+          <div className={styles.accordionHeader}
+               onClick={() => toggleAccordion(index)}
+               ref={(el) => (headerRefs.current[index] = el)}
+          >
             <span className={`${styles._heading} s40_64 FontSui`}>{child.title}</span>
             {useArrow &&
               <svg className={styles.downArrow} width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg">
