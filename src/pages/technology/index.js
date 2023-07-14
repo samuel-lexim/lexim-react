@@ -44,9 +44,10 @@ export default function Technology() {
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1200,
-    verticalSwiping: false,
-    swipeToSlide: true,
-    vertical: true
+    vertical: true,
+    swipe: false,
+    // verticalSwiping: false,
+    // swipeToSlide: true,
   };
 
   const scrollableDivRef = useRef(null);
@@ -134,7 +135,6 @@ export default function Technology() {
             <div ref={scrollableDivRef} className={`${accordionStyle.accordionContent} `}>
               <Slider
                 {...settings}
-                {...swipeHandlers}
                 ref={sliderRef}
                 className={isSystemsIntegrationOpen ? 'isOpened' : ''}
               >
