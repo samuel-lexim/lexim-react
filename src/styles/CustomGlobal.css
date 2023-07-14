@@ -728,38 +728,6 @@ body.about #fp-nav {
 
 /* # Page Title */
 
-/* Vertical slick - technologySlider */
-
-.technologySlider .slick-vertical .slick-list {
-  height: calc(100vh - 160px) !important;
-  transition: transform 700ms ease 0s !important;
-}
-
-.technologySlider .slick-vertical .slick-slide {
-  min-height: calc(100vh - 160px) !important;
-}
-
-@media screen and (min-width: 768px) {
-  .technologySlider .slick-vertical .slick-list {
-    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
-  }
-
-  .technologySlider .slick-vertical .slick-slide {
-    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .technologySlider .slick-vertical .slick-list {
-    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
-  }
-
-  .technologySlider .slick-vertical .slick-slide {
-    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
-  }
-}
-
-/* # vertical slick - technologySlider*/
 
 /* Black Slick */
 body.scrollHidden {
@@ -770,9 +738,15 @@ body.scrollHidden header {
   width: calc(100% - 15px);
 }
 
-.blackSlickSlider .slick-slide {
-  /*padding-top: 20px;*/
+.blackSlickSlider .slick-vertical .slick-list {
+  height: calc(100vh - 160px) !important;
+  transition: transform 700ms ease 0s !important;
 }
+
+.blackSlickSlider .slick-vertical .slick-slide {
+  min-height: calc(100vh - 160px) !important;
+}
+
 
 .blackSlickSlider .slick-dots {
   position: absolute;
@@ -807,7 +781,25 @@ body.scrollHidden header {
   border-color: #0827F5;
 }
 
+@media only screen and (min-width: 768px) {
+  .blackSlickSlider .slick-vertical .slick-list {
+    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+
+  .blackSlickSlider .slick-vertical .slick-slide {
+    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
+  .blackSlickSlider .slick-vertical .slick-list {
+    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+
+  .blackSlickSlider .slick-vertical .slick-slide {
+    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+
   .blackSlickSlider .slick-dots {
     left: -63px;
   }

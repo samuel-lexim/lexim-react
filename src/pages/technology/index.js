@@ -9,6 +9,7 @@ import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
 import accordionStyle from '@/styles/accordion.module.scss';
 
+import { useSwipeable } from 'react-swipeable';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -16,14 +17,23 @@ import GreenTechnologyData from "@/data/GreenTechnology";
 
 export default function Technology() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isSystemsIntegrationOpen, setIsSystemsIntegrationOpen] = useState(false);
+
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
 
-    if (index === 1) {
+    if (index === 1) { // tab SYSTEMS INTEGRATION
+      // scroll
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       });
+
+      // Reset the slider to the first slide
+      setIsSystemsIntegrationOpen(true);
+      sliderRef.current.slickGoTo(0);
+    } else {
+      setIsSystemsIntegrationOpen(false);
     }
   };
 
@@ -33,14 +43,20 @@ export default function Technology() {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    verticalSwiping: false,
     speed: 1200,
+    verticalSwiping: false,
+    swipeToSlide: true,
     vertical: true
   };
 
   const scrollableDivRef = useRef(null);
   const sliderRef = useRef(null); // Reference to the Slider component
   const [isMouseInside, setIsMouseInside] = useState(false);
+
+  const swipeHandlers = useSwipeable({
+    onSwipedUp: () => sliderRef.current.slickNext(),
+    onSwipedDown: () => sliderRef.current.slickPrev(),
+  });
 
   useEffect(() => {
     const handleMouseEnter = () => {
@@ -109,14 +125,19 @@ export default function Technology() {
             className={`${accordionStyle.accordionWrap} ${accordionStyle['normal']} ${accordionStyle.black}
             blackSlickSlider
             ${accordionStyle.accordionWrap} ${accordionStyle['fullContent']} 
-            ${1 === activeIndex ? accordionStyle.expanded : accordionStyle.closed}
+            ${1 === activeIndex ? accordionStyle.expanded + ' expanded' : accordionStyle.closed}
           `}>
             <div className={accordionStyle.accordionHeader} onClick={() => toggleAccordion(1)}>
               <span className={`${accordionStyle._heading} s40_64 FontSui`}>SYSTEMS INTEGRATION</span>
             </div>
 
-            <div ref={scrollableDivRef} className={`${accordionStyle.accordionContent} technologySlider`}>
-              <Slider {...settings} ref={sliderRef}>
+            <div ref={scrollableDivRef} className={`${accordionStyle.accordionContent} `}>
+              <Slider
+                {...settings}
+                {...swipeHandlers}
+                ref={sliderRef}
+                className={isSystemsIntegrationOpen ? 'isOpened' : ''}
+              >
                 <div>
                   <p>
                     Many companies use different IT solutions for different tasks, but as business functions expand, they become overwhelmed by disjointed tools that can’t share data with each
