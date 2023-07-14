@@ -728,6 +728,39 @@ body.about #fp-nav {
 
 /* # Page Title */
 
+/* Vertical slick - technologySlider */
+
+.technologySlider .slick-vertical .slick-list {
+  height: calc(100vh - 160px) !important;
+  transition: transform 700ms ease 0s !important;
+}
+
+.technologySlider .slick-vertical .slick-slide {
+  min-height: calc(100vh - 160px) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .technologySlider .slick-vertical .slick-list {
+    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+
+  .technologySlider .slick-vertical .slick-slide {
+    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .technologySlider .slick-vertical .slick-list {
+    height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+
+  .technologySlider .slick-vertical .slick-slide {
+    min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+}
+
+/* # vertical slick - technologySlider*/
+
 /* Black Slick */
 body.scrollHidden {
   overflow-y: hidden;

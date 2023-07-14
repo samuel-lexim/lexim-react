@@ -8,6 +8,7 @@ import PageTitle from "@/components/PageTitle";
 import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
 import accordionStyle from '@/styles/accordion.module.scss';
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -32,9 +33,9 @@ export default function Technology() {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    verticalSwiping: true,
+    verticalSwiping: false,
     speed: 1200,
-    // vertical: true,
+    vertical: true
   };
 
   const scrollableDivRef = useRef(null);
@@ -114,7 +115,7 @@ export default function Technology() {
               <span className={`${accordionStyle._heading} s40_64 FontSui`}>SYSTEMS INTEGRATION</span>
             </div>
 
-            <div ref={scrollableDivRef} className={`${accordionStyle.accordionContent}`}>
+            <div ref={scrollableDivRef} className={`${accordionStyle.accordionContent} technologySlider`}>
               <Slider {...settings} ref={sliderRef}>
                 <div>
                   <p>
