@@ -238,6 +238,7 @@
     }
   }
 }
+
 // # Our Customer
 
 @media only screen and (max-width: 767px) {
@@ -248,10 +249,13 @@
   .homeSection {
     &[data-index="1"],
     &[data-index="2"] {
-      align-items: flex-start;
+      //align-items: flex-start;
 
       .innerSection {
-        padding-top: 255px;
+        .content {
+          height: 100vh;
+          padding-top: 255px;
+        }
       }
     }
   }

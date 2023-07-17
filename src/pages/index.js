@@ -123,12 +123,12 @@ export default function Home() {
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
-                    <div className={`${styles.homeHeading} FontSui`}>
-                      <h3 className={`s40_100 _backInRight fw-300`}>And we do</h3>
-                      <h2 className={`s50_140 fw-500 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
-                    </div>
-
-                    {/*
+                    <div className={`${styles.content} `}>
+                      <div className={`${styles.homeHeading} FontSui`}>
+                        <h3 className={`s40_100 _backInRight fw-300`}>And we do</h3>
+                        <h2 className={`s50_140 fw-500 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
+                      </div>
+                      {/*
                     <div className={`${styles.ourCustomers}`}>
                       {logoStarted &&
                         <>
@@ -172,6 +172,7 @@ export default function Home() {
                       }
                     </div>
                     */}
+                    </div>
                   </div>
                 </section>
               </div>
