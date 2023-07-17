@@ -67,7 +67,7 @@ export default function Home() {
 
         render={({state}) => {
           return (
-            <div id='HomeFullPage' className=''>
+            <>
               <div className={`${styles.fullPageSection} section initNotRunEffect`} data-index={0}>
                 <div className={styles.lineHome}>
                   {/*<span className={`${styles._lineTop} _lineTopEffect`}></span>*/}
@@ -261,9 +261,8 @@ export default function Home() {
                   <Footer/>
                 </section>
               </div>
+            </>
 
-
-            </div>
           );
 
         }}
