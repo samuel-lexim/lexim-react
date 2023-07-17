@@ -612,6 +612,7 @@ h1, .h1, .s70 {
 /* Fix bug scroll */
 
 .fp-section {
+  will-change: transform;
   height: 100vh !important;
   min-height: 100vh;
   max-height: 100vh;
