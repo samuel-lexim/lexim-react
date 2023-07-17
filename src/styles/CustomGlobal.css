@@ -609,6 +609,16 @@ h1, .h1, .s70 {
 
 /* END - Effect */
 
+/* Fix bug scroll */
+
+.fp-section {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+/* # Fix bug scroll */
+
+
 /* Pagination */
 body.about #fp-nav {
   display: none;
