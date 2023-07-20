@@ -112,7 +112,7 @@ export default function Home() {
                 <section className={` ${styles.homeSection}`}
                          id={sections[1]} data-index={1}>
                   <div className={`${styles.innerSection} _backInLeft22`}>
-                    <div className={`${styles.content} `}>
+                    <div className={`${styles.content} bugScroll`}>
 
                       {typingStarted &&
                         <>
@@ -134,12 +134,12 @@ export default function Home() {
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[2]} data-index={2}>
                   <div className={styles.innerSection}>
-                    <div className={`${styles.content} `}>
+                    <div className={`${styles.content} bugScroll`}>
                       <div className={`${styles.homeHeading} FontSui`}>
                         <h3 className={`s40_100 _backInRight fw-300`}>And we do</h3>
                         <h2 className={`s50_140 fw-500 ${styles._underLine} _underLineEffect _backInLeft`}>a lot more than that…</h2>
                       </div>
-                      {/*
+                    {/*
                     <div className={`${styles.ourCustomers}`}>
                       {logoStarted &&
                         <>
@@ -191,7 +191,7 @@ export default function Home() {
               <div className={`${styles.fullPageSection} section`} data-index={3}>
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[3]} data-index={3}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <div className={styles.homeHeading}>
                       <h3 className={`fw-400 s50 ${styles._underLine} _underLineEffect _backInLeft FontSui`}>We focus on:</h3>
                     </div>
@@ -217,7 +217,7 @@ export default function Home() {
               <div className={`${styles.fullPageSection} section`} data-index={4}>
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[4]} data-index={4}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <div className={styles.homeHeading}>
                       <h3 className={`fw-400 s50 ${styles._underLine} _underLineEffect _backInLeft FontSui`}>
                         Here’s how we’ll<br/> plan your project:</h3>
@@ -242,7 +242,7 @@ export default function Home() {
               <div className={`${styles.fullPageSection} section`} data-index={5}>
                 <section className={` ${styles.homeSection} ${styles.headingUnderLine}`}
                          id={sections[5]} data-index={5}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <div className={styles.homeHeading}>
                       <h3 className={`fw-400 s50 ${styles._underLine} _underLineEffect _backInLeft FontSui`}>Let’s plan your<br/> project:</h3>
                     </div>
