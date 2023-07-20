@@ -60,7 +60,12 @@ export default function About() {
   };
 
   useEffect(() => {
-    initNotRunEffect(); // Run the function only once after the component mounts
+    // Ad up class for the first section
+    const theFirst = document.querySelector(".fp-section[data-index='0']");
+    theFirst.classList.add('up');
+
+    // Run the function only once after the component mounts
+    initNotRunEffect();
   }, []);
   // END - Run effect in the first time page load
 
