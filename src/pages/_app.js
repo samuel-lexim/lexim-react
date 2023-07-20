@@ -43,6 +43,7 @@ export default function App({Component, pageProps}) {
     }
     if (bodyClasses.length > 0) {
       document.body.classList.add(...bodyClasses);
+      alert(bodyClasses);
     }
 
     return () => {
