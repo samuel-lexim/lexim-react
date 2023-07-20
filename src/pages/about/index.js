@@ -83,7 +83,11 @@ export default function About() {
       <ReactFullPage
         navigation={true}
         navigationPosition="right"
+
         afterLoad={(origin, destination, direction, trigger) => {
+          // Add direction to the current section
+          destination.item.classList.add(direction);
+
           // Logo Effect
           if (destination.index === 2) {
             setLogoStarted(true);
@@ -99,6 +103,14 @@ export default function About() {
           }
           // End - Logo Effect
         }}
+
+        // This callback is fired once the user leaves a section, in the transition to the new section.
+        // Returning false will cancel the move before it takes place.
+        beforeLeave={(origin, destination, direction, trigger) => {
+          let array = ['up', 'down'];
+          origin.item.classList.remove(...array);
+        }}
+
         render={({state, fullPageApi}) => {
 
           return (
@@ -110,7 +122,7 @@ export default function About() {
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <div className='_backInTop'>
                       <a href='/'>
                         {/*<Image*/}
@@ -148,7 +160,7 @@ export default function About() {
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <h2 className={`${styles._heading} fw-300 s46_120 _backInLeft FontSui`}>IT SOLUTIONS</h2>
 
                     <div className={`${styles.contentWrap} _backInRight`}>
@@ -176,7 +188,7 @@ export default function About() {
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <h2 className={`${styles._heading} fw-300 s46_120 _backInRight FontSui`}>OUR CLIENTS</h2>
 
                     <div className={`${styles.contentWrap} _backInLeft`}>
@@ -251,7 +263,7 @@ export default function About() {
                 </div>
 
                 <section className={`${styles.aboutSection} ${page.pageWrapLeft}`}>
-                  <div className={styles.innerSection}>
+                  <div className={`${styles.innerSection} bugScroll`}>
                     <h2 className={`${styles._heading} ${styles._headingLoop} fw-300 s46_120 _backInLeft FontSui`}>
                       <span className={page.fadeInOut}>LOS ANGELES</span>
                       <span className={page.fadeInOut} style={{'animation-delay': '3s'}}>DA NANG</span>
