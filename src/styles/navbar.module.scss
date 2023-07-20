@@ -59,6 +59,7 @@
 
     &:not(.yellow) .menuBar {
       background-color: $color-White;
+      transition: background-color 0.1s 0s, transform 0.5s 0.7s;
     }
 
     .menuBar.top {
@@ -87,6 +88,10 @@
     + .menuPanel {
       background-color: $color-Blue;
     }
+
+    .menuBar {
+      transition: background-color 0.2s 0.8s, transform 0.5s 0.7s;
+    }
   }
 
   &.yellow {
@@ -100,6 +105,10 @@
       .bottomLine {
         background: $color-SoftBlack;
       }
+    }
+
+    .menuBar {
+      transition: background-color 0.2s 0.8s, transform 0.5s 0.7s;
     }
   }
 }
@@ -142,11 +151,11 @@
     transition-property: width;
   }
 
-  a:hover {
-    .bottomLine {
-      width: 100%;
-    }
-  }
+  //a:hover {
+  //  .bottomLine {
+  //    width: 100%;
+  //  }
+  //}
 }
 
 @media only screen and (max-width: 389px) {
@@ -201,6 +210,16 @@
 
     .menuBtn {
       padding-right: 70px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .menuPanel {
+    a:hover {
+      .bottomLine {
+        width: 100%;
+      }
     }
   }
 }

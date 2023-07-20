@@ -45,15 +45,15 @@
       position: relative;
     }
 
-    &:hover {
-      .bottomLine {
-        width: 100%;
-      }
-
-      .arrow img {
-        transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-      }
-    }
+    //&:hover {
+    //  .bottomLine {
+    //    width: 100%;
+    //  }
+    //
+    //  .arrow img {
+    //    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    //  }
+    //}
   }
 
   .brandWrap {
@@ -106,14 +106,14 @@
       height: auto;
     }
 
-    &:hover {
-      background: #fff;
-      color: $color-Blue;
-
-      svg path {
-        fill: $color-Blue;
-      }
-    }
+    //&:hover {
+    //  background: #fff;
+    //  color: $color-Blue;
+    //
+    //  svg path {
+    //    fill: $color-Blue;
+    //  }
+    //}
   }
 }
 
@@ -192,6 +192,36 @@
       }
     }
   }
+}
+
+@media only screen and (min-width: 1300px) {
+  .ctaButton {
+    .ctaLink {
+      &:hover {
+        .bottomLine {
+          width: 100%;
+        }
+
+        .arrow img {
+          transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        }
+      }
+    }
+  }
+
+  .blueButton {
+    .ctaLink {
+      &:hover {
+        background: #fff;
+        color: $color-Blue;
+
+        svg path {
+          fill: $color-Blue;
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: 1400px) {

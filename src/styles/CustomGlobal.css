@@ -663,8 +663,6 @@ body #fp-nav.fp-left {
 
 body #fp-nav ul li,
 body #fp-nav ul li a span,
-body #fp-nav ul li:hover a span,
-body #fp-nav ul li:hover a.active span,
 body #fp-nav ul li a.active span {
   width: 25px;
   height: 22px;
@@ -675,8 +673,6 @@ body #fp-nav ul li {
 }
 
 body #fp-nav ul li a span,
-body #fp-nav ul li:hover a span,
-body #fp-nav ul li:hover a.active span,
 body #fp-nav ul li a.active span {
   border: 1px solid #000;
   border-radius: 5px;
@@ -689,14 +685,10 @@ body #fp-nav ul li a span {
   left: 0;
 }
 
-body #fp-nav ul li:hover a span,
-body #fp-nav ul li:hover a.active span,
 body #fp-nav ul li a.active span {
   background: #0827F5;
 }
 
-body #fp-nav ul li:nth-child(2n):hover a span,
-body #fp-nav ul li:nth-child(2n):hover a.active span,
 body #fp-nav ul li:nth-child(2n) a.active span {
   background: #F7F749;
 }
@@ -712,8 +704,6 @@ body.about #fp-nav {
 
   body #fp-nav ul li,
   body #fp-nav ul li a span,
-  body #fp-nav ul li:hover a span,
-  body #fp-nav ul li:hover a.active span,
   body #fp-nav ul li a.active span {
     width: 30px;
     height: 27px;
@@ -733,6 +723,24 @@ body.about #fp-nav {
   body.about #fp-nav {
     top: calc(17vw + 197px);
   }
+}
+
+@media only screen and (min-width: 1300px) {
+  body #fp-nav ul li:hover a span,
+  body #fp-nav ul li:hover a.active span {
+    width: 25px;
+    height: 22px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0;
+    background: #0827F5;
+  }
+
+  body #fp-nav ul li:nth-child(2n):hover a span,
+  body #fp-nav ul li:nth-child(2n):hover a.active span {
+    background: #F7F749;
+  }
+
 }
 
 
@@ -818,7 +826,6 @@ body.scrollHidden header {
   cursor: pointer;
 }
 
-.blackSlickSlider .slick-dots li:hover button,
 .blackSlickSlider .slick-dots li.slick-active button {
   background: #0827F5;
   border-color: #0827F5;
@@ -831,6 +838,13 @@ body.scrollHidden header {
 
   .blackSlickSlider .slick-vertical .slick-slide {
     min-height: calc(100vh - 50px - 6vw - 40px - 8vw) !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .blackSlickSlider .slick-dots li:hover button {
+    background: #0827F5;
+    border-color: #0827F5;
   }
 }
 
