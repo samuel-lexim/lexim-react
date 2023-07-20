@@ -9,7 +9,6 @@ import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
 import accordionStyle from '@/styles/accordion.module.scss';
 
-// import {useSwipeable} from 'react-swipeable';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -18,6 +17,7 @@ import GreenTechnologyData from "@/data/GreenTechnology";
 export default function Technology() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSystemsIntegrationOpen, setIsSystemsIntegrationOpen] = useState(false);
+  const [isMobileScrollDisabled, setIsMobileScrollDisabled] = useState(false);
 
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
@@ -32,8 +32,14 @@ export default function Technology() {
       // Reset the slider to the first slide
       setIsSystemsIntegrationOpen(true);
       sliderRef.current.slickGoTo(0);
+
+      // check screen and disable scroll
+      if (window.innerWidth < 1300) {
+        setIsMobileScrollDisabled(true);
+      }
     } else {
       setIsSystemsIntegrationOpen(false);
+      setIsMobileScrollDisabled(false); // enable scroll when SYSTEMS INTEGRATION tab is closed
     }
   };
 
@@ -47,78 +53,12 @@ export default function Technology() {
     vertical: true,
     swipe: true,
     verticalSwiping: true,
-    swipeToSlide: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       arrows: true
-    //     }
-    //   }
-    // ]
+    swipeToSlide: true
   };
 
   const scrollableDivRef = useRef(null);
   const sliderRef = useRef(null); // Reference to the Slider component
   const [isMouseInside, setIsMouseInside] = useState(false);
-
-  // const swipeHandlers = useSwipeable({
-  //   onSwipedUp: () => {
-  //     console.log('onSwipedUp');
-  //     sliderRef.current.slickNext()
-  //   },
-  //   onSwipedDown: () => {
-  //     console.log('onSwipedDown');
-  //     sliderRef.current.slickPrev()
-  //   },
-  // });
-
-  // let xDown = null;
-  // let yDown = null;
-  //
-  // const getTouches = (evt) => {
-  //   return evt.touches || // browser API
-  //     evt.originalEvent.touches; // jQuery
-  // }
-  //
-  // const handleTouchStart = (evt) => {
-  //   const firstTouch = getTouches(evt)[0];
-  //   xDown = firstTouch.clientX;
-  //   yDown = firstTouch.clientY;
-  // }
-
-  // const handleTouchMove = (evt) => {
-  //   if ( ! xDown || ! yDown ) {
-  //     return;
-  //   }
-  //
-  //   let xUp = evt.touches[0].clientX;
-  //   let yUp = evt.touches[0].clientY;
-  //
-  //   let xDiff = xDown - xUp;
-  //   let yDiff = yDown - yUp;
-  //
-  //   if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
-  //     if ( xDiff > 0 ) {
-  //       /* right swipe */
-  //       console.log('/* right swipe */');
-  //     } else {
-  //       /* left swipe */
-  //       console.log('/* left swipe */');
-  //     }
-  //   } else {
-  //     if ( yDiff > 0 ) {
-  //       /* down swipe */
-  //       console.log('/* down swipe */');
-  //     } else {
-  //       /* up swipe */
-  //       console.log('/* up swipe */');
-  //     }
-  //   }
-  //   /* reset values */
-  //   xDown = null;
-  //   yDown = null;
-  // }
 
   useEffect(() => {
     const handleMouseEnter = () => {
@@ -128,7 +68,9 @@ export default function Technology() {
 
     const handleMouseLeave = () => {
       setIsMouseInside(false);
-      document.body.classList.remove('scrollHidden'); // Enable global scroll
+      if (!isMobileScrollDisabled) {
+        document.body.classList.remove('scrollHidden'); // Enable global scroll
+      }
     };
 
     const handleWheel = (event) => {
@@ -142,24 +84,28 @@ export default function Technology() {
       }
     }
 
+    // add event listener for scroll
+    const handleScroll = () => {
+      if (isMobileScrollDisabled) {
+        window.scrollTo(0, 0);
+        document.body.classList.add('scrollHidden');
+      }
+    };
+
     const scrollableDiv = scrollableDivRef.current;
     scrollableDiv.addEventListener('mouseenter', handleMouseEnter);
     scrollableDiv.addEventListener('mouseleave', handleMouseLeave);
     scrollableDiv.addEventListener('wheel', handleWheel);
-
-    // document.addEventListener('touchstart', handleTouchStart, false);
-    // document.addEventListener('touchmove', handleTouchMove, false);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
       scrollableDiv.removeEventListener('wheel', handleWheel);
       scrollableDiv.removeEventListener('mouseenter', handleMouseEnter);
       scrollableDiv.removeEventListener('mouseleave', handleMouseLeave);
       document.body.classList.remove('scrollHidden');
-
-      // document.removeEventListener('touchstart', handleTouchStart);
-      // document.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isMobileScrollDisabled]);
   // END - Scroll slider
 
 
