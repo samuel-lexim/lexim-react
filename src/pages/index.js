@@ -39,7 +39,11 @@ export default function Home() {
     <Layout className='pageHome'>
 
       <ReactFullPage
+        // Callback fired once the sections have been loaded, after the scrolling has ended
         afterLoad={(origin, destination, direction, trigger) => {
+          // Add direction to the current section
+          destination.item.classList.add(direction);
+
           // Typing Effect
           if (origin.index === 1) {
             setTypingStarted(false);
@@ -63,6 +67,13 @@ export default function Home() {
             }, 200)
           }
           // End - Logo Effect
+        }}
+
+        // This callback is fired once the user leaves a section, in the transition to the new section.
+        // Returning false will cancel the move before it takes place.
+        beforeLeave={(origin, destination, direction, trigger) => {
+          let array = ['up', 'down'];
+          origin.item.classList.remove(...array);
         }}
 
         render={({state}) => {

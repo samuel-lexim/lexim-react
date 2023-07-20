@@ -410,9 +410,15 @@ h1, .h1, .s70 {
 
 /* # Font and Spacing */
 
-/* Custom */
+/* Fix bug fullPage.js */
 .fp-watermark, .fp-watermark > a {
   display: none !important;
+}
+
+@media only screen and (max-width: 1023px) {
+  body.mobile:not(.firefox) .fp-section.active.down {
+    padding-bottom: 200px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

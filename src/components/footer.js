@@ -1,4 +1,3 @@
-import 'animate.css';
 import styles from '@/styles/footer.module.scss';
 import CtaButton from "@/components/ctaButton";
 import Image from "next/image";
