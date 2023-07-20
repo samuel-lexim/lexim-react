@@ -44,7 +44,7 @@ export default function App({Component, pageProps}) {
     if (bodyClasses.length > 0) {
       document.body.classList.add(...bodyClasses);
       console.log(window.navigator.userAgent + " === " + bodyClasses);
-      alert(window.navigator.userAgent + " === " + bodyClasses);
+      // alert(window.navigator.userAgent + " === " + bodyClasses);
     }
 
     return () => {

@@ -437,6 +437,10 @@ h1, .h1, .s70 {
     margin-top: 92px;
   }
 
+  body.about.mobile.firefox .fp-section.active.up[data-index='0'] .bugScroll {
+    margin-top: -30px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
