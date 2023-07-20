@@ -41,9 +41,6 @@ export default function Home() {
       <ReactFullPage
         // Callback fired once the sections have been loaded, after the scrolling has ended
         afterLoad={(origin, destination, direction, trigger) => {
-          // Add direction to the current section
-          destination.item.classList.add(direction);
-
           // Typing Effect
           if (origin.index === 1) {
             setTypingStarted(false);
@@ -73,7 +70,10 @@ export default function Home() {
         // Returning false will cancel the move before it takes place.
         beforeLeave={(origin, destination, direction, trigger) => {
           let array = ['up', 'down'];
+          // Remove class on the origin section
           origin.item.classList.remove(...array);
+          // Add direction to the destination section
+          destination.item.classList.add(direction);
         }}
 
         render={({state}) => {
