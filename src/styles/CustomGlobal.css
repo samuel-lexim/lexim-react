@@ -425,7 +425,7 @@ h1, .h1, .s70 {
   }
 
   body.about.mobile:not(.firefox) .fp-section.active.up[data-index='0'] .bugScroll {
-    margin-top: 70px;
+    margin-top: 65px;
   }
 }
 
