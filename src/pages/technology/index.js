@@ -9,7 +9,7 @@ import page from '@/styles/page.module.scss';
 import styles from '@/styles/pageTechnology.module.scss';
 import accordionStyle from '@/styles/accordion.module.scss';
 
-import { useSwipeable } from 'react-swipeable';
+// import {useSwipeable} from 'react-swipeable';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
@@ -45,19 +45,80 @@ export default function Technology() {
     slidesToScroll: 1,
     speed: 1200,
     vertical: true,
-    swipe: false,
-    // verticalSwiping: false,
-    // swipeToSlide: true,
+    swipe: true,
+    verticalSwiping: true,
+    swipeToSlide: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       arrows: true
+    //     }
+    //   }
+    // ]
   };
 
   const scrollableDivRef = useRef(null);
   const sliderRef = useRef(null); // Reference to the Slider component
   const [isMouseInside, setIsMouseInside] = useState(false);
 
-  const swipeHandlers = useSwipeable({
-    onSwipedUp: () => sliderRef.current.slickNext(),
-    onSwipedDown: () => sliderRef.current.slickPrev(),
-  });
+  // const swipeHandlers = useSwipeable({
+  //   onSwipedUp: () => {
+  //     console.log('onSwipedUp');
+  //     sliderRef.current.slickNext()
+  //   },
+  //   onSwipedDown: () => {
+  //     console.log('onSwipedDown');
+  //     sliderRef.current.slickPrev()
+  //   },
+  // });
+
+  // let xDown = null;
+  // let yDown = null;
+  //
+  // const getTouches = (evt) => {
+  //   return evt.touches || // browser API
+  //     evt.originalEvent.touches; // jQuery
+  // }
+  //
+  // const handleTouchStart = (evt) => {
+  //   const firstTouch = getTouches(evt)[0];
+  //   xDown = firstTouch.clientX;
+  //   yDown = firstTouch.clientY;
+  // }
+
+  // const handleTouchMove = (evt) => {
+  //   if ( ! xDown || ! yDown ) {
+  //     return;
+  //   }
+  //
+  //   let xUp = evt.touches[0].clientX;
+  //   let yUp = evt.touches[0].clientY;
+  //
+  //   let xDiff = xDown - xUp;
+  //   let yDiff = yDown - yUp;
+  //
+  //   if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+  //     if ( xDiff > 0 ) {
+  //       /* right swipe */
+  //       console.log('/* right swipe */');
+  //     } else {
+  //       /* left swipe */
+  //       console.log('/* left swipe */');
+  //     }
+  //   } else {
+  //     if ( yDiff > 0 ) {
+  //       /* down swipe */
+  //       console.log('/* down swipe */');
+  //     } else {
+  //       /* up swipe */
+  //       console.log('/* up swipe */');
+  //     }
+  //   }
+  //   /* reset values */
+  //   xDown = null;
+  //   yDown = null;
+  // }
 
   useEffect(() => {
     const handleMouseEnter = () => {
@@ -86,11 +147,17 @@ export default function Technology() {
     scrollableDiv.addEventListener('mouseleave', handleMouseLeave);
     scrollableDiv.addEventListener('wheel', handleWheel);
 
+    // document.addEventListener('touchstart', handleTouchStart, false);
+    // document.addEventListener('touchmove', handleTouchMove, false);
+
     return () => {
       scrollableDiv.removeEventListener('wheel', handleWheel);
       scrollableDiv.removeEventListener('mouseenter', handleMouseEnter);
       scrollableDiv.removeEventListener('mouseleave', handleMouseLeave);
       document.body.classList.remove('scrollHidden');
+
+      // document.removeEventListener('touchstart', handleTouchStart);
+      // document.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
   // END - Scroll slider
@@ -117,13 +184,13 @@ export default function Technology() {
             <div className={`${accordionStyle.accordionContent}`}>
               <GreenAccordion data={GreenTechnologyData}
                               activeIndex={activeIndex}
-                              onAccordionToggle={toggleAccordion} />
+                              onAccordionToggle={toggleAccordion}/>
             </div>
           </div>
 
 
           <div key={1}
-            className={`${accordionStyle.accordionWrap} ${accordionStyle['normal']} ${accordionStyle.black}
+               className={`${accordionStyle.accordionWrap} ${accordionStyle['normal']} ${accordionStyle.black}
             blackSlickSlider
             ${accordionStyle.accordionWrap} ${accordionStyle['fullContent']} 
             ${1 === activeIndex ? accordionStyle.expanded + ' expanded' : accordionStyle.closed}
@@ -141,22 +208,18 @@ export default function Technology() {
                 <div>
                   <p>
                     Many companies use different IT solutions for different tasks, but as business functions expand, they become overwhelmed by disjointed tools that can’t share data with each
-                    other.
-                    That’s why Systems Integration is so important to connect these different pieces of technology into a single ecosystem.</p>
+                    other. That’s why Systems Integration is so important to connect these different pieces of technology into a single ecosystem.</p>
                 </div>
 
                 <div>
-                  <p>Systems Integration involves <span className={`${page.yellowText} fw-400`}>connecting business software, applications, and databases together</span> so that data can be pushed and pulled
-                    between
-                    them. Businesses use many different
-                    systems for sales, accounting, inventory or fulfillment, but these systems don't always work together. System integration solves this problem by connecting different systems
-                    together.</p>
+                  <p>Systems Integration involves <span className={`${page.yellowText} fw-400`}>connecting business software, applications, and databases together</span> so that data can be pushed and
+                    pulled between them. Businesses use many different systems for sales, accounting, inventory or fulfillment, but these systems don't always work together. System integration solves
+                    this problem by connecting different systems together.</p>
                 </div>
 
                 <div>
                   <p>This allows businesses to automate tasks, like moving data between systems, getting notifications when certain things happen, and generating reports. By doing this, businesses
-                    can
-                    improve their performance, gain more insight into their operations, and make better decisions.</p>
+                    can improve their performance, gain more insight into their operations, and make better decisions.</p>
                 </div>
 
                 <div>
