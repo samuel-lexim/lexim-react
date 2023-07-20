@@ -423,15 +423,16 @@ h1, .h1, .s70 {
   body.about.mobile:not(.firefox) .fp-section.active.up .bugScroll {
     margin-top: 80px;
   }
-
   body.about.mobile:not(.firefox) .fp-section.active.up[data-index='0'] .bugScroll {
     margin-top: 65px;
   }
 
+  body.home.mobile.chrome .fp-section.active.up .bugScroll {
+    margin-top: 195px;
+  }
   body.about.mobile.chrome .fp-section.active.up .bugScroll {
     margin-top: 108px;
   }
-
   body.about.mobile.chrome .fp-section.active.up[data-index='0'] .bugScroll {
     margin-top: 92px;
   }
