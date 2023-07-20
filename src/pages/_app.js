@@ -15,7 +15,7 @@ export default function App({Component, pageProps}) {
   const userAgent = typeof window !== 'undefined' ? window.navigator.userAgent : '';
   const isMobile = /Mobi|Android/i.test(userAgent);
   const isSafari = /Safari/i.test(userAgent) && !/Chrome|CriOS|FxiOS|Edg|EdgA|EdgiOS/i.test(userAgent);
-  const isFirefox = /Firefox/i.test(userAgent);
+  const isFirefox = /Firefox|FxiOS/i.test(userAgent);
   const isChrome = /Chrome|CriOS/i.test(userAgent);
   const bodyClasses = [isMobile ? 'mobile' : 'desktop'];
   if (isSafari) {
