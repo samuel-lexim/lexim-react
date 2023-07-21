@@ -432,11 +432,7 @@ h1, .h1, .s70 {
     margin-top: 80px;
   }
 
-  body.home.mobile.chrome .fp-section.active.up .bugScroll {
-    margin-top: 110px;
-  }
-
-  body.about.mobile.chrome .fp-section.active.up .bugScroll {
+  body.mobile.chrome .fp-section.active.up .bugScroll {
     margin-top: 108px;
   }
 
