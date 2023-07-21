@@ -416,17 +416,17 @@ h1, .h1, .s70 {
 }
 
 @media only screen and (max-width: 1023px) {
-  body.home.mobile:not(.firefox) .fp-section.active.up .bugScroll {
-    margin-top: 80px;
-  }
+  /*body.home.mobile:not(.firefox) .fp-section.active.up .bugScroll {*/
+  /*  margin-top: 80px;*/
+  /*}*/
 
-  body.about.mobile:not(.firefox) .fp-section.active.up .bugScroll {
-    margin-top: 80px;
-  }
+  /*body.about.mobile:not(.firefox) .fp-section.active.up .bugScroll {*/
+  /*  margin-top: 80px;*/
+  /*}*/
 
-  body.about.mobile:not(.firefox) .fp-section.active.up[data-index='0'] .bugScroll {
-    margin-top: 65px;
-  }
+  /*body.about.mobile:not(.firefox) .fp-section.active.up[data-index='0'] .bugScroll {*/
+  /*  margin-top: 65px;*/
+  /*}*/
 
   body.home.mobile.safari .fp-section.active.up .bugScroll {
     margin-top: 80px;
