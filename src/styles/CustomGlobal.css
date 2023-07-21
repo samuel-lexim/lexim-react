@@ -433,7 +433,7 @@ h1, .h1, .s70 {
   }
 
   body.home.mobile.chrome .fp-section.active.up .bugScroll {
-    margin-top: 215px;
+    margin-top: 80px;
   }
 
   body.about.mobile.chrome .fp-section.active.up .bugScroll {
@@ -441,7 +441,7 @@ h1, .h1, .s70 {
   }
 
   body.about.mobile.chrome .fp-section.active.up[data-index='0'] .bugScroll {
-    margin-top: 92px;
+    margin-top: 93px;
   }
 
   body.about.mobile.firefox .fp-section.active.up[data-index='0'] .bugScroll {
