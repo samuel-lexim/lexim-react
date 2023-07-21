@@ -417,7 +417,7 @@ h1, .h1, .s70 {
 
 @media only screen and (max-width: 1023px) {
   body.home.mobile:not(.firefox) .fp-section.active.up .bugScroll {
-    margin-top: 170px;
+    margin-top: 80px;
   }
 
   body.about.mobile:not(.firefox) .fp-section.active.up .bugScroll {
@@ -429,7 +429,7 @@ h1, .h1, .s70 {
   }
 
   body.home.mobile.safari .fp-section.active.up .bugScroll {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   body.home.mobile.chrome .fp-section.active.up .bugScroll {
