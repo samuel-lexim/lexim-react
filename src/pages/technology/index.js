@@ -18,6 +18,7 @@ export default function Technology() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isSystemsIntegrationOpen, setIsSystemsIntegrationOpen] = useState(false);
   const [isMobileScrollDisabled, setIsMobileScrollDisabled] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const toggleAccordion = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? -1 : index));
@@ -34,7 +35,7 @@ export default function Technology() {
       sliderRef.current.slickGoTo(0);
 
       // check screen and disable scroll
-      if (window.innerWidth < 1300) {
+      if (!isDesktop) {
         setIsMobileScrollDisabled(true);
       }
     } else {
@@ -73,6 +74,7 @@ export default function Technology() {
       }
     };
 
+    // Event wheel
     const handleWheel = (event) => {
       const delta = Math.sign(event.deltaY);
       if (delta > 0) {
@@ -87,15 +89,29 @@ export default function Technology() {
     // add event listener for scroll
     const handleScroll = () => {
       if (isMobileScrollDisabled) {
-        window.scrollTo(0, 0);
         document.body.classList.add('scrollHidden');
+      }
+    };
+
+    // event resize
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1300);
+      if (isDesktop) {
+        scrollableDiv.addEventListener('wheel', handleWheel);
+      } else {
+        scrollableDiv.removeEventListener('wheel', handleWheel);
       }
     };
 
     const scrollableDiv = scrollableDivRef.current;
     scrollableDiv.addEventListener('mouseenter', handleMouseEnter);
     scrollableDiv.addEventListener('mouseleave', handleMouseLeave);
-    scrollableDiv.addEventListener('wheel', handleWheel);
+    if (isDesktop) {
+      scrollableDiv.addEventListener('wheel', handleWheel);
+    } else {
+      scrollableDiv.removeEventListener('wheel', handleWheel);
+    }
+    window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -104,8 +120,9 @@ export default function Technology() {
       scrollableDiv.removeEventListener('mouseleave', handleMouseLeave);
       document.body.classList.remove('scrollHidden');
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
-  }, [isMobileScrollDisabled]);
+  }, [isMobileScrollDisabled, isDesktop]);
   // END - Scroll slider
 
 

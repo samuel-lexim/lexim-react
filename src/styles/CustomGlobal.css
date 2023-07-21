@@ -785,10 +785,6 @@ body.scrollHidden {
   overflow-y: hidden;
 }
 
-body.scrollHidden header {
-  width: calc(100% - 15px);
-}
-
 .blackSlickSlider .slick-vertical .slick-list {
   height: calc(100vh - 160px) !important;
   transition: transform 700ms ease 0s !important;
