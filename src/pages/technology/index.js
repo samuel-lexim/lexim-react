@@ -113,6 +113,7 @@ export default function Technology() {
     }
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
+    handleResize();
 
     return () => {
       scrollableDiv.removeEventListener('wheel', handleWheel);
