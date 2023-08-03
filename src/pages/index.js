@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
 import CtaBlueButton from "@/components/ctaBlueButton";
-import TypingEffect from '@/components/TypingEffect';
+// import TypingEffect from '@/components/TypingEffect';
 import FadeInUpSentences from '@/components/FadeInUpSentences';
 
 // Docs: https://alvarotrigo.com/fullPage/docs/

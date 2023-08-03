@@ -15,7 +15,7 @@ const FadeInUpSentences = (
 
 			{sentences.map((element, index) => (
 				<p
-					data-index={index}
+					key={index}
 					dangerouslySetInnerHTML={{__html: element}}
 					className={`${classArray[index]} 
 						${styles.sentence} ${styles.__fadeInUp}`}
