@@ -216,7 +216,7 @@ export default function About() {
                     <div className={`${styles.ourCustomers}`}>
                       {logoStarted &&
                         <>
-                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0s'}}>
+                          <div className={`${styles.customerItem} `} style={{'transitionDelay': '0s'}}>
                             <Link href='https://www.silverts.com'>
                               <Image
                                 src="/images/customers/silverts.png"
@@ -225,7 +225,7 @@ export default function About() {
                               />
                             </Link>
                           </div>
-                          <div className={`${styles.customerItem} `} style={{'transition-delay': '0.5s'}}>
+                          <div className={`${styles.customerItem} `} style={{'transitionDelay': '0.5s'}}>
                             <Link href='https://www.intertrend.com'>
                               <Image
                                 src="/images/customers/intertrend.png"
@@ -234,7 +234,7 @@ export default function About() {
                               />
                             </Link>
                           </div>
-                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1s'}}>
+                          <div className={`${styles.customerItem} `} style={{'transitionDelay': '1s'}}>
                             <Link href='https://www.heartsoulscrubs.com'>
                               <Image
                                 src="/images/customers/heartsoul.png"
@@ -243,7 +243,7 @@ export default function About() {
                               />
                             </Link>
                           </div>
-                          <div className={`${styles.customerItem} `} style={{'transition-delay': '1.5s'}}>
+                          <div className={`${styles.customerItem} `} style={{'transitionDelay': '1.5s'}}>
                             <Link href='https://www.infinityscrubs.com'>
                               <Image
                                 src="/images/customers/infinity.png"
