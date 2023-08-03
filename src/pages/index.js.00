@@ -4,7 +4,6 @@ import styles from '@/styles/home.module.scss';
 import page from '@/styles/page.module.scss';
 import CtaBlueButton from "@/components/ctaBlueButton";
 import TypingEffect from '@/components/TypingEffect';
-import FadeInUpSentences from '@/components/FadeInUpSentences';
 
 // Docs: https://alvarotrigo.com/fullPage/docs/
 import ReactFullPage from "@fullpage/react-fullpage";
@@ -25,28 +24,12 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // event resize - and setIsMobile
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    // Run the function only once after the component mounts
-    initNotRunEffect();
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+    initNotRunEffect(); // Run the function only once after the component mounts
   }, []);
   // END - Run effect in the first time page load
 
   // Typing Effect
   const [typingStarted, setTypingStarted] = useState(false);
-
-  // FadeInUp Sentences on the section 2
-  const [fadeInUpStarted, setFadeInUpStarted] = useState(false);
-  const [isMobile, setIsMobile] = useState(true);
 
   // Logo Effect
   const [logoStarted, setLogoStarted] = useState(false);
@@ -61,10 +44,8 @@ export default function Home() {
           // Typing Effect
           if (origin.index === 1) {
             setTypingStarted(false);
-            setFadeInUpStarted(false);
           }
           if (destination.index === 1) {
-            setFadeInUpStarted(true);
             setTypingStarted(true);
           }
           // End - Typing Effect
@@ -133,38 +114,14 @@ export default function Home() {
                   <div className={`${styles.innerSection} _backInLeft22`}>
                     <div className={`${styles.content} bugScroll`}>
 
-                      {
-                        (fadeInUpStarted && isMobile) &&
+                      {typingStarted &&
                         <>
-                          <FadeInUpSentences
-                            wrapClass={` s24_42 fw-300`}
-                            sentences={[
-                              'Our team <span class="blueText">integrates</span>',
-                              '<span class="blueText">systems, connects</span>',
-                              '<span class="blueText">front-end to back-end,</span>',
-                              '<span class="blueText">and streamlines your</span>',
-                              '<span class="blueText">business with</span>',
-                              '<span class="blueText">automation</span> to move at',
-                              'the pace of your',
-                              'customers.'
-                            ]}
-                          />
-                        </>
-                      }
-
-                      {
-                        (fadeInUpStarted && !isMobile) &&
-                        <>
-                          <FadeInUpSentences
-                            wrapClass={` s24_42 fw-300`}
-                            sentences={[
-                              'Our team <span class="blueText">integrates systems,</span>',
-                              '<span class="blueText">connects front-end to back-end,</span>',
-                              '<span class="blueText">and streamlines your business</span>',
-                              '<span class="blueText">with automation</span> to move at the ',
-                              'pace of your customers. '
-                            ]}
-                          />
+                          <p>
+                            <TypingEffect start={typingStarted} text='Our team '/>
+                            <TypingEffect start={typingStarted} classText={page.blueText} after={450 + 20}
+                                          text='integrates systems, connects front-end to back-end, and streamlines your business with automation '/>
+                            <TypingEffect start={typingStarted} after={5225 + 120} text='to move at the pace of your customers.'/>
+                          </p>
                         </>
                       }
 
